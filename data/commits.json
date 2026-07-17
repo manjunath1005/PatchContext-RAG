@@ -1,0 +1,2402 @@
+[
+  {
+    "sha": "866b7a3d0ce1025a3811f23aea4846d01a2b16a8",
+    "short_sha": "866b7a3",
+    "message": "\ud83d\udd16 Release version 0.139.2 (#16014)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-16T15:04:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/866b7a3d0ce1025a3811f23aea4846d01a2b16a8"
+  },
+  {
+    "sha": "7b3effea754619f0c305af576be23a51865292a3",
+    "short_sha": "7b3effe",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-16T14:58:20Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7b3effea754619f0c305af576be23a51865292a3"
+  },
+  {
+    "sha": "7fe315c21afb8a57a2b559772e0f7ced7e5d071a",
+    "short_sha": "7fe315c",
+    "message": "\ud83d\udc1b Refactor router route building to make it thread-safe, mainly relevant for tests running in parallel threads (uncommon) (#16013)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-16T14:57:38Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7fe315c21afb8a57a2b559772e0f7ced7e5d071a"
+  },
+  {
+    "sha": "c48e67b1ce9c03fc9bd4b1ac72350e51ad5a6e8a",
+    "short_sha": "c48e67b",
+    "message": "\ud83d\udd16 Release version 0.139.1 (#16012)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-16T09:09:10Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c48e67b1ce9c03fc9bd4b1ac72350e51ad5a6e8a"
+  },
+  {
+    "sha": "2acc4fbf155caf016e3bd2602c0d2ec52723e635",
+    "short_sha": "2acc4fb",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-16T09:00:03Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2acc4fbf155caf016e3bd2602c0d2ec52723e635"
+  },
+  {
+    "sha": "eb75fd078e83aed935016bcdf0705cd58bbf0d0e",
+    "short_sha": "eb75fd0",
+    "message": "\ud83d\udc1b Fix frontend fallback support for doted paths like `/users/john.doe` (#16011)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-16T08:59:23Z",
+    "url": "https://github.com/fastapi/fastapi/commit/eb75fd078e83aed935016bcdf0705cd58bbf0d0e"
+  },
+  {
+    "sha": "9b8410bdc9fa1fd679ea7e65b926535c7045ab87",
+    "short_sha": "9b8410b",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T14:37:13Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9b8410bdc9fa1fd679ea7e65b926535c7045ab87"
+  },
+  {
+    "sha": "e24d44cce4092a33b64e9536e96e7608a7dcb9b8",
+    "short_sha": "e24d44c",
+    "message": "\ud83d\udcdd Fix topic repository list not being displayed and `skip_users` not being applied (#15995)",
+    "author": "Yurii Motov",
+    "date": "2026-07-15T14:36:37Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e24d44cce4092a33b64e9536e96e7608a7dcb9b8"
+  },
+  {
+    "sha": "93b78f8646dea4543cc4d938f7e29b8547749a99",
+    "short_sha": "93b78f8",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:21:27Z",
+    "url": "https://github.com/fastapi/fastapi/commit/93b78f8646dea4543cc4d938f7e29b8547749a99"
+  },
+  {
+    "sha": "b959b443577c5f2b870cdef13219b98aa32f8943",
+    "short_sha": "b959b44",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:19:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b959b443577c5f2b870cdef13219b98aa32f8943"
+  },
+  {
+    "sha": "20d332cb2e33ed5e6a406cffafa79f537852a307",
+    "short_sha": "20d332c",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:15:28Z",
+    "url": "https://github.com/fastapi/fastapi/commit/20d332cb2e33ed5e6a406cffafa79f537852a307"
+  },
+  {
+    "sha": "061eb10016f5cd680a7796ba0320100ddce00710",
+    "short_sha": "061eb10",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:14:40Z",
+    "url": "https://github.com/fastapi/fastapi/commit/061eb10016f5cd680a7796ba0320100ddce00710"
+  },
+  {
+    "sha": "8f93206768d362c75ba38e7c66a3e104df56222e",
+    "short_sha": "8f93206",
+    "message": "\ud83c\udf10 Update translations for tr (update-outdated) (#16005)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:14:11Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8f93206768d362c75ba38e7c66a3e104df56222e"
+  },
+  {
+    "sha": "5ca69d462685929d2c418a0a393d9c13d3d24504",
+    "short_sha": "5ca69d4",
+    "message": "\ud83c\udf10 Update translations for zh-hant (update-outdated) (#15996)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:13:02Z",
+    "url": "https://github.com/fastapi/fastapi/commit/5ca69d462685929d2c418a0a393d9c13d3d24504"
+  },
+  {
+    "sha": "38c668601586dbdf38a6d8c4200c6ab6ab745e1b",
+    "short_sha": "38c6686",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:12:46Z",
+    "url": "https://github.com/fastapi/fastapi/commit/38c668601586dbdf38a6d8c4200c6ab6ab745e1b"
+  },
+  {
+    "sha": "1bea40556e933861fe5b66e91b04a84c766d6af6",
+    "short_sha": "1bea405",
+    "message": "\ud83c\udf10 Update translations for fr (update-outdated) (#16006)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:12:13Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1bea40556e933861fe5b66e91b04a84c766d6af6"
+  },
+  {
+    "sha": "3330e247ce1984f2e9bedeb20c6dbdedf3662cfa",
+    "short_sha": "3330e24",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:11:45Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3330e247ce1984f2e9bedeb20c6dbdedf3662cfa"
+  },
+  {
+    "sha": "569630f6463ff03bd711ad8dd07af6f074410124",
+    "short_sha": "569630f",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:11:16Z",
+    "url": "https://github.com/fastapi/fastapi/commit/569630f6463ff03bd711ad8dd07af6f074410124"
+  },
+  {
+    "sha": "362c6f1d3f11b1426cf18315568947e9e64894f3",
+    "short_sha": "362c6f1",
+    "message": "\ud83c\udf10 Update translations for de (update-outdated) (#15999)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:11:05Z",
+    "url": "https://github.com/fastapi/fastapi/commit/362c6f1d3f11b1426cf18315568947e9e64894f3"
+  },
+  {
+    "sha": "10f30b844b370aa56974c59ec8bb13439de75b96",
+    "short_sha": "10f30b8",
+    "message": "\ud83c\udf10 Update translations for ko (update-outdated) (#16004)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:10:56Z",
+    "url": "https://github.com/fastapi/fastapi/commit/10f30b844b370aa56974c59ec8bb13439de75b96"
+  },
+  {
+    "sha": "4cb38a48098f0bce73cd6c7242cb6a4f81a5b4c2",
+    "short_sha": "4cb38a4",
+    "message": "\ud83c\udf10 Update translations for zh (update-outdated) (#16001)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:10:45Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4cb38a48098f0bce73cd6c7242cb6a4f81a5b4c2"
+  },
+  {
+    "sha": "745d3d222f52ea61c4e9d1cc19c7196992594085",
+    "short_sha": "745d3d2",
+    "message": "\ud83c\udf10 Update translations for uk (update-outdated) (#16003)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:10:36Z",
+    "url": "https://github.com/fastapi/fastapi/commit/745d3d222f52ea61c4e9d1cc19c7196992594085"
+  },
+  {
+    "sha": "8458d35c96647a92801b9a243f3bd42a24fc7350",
+    "short_sha": "8458d35",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:10:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8458d35c96647a92801b9a243f3bd42a24fc7350"
+  },
+  {
+    "sha": "75bdc46293f35d8ca806e4690d6e294d9444492b",
+    "short_sha": "75bdc46",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:10:14Z",
+    "url": "https://github.com/fastapi/fastapi/commit/75bdc46293f35d8ca806e4690d6e294d9444492b"
+  },
+  {
+    "sha": "c29b4a17afe51299200fad8e5bc9f5c8822efe4d",
+    "short_sha": "c29b4a1",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:10:06Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c29b4a17afe51299200fad8e5bc9f5c8822efe4d"
+  },
+  {
+    "sha": "3a8ab1f76bc6af6d84101cf21d8180c20f3e6538",
+    "short_sha": "3a8ab1f",
+    "message": "\ud83c\udf10 Update translations for ja (update-outdated) (#15998)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:09:44Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3a8ab1f76bc6af6d84101cf21d8180c20f3e6538"
+  },
+  {
+    "sha": "b10d3dac4ce2e17ecd04f65fd92b050ce33ca899",
+    "short_sha": "b10d3da",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-15T08:09:35Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b10d3dac4ce2e17ecd04f65fd92b050ce33ca899"
+  },
+  {
+    "sha": "1d02512ce3c5d2ab0cb59ccda44725e7fc3076c7",
+    "short_sha": "1d02512",
+    "message": "\ud83c\udf10 Update translations for pt (update-outdated) (#16000)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:09:33Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1d02512ce3c5d2ab0cb59ccda44725e7fc3076c7"
+  },
+  {
+    "sha": "24a957b5b01a25718b477897976bff7f032606f3",
+    "short_sha": "24a957b",
+    "message": "\ud83c\udf10 Update translations for es (update-outdated) (#15997)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:09:15Z",
+    "url": "https://github.com/fastapi/fastapi/commit/24a957b5b01a25718b477897976bff7f032606f3"
+  },
+  {
+    "sha": "2ebfb7a7bc68b5346502676e7a234cd78cf01c26",
+    "short_sha": "2ebfb7a",
+    "message": "\ud83c\udf10 Update translations for ru (update-outdated) (#16002)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-15T08:08:55Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2ebfb7a7bc68b5346502676e7a234cd78cf01c26"
+  },
+  {
+    "sha": "027f27220c3ba66be6c42c95a227389b19383645",
+    "short_sha": "027f272",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-14T15:40:57Z",
+    "url": "https://github.com/fastapi/fastapi/commit/027f27220c3ba66be6c42c95a227389b19383645"
+  },
+  {
+    "sha": "37ccca3e95e287822602e275e92301399ba8917b",
+    "short_sha": "37ccca3",
+    "message": "\ud83c\udf10 Update translations for hi (add-missing) (#15990)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-14T15:40:20Z",
+    "url": "https://github.com/fastapi/fastapi/commit/37ccca3e95e287822602e275e92301399ba8917b"
+  },
+  {
+    "sha": "64fc8a4521d924e15cfecf6bf37d775ce688267a",
+    "short_sha": "64fc8a4",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-14T12:18:15Z",
+    "url": "https://github.com/fastapi/fastapi/commit/64fc8a4521d924e15cfecf6bf37d775ce688267a"
+  },
+  {
+    "sha": "e5d61c34a35f65676115ceec75acb26e1502f2c3",
+    "short_sha": "e5d61c3",
+    "message": "\ud83c\udf10 Update translations for hi (add-missing) (#15925)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-14T12:17:35Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e5d61c34a35f65676115ceec75acb26e1502f2c3"
+  },
+  {
+    "sha": "b1346bb142c8154950953255eea535e5a83d62eb",
+    "short_sha": "b1346bb",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-13T11:02:55Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b1346bb142c8154950953255eea535e5a83d62eb"
+  },
+  {
+    "sha": "9405816f15ffa5e6c3558444a14791f3b62e0c99",
+    "short_sha": "9405816",
+    "message": "\u2b06 Bump the python-packages group across 1 directory with 6 updates (#15981)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-07-13T11:02:21Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9405816f15ffa5e6c3558444a14791f3b62e0c99"
+  },
+  {
+    "sha": "fd4c4cfc3e8d3ffc207ff9f510a27b459e79fa0f",
+    "short_sha": "fd4c4cf",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-13T10:27:10Z",
+    "url": "https://github.com/fastapi/fastapi/commit/fd4c4cfc3e8d3ffc207ff9f510a27b459e79fa0f"
+  },
+  {
+    "sha": "87bbab1b739e7f7018bb826bc929af5c0e8e5d40",
+    "short_sha": "87bbab1",
+    "message": "\u2b06 Bump typing-extensions from 4.15.0 to 4.16.0 (#15982)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-07-13T10:26:39Z",
+    "url": "https://github.com/fastapi/fastapi/commit/87bbab1b739e7f7018bb826bc929af5c0e8e5d40"
+  },
+  {
+    "sha": "b335c906e1495c1b35100823b8b33639879d15f2",
+    "short_sha": "b335c90",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-13T10:16:09Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b335c906e1495c1b35100823b8b33639879d15f2"
+  },
+  {
+    "sha": "2b0b417c0cc38e3197d1c8eab90d512c6d905e25",
+    "short_sha": "2b0b417",
+    "message": "\u2b06 Bump the github-actions group across 1 directory with 4 updates (#15983)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-07-13T10:15:37Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2b0b417c0cc38e3197d1c8eab90d512c6d905e25"
+  },
+  {
+    "sha": "c9d88e33d8aecb96a4898a8f82d154ea1d40e318",
+    "short_sha": "c9d88e3",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-13T09:54:21Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c9d88e33d8aecb96a4898a8f82d154ea1d40e318"
+  },
+  {
+    "sha": "ef3f1ac9c1483666fb70ced80b089f08f7c8d5bf",
+    "short_sha": "ef3f1ac",
+    "message": "\u2b06 Bump pre-commit hooks (#15985)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-13T09:53:48Z",
+    "url": "https://github.com/fastapi/fastapi/commit/ef3f1ac9c1483666fb70ced80b089f08f7c8d5bf"
+  },
+  {
+    "sha": "cf93cc6258babf28a5c4b7a269517903b30ef609",
+    "short_sha": "cf93cc6",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-13T09:04:02Z",
+    "url": "https://github.com/fastapi/fastapi/commit/cf93cc6258babf28a5c4b7a269517903b30ef609"
+  },
+  {
+    "sha": "b75bd318f30e57a93727b17b4ef246fc2af61863",
+    "short_sha": "b75bd31",
+    "message": "\ud83d\udc77 Use `FASTAPI_LATEST_CHANGES` token in `bump-pre-commit-hooks` workflow (#15984)",
+    "author": "Yurii Motov",
+    "date": "2026-07-13T09:03:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b75bd318f30e57a93727b17b4ef246fc2af61863"
+  },
+  {
+    "sha": "c87047938912ce46ac1855d45638333397c81714",
+    "short_sha": "c870479",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-13T08:09:09Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c87047938912ce46ac1855d45638333397c81714"
+  },
+  {
+    "sha": "8bd152772e7f0aa50b88006ec574cf23f92ba571",
+    "short_sha": "8bd1527",
+    "message": "\ud83d\udc77 Add GH workflow to bump pre-commit hook versions (#15873)",
+    "author": "Yurii Motov",
+    "date": "2026-07-13T08:08:13Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8bd152772e7f0aa50b88006ec574cf23f92ba571"
+  },
+  {
+    "sha": "424f6b3c9ac8df1e35ed421bfeb4ef147cfecdeb",
+    "short_sha": "424f6b3",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-13T08:03:27Z",
+    "url": "https://github.com/fastapi/fastapi/commit/424f6b3c9ac8df1e35ed421bfeb4ef147cfecdeb"
+  },
+  {
+    "sha": "59e4a1c8a84dc6a19fdf054f74317504b68d7bc0",
+    "short_sha": "59e4a1c",
+    "message": "\ud83d\udd27 Set Dependabot schedule interval to \"monthly\" (#15874)",
+    "author": "Yurii Motov",
+    "date": "2026-07-13T08:02:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/59e4a1c8a84dc6a19fdf054f74317504b68d7bc0"
+  },
+  {
+    "sha": "7cb06f360dd44efac059848df1a9beee7643b018",
+    "short_sha": "7cb06f3",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-07T19:03:19Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7cb06f360dd44efac059848df1a9beee7643b018"
+  },
+  {
+    "sha": "1e60e3299246c6b1515ab9ef1b1c5de11bf4454b",
+    "short_sha": "1e60e32",
+    "message": "\u2b06 Bump CodSpeedHQ/action from 4.17.6 to 4.18.1 in the github-actions group (#15950)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-07-07T19:02:48Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1e60e3299246c6b1515ab9ef1b1c5de11bf4454b"
+  },
+  {
+    "sha": "fb53e1df99d05689d2c519bd30ae50442c3240cb",
+    "short_sha": "fb53e1d",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-07T19:01:05Z",
+    "url": "https://github.com/fastapi/fastapi/commit/fb53e1df99d05689d2c519bd30ae50442c3240cb"
+  },
+  {
+    "sha": "74963395fc32638a2b698d9fc0b2a46961556b1b",
+    "short_sha": "7496339",
+    "message": "\u2b06 Bump the python-packages group with 8 updates (#15952)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-07-07T19:00:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/74963395fc32638a2b698d9fc0b2a46961556b1b"
+  },
+  {
+    "sha": "3f3354a94d7c8b496258d7b762070e46704e01c1",
+    "short_sha": "3f3354a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-06T22:41:52Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3f3354a94d7c8b496258d7b762070e46704e01c1"
+  },
+  {
+    "sha": "4cafad584d5eb4cff0ace66f25b6b9a461d6fa6f",
+    "short_sha": "4cafad5",
+    "message": "\ud83d\udd27 Update sponsors: add TutorCruncher (#15947)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-06T22:41:18Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4cafad584d5eb4cff0ace66f25b6b9a461d6fa6f"
+  },
+  {
+    "sha": "dd17e4f723a23854cfe4b9b6258e31efd86ea523",
+    "short_sha": "dd17e4f",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-04T20:24:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/dd17e4f723a23854cfe4b9b6258e31efd86ea523"
+  },
+  {
+    "sha": "787e11b4266581c7623afa1bd950aecfe64e8eea",
+    "short_sha": "787e11b",
+    "message": "\ud83d\udc77 Fix notify translations checkout target (#15933)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-04T20:23:59Z",
+    "url": "https://github.com/fastapi/fastapi/commit/787e11b4266581c7623afa1bd950aecfe64e8eea"
+  },
+  {
+    "sha": "68c02766d4a537890a892d42c94fc4c4c4d16906",
+    "short_sha": "68c0276",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-04T20:04:00Z",
+    "url": "https://github.com/fastapi/fastapi/commit/68c02766d4a537890a892d42c94fc4c4c4d16906"
+  },
+  {
+    "sha": "f500ef131e0c00bd42b26706ce75ece89eb39081",
+    "short_sha": "f500ef1",
+    "message": "\ud83d\udc77 Fix latest-changes checkout target (#15932)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-04T20:03:22Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f500ef131e0c00bd42b26706ce75ece89eb39081"
+  },
+  {
+    "sha": "fdfd5091f149bd9c7281c2bcc4bb867bdaa1269c",
+    "short_sha": "fdfd509",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-04T13:15:08Z",
+    "url": "https://github.com/fastapi/fastapi/commit/fdfd5091f149bd9c7281c2bcc4bb867bdaa1269c"
+  },
+  {
+    "sha": "28c6fa1132b62489aef98234a09a8a663495d67b",
+    "short_sha": "28c6fa1",
+    "message": "\ud83d\udd27 Update sponsors: remove RapidProxy (#15929)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-04T13:14:37Z",
+    "url": "https://github.com/fastapi/fastapi/commit/28c6fa1132b62489aef98234a09a8a663495d67b"
+  },
+  {
+    "sha": "0475b62ff7dff909db08dc9bba96607ec08e2b5d",
+    "short_sha": "0475b62",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-03T19:10:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0475b62ff7dff909db08dc9bba96607ec08e2b5d"
+  },
+  {
+    "sha": "9c913b7bf748db2f1b2ed7a02c45264abc208698",
+    "short_sha": "9c913b7",
+    "message": "\u2b06\ufe0f Update issue-manager to 0.8.1 (#15928)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-03T19:08:33Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9c913b7bf748db2f1b2ed7a02c45264abc208698"
+  },
+  {
+    "sha": "f9816e4aa3e4e6ae55abd3fe4a190a6fa9da2c43",
+    "short_sha": "f9816e4",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-03T14:43:06Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f9816e4aa3e4e6ae55abd3fe4a190a6fa9da2c43"
+  },
+  {
+    "sha": "a52b4b9283ef42704ce1392f9ef2819205400855",
+    "short_sha": "a52b4b9",
+    "message": "\u2b06\ufe0f Update latest-changes to 0.6.1 (#15926)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-03T14:41:40Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a52b4b9283ef42704ce1392f9ef2819205400855"
+  },
+  {
+    "sha": "33299e22d178aa6f731140f67f8dbf5dd07cfa25",
+    "short_sha": "33299e2",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-03T13:42:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/33299e22d178aa6f731140f67f8dbf5dd07cfa25"
+  },
+  {
+    "sha": "72726acc6b16d419c02db9da5859b5b0f859fb6f",
+    "short_sha": "72726ac",
+    "message": "\ud83c\udf10 Update translations for hi (add-missing) (#15797)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-03T13:41:36Z",
+    "url": "https://github.com/fastapi/fastapi/commit/72726acc6b16d419c02db9da5859b5b0f859fb6f"
+  },
+  {
+    "sha": "d27fe5cf15106a93687951479272999d4d84ecce",
+    "short_sha": "d27fe5c",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-03T13:39:15Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d27fe5cf15106a93687951479272999d4d84ecce"
+  },
+  {
+    "sha": "91df2c20bc83ba67aaf71cf461acd36c314ba326",
+    "short_sha": "91df2c2",
+    "message": "\ud83c\udf10 Update `llm-prompt.md` for Hindi (#15810)",
+    "author": "Yurii Motov",
+    "date": "2026-07-03T13:38:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/91df2c20bc83ba67aaf71cf461acd36c314ba326"
+  },
+  {
+    "sha": "ae59432d3ba389ba6e83101ffc6b2c5b10b43421",
+    "short_sha": "ae59432",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-03T12:39:09Z",
+    "url": "https://github.com/fastapi/fastapi/commit/ae59432d3ba389ba6e83101ffc6b2c5b10b43421"
+  },
+  {
+    "sha": "b0708dcbb99ee0b63521b84c8cdc843055095124",
+    "short_sha": "b0708dc",
+    "message": "\ud83c\udf10 Fix language-specific translation prompt for Russian language (#15924)",
+    "author": "Yurii Motov",
+    "date": "2026-07-03T12:38:40Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b0708dcbb99ee0b63521b84c8cdc843055095124"
+  },
+  {
+    "sha": "cecd96d9c6c318e0df1c40cedbc2e953381ddfd3",
+    "short_sha": "cecd96d",
+    "message": "\ud83d\udd16 Release version 0.139.0 (#15910)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T16:24:47Z",
+    "url": "https://github.com/fastapi/fastapi/commit/cecd96d9c6c318e0df1c40cedbc2e953381ddfd3"
+  },
+  {
+    "sha": "aea660936b55fdbd84270d24f892839388922dd6",
+    "short_sha": "aea6609",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T16:13:00Z",
+    "url": "https://github.com/fastapi/fastapi/commit/aea660936b55fdbd84270d24f892839388922dd6"
+  },
+  {
+    "sha": "319be508ce7db9ee5f52c3b9baa68c6cc1037c10",
+    "short_sha": "319be50",
+    "message": "\u2728 Support dependencies in `app.frontend()`, e.g. for automatic cookie authentication for the frontend (#15908)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T16:12:33Z",
+    "url": "https://github.com/fastapi/fastapi/commit/319be508ce7db9ee5f52c3b9baa68c6cc1037c10"
+  },
+  {
+    "sha": "66a90f6ee9c0cf58ec61b14f8925344d6f16eae5",
+    "short_sha": "66a90f6",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T15:54:16Z",
+    "url": "https://github.com/fastapi/fastapi/commit/66a90f6ee9c0cf58ec61b14f8925344d6f16eae5"
+  },
+  {
+    "sha": "d30a3ebfc7d7fd7851ba4243677266c53cb9f154",
+    "short_sha": "d30a3eb",
+    "message": "\ud83d\udc65 Update FastAPI People - Experts (#15909)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T15:53:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d30a3ebfc7d7fd7851ba4243677266c53cb9f154"
+  },
+  {
+    "sha": "122f1b58f4e0fabfefef3710a8c8247bb2bd820b",
+    "short_sha": "122f1b5",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T14:23:45Z",
+    "url": "https://github.com/fastapi/fastapi/commit/122f1b58f4e0fabfefef3710a8c8247bb2bd820b"
+  },
+  {
+    "sha": "fd6ece32eeb27c9ce164bd9170f9d8e1db1dacff",
+    "short_sha": "fd6ece3",
+    "message": "\ud83d\udc65 Update FastAPI GitHub topic repositories (#15906)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T14:23:18Z",
+    "url": "https://github.com/fastapi/fastapi/commit/fd6ece32eeb27c9ce164bd9170f9d8e1db1dacff"
+  },
+  {
+    "sha": "ec2a6adaf14c440bdcd0fd3f4ca203daa8c3ba6a",
+    "short_sha": "ec2a6ad",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T14:07:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/ec2a6adaf14c440bdcd0fd3f4ca203daa8c3ba6a"
+  },
+  {
+    "sha": "9d7d7febd3a66844f948254c1ba4745b6cc16f40",
+    "short_sha": "9d7d7fe",
+    "message": "\ud83c\udf10 Update translations for fr (update-outdated) (#15897)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T14:06:27Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9d7d7febd3a66844f948254c1ba4745b6cc16f40"
+  },
+  {
+    "sha": "8dc852df4713efa998d126c5194302e9f06e7675",
+    "short_sha": "8dc852d",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:59:58Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8dc852df4713efa998d126c5194302e9f06e7675"
+  },
+  {
+    "sha": "704927a066baaf3d680446bdee700b9b8e16c13e",
+    "short_sha": "704927a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:59:57Z",
+    "url": "https://github.com/fastapi/fastapi/commit/704927a066baaf3d680446bdee700b9b8e16c13e"
+  },
+  {
+    "sha": "c80355b65eda4e636aff4463d159c1bdc2029982",
+    "short_sha": "c80355b",
+    "message": "\ud83c\udf10 Update translations for zh-hant (update-outdated) (#15896)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:59:24Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c80355b65eda4e636aff4463d159c1bdc2029982"
+  },
+  {
+    "sha": "28c93900e71f69ac536ebdd317c476003750a8de",
+    "short_sha": "28c9390",
+    "message": "\ud83c\udf10 Update translations for ja (update-outdated) (#15895)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:59:00Z",
+    "url": "https://github.com/fastapi/fastapi/commit/28c93900e71f69ac536ebdd317c476003750a8de"
+  },
+  {
+    "sha": "a49e35172dcfc064f8b3a6e0758442da774a977d",
+    "short_sha": "a49e351",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:58:04Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a49e35172dcfc064f8b3a6e0758442da774a977d"
+  },
+  {
+    "sha": "512a3e7825dc7f9c4e08c350851d06ab005b18cc",
+    "short_sha": "512a3e7",
+    "message": "\ud83c\udf10 Update translations for de (update-outdated) (#15899)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:57:35Z",
+    "url": "https://github.com/fastapi/fastapi/commit/512a3e7825dc7f9c4e08c350851d06ab005b18cc"
+  },
+  {
+    "sha": "e23813a9b537672a882b589290ca128c0a55c95d",
+    "short_sha": "e23813a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:50:58Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e23813a9b537672a882b589290ca128c0a55c95d"
+  },
+  {
+    "sha": "c2cdfcbcdd0394c8b4dcf3bd30fca535091e5524",
+    "short_sha": "c2cdfcb",
+    "message": "\ud83c\udf10 Update translations for es (update-outdated) (#15892)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:50:11Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c2cdfcbcdd0394c8b4dcf3bd30fca535091e5524"
+  },
+  {
+    "sha": "60237faadb926f616b2b8947e1f793779844d22a",
+    "short_sha": "60237fa",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:47:39Z",
+    "url": "https://github.com/fastapi/fastapi/commit/60237faadb926f616b2b8947e1f793779844d22a"
+  },
+  {
+    "sha": "e7324a77db4a9f4d38e4673850ed10ab1de0cb96",
+    "short_sha": "e7324a7",
+    "message": "\ud83c\udf10 Update translations for tr (update-outdated) (#15891)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:46:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e7324a77db4a9f4d38e4673850ed10ab1de0cb96"
+  },
+  {
+    "sha": "50ab217bc6f2fc2d2ecd05af8329591c55e9d5fe",
+    "short_sha": "50ab217",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:45:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/50ab217bc6f2fc2d2ecd05af8329591c55e9d5fe"
+  },
+  {
+    "sha": "48dd913e5648cda943bc28cccfbbc4c93f2a5859",
+    "short_sha": "48dd913",
+    "message": "\ud83c\udf10 Update translations for pt (update-outdated) (#15893)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:45:25Z",
+    "url": "https://github.com/fastapi/fastapi/commit/48dd913e5648cda943bc28cccfbbc4c93f2a5859"
+  },
+  {
+    "sha": "59d335d200a9d39256b521038f7ae58535eb75b0",
+    "short_sha": "59d335d",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:36:20Z",
+    "url": "https://github.com/fastapi/fastapi/commit/59d335d200a9d39256b521038f7ae58535eb75b0"
+  },
+  {
+    "sha": "6119d875861a1ff1d4f4352fe6c87c42a8d820dc",
+    "short_sha": "6119d87",
+    "message": "\ud83c\udf10 Update translations for zh (update-outdated) (#15898)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:35:53Z",
+    "url": "https://github.com/fastapi/fastapi/commit/6119d875861a1ff1d4f4352fe6c87c42a8d820dc"
+  },
+  {
+    "sha": "2b5cf661cab461072b910f26bdc8d2e6512abe13",
+    "short_sha": "2b5cf66",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:27:56Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2b5cf661cab461072b910f26bdc8d2e6512abe13"
+  },
+  {
+    "sha": "509ac59f5c8cd0914968beb64178c764e1a11e2f",
+    "short_sha": "509ac59",
+    "message": "\ud83c\udf10 Update translations for uk (update-outdated) (#15900)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:27:26Z",
+    "url": "https://github.com/fastapi/fastapi/commit/509ac59f5c8cd0914968beb64178c764e1a11e2f"
+  },
+  {
+    "sha": "ffcbd457ea065a17645a2a56c3fee588cbaca5a6",
+    "short_sha": "ffcbd45",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T13:16:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/ffcbd457ea065a17645a2a56c3fee588cbaca5a6"
+  },
+  {
+    "sha": "3b7cb60067b982ac682a21485ee413fe89832d80",
+    "short_sha": "3b7cb60",
+    "message": "\ud83c\udf10 Update translations for ko (update-outdated) (#15890)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T13:16:28Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3b7cb60067b982ac682a21485ee413fe89832d80"
+  },
+  {
+    "sha": "6c0df1738dc8893e6415ec7c58251898bd63a7a0",
+    "short_sha": "6c0df17",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T12:52:28Z",
+    "url": "https://github.com/fastapi/fastapi/commit/6c0df1738dc8893e6415ec7c58251898bd63a7a0"
+  },
+  {
+    "sha": "c5ab51d50f576a9e53e0f887d4046033234787cd",
+    "short_sha": "c5ab51d",
+    "message": "\ud83c\udf10 Update translations for ru (update-outdated) (#15894)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T12:51:57Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c5ab51d50f576a9e53e0f887d4046033234787cd"
+  },
+  {
+    "sha": "473acc1adf0218a07510a157a6995b61f2591cb9",
+    "short_sha": "473acc1",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:47:05Z",
+    "url": "https://github.com/fastapi/fastapi/commit/473acc1adf0218a07510a157a6995b61f2591cb9"
+  },
+  {
+    "sha": "86dd7b8a23fdbcc4ceafaaa92000a1a5ce874b88",
+    "short_sha": "86dd7b8",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:46:58Z",
+    "url": "https://github.com/fastapi/fastapi/commit/86dd7b8a23fdbcc4ceafaaa92000a1a5ce874b88"
+  },
+  {
+    "sha": "bdc2dfc9aae56e7cf61fb14f9ca037a23c74255e",
+    "short_sha": "bdc2dfc",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:46:08Z",
+    "url": "https://github.com/fastapi/fastapi/commit/bdc2dfc9aae56e7cf61fb14f9ca037a23c74255e"
+  },
+  {
+    "sha": "bfb663fa848e35d09b9d7bd21e3b346f442a7b80",
+    "short_sha": "bfb663f",
+    "message": "\ud83c\udf10 Update translations for es (add-missing) (#15880)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:44:40Z",
+    "url": "https://github.com/fastapi/fastapi/commit/bfb663fa848e35d09b9d7bd21e3b346f442a7b80"
+  },
+  {
+    "sha": "2c4f3e3ece230410893471e66dac68b26b4c915a",
+    "short_sha": "2c4f3e3",
+    "message": "\ud83c\udf10 Update translations for ko (add-missing) (#15888)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:44:10Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2c4f3e3ece230410893471e66dac68b26b4c915a"
+  },
+  {
+    "sha": "4011c1231827ae472ff35545b7fe1e32be4ba570",
+    "short_sha": "4011c12",
+    "message": "\ud83c\udf10 Update translations for zh-hant (add-missing) (#15889)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:43:53Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4011c1231827ae472ff35545b7fe1e32be4ba570"
+  },
+  {
+    "sha": "78154e85a620556722d0b9318b61d7ba4a222c4d",
+    "short_sha": "78154e8",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:43:39Z",
+    "url": "https://github.com/fastapi/fastapi/commit/78154e85a620556722d0b9318b61d7ba4a222c4d"
+  },
+  {
+    "sha": "eaace7a13e787e8fab3822165adbef36d21675dd",
+    "short_sha": "eaace7a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:43:23Z",
+    "url": "https://github.com/fastapi/fastapi/commit/eaace7a13e787e8fab3822165adbef36d21675dd"
+  },
+  {
+    "sha": "7a79b7e9fb4afa0ee10ccf0bdc800f56adda8732",
+    "short_sha": "7a79b7e",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:43:20Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7a79b7e9fb4afa0ee10ccf0bdc800f56adda8732"
+  },
+  {
+    "sha": "65fd47ffa0077da9760d4ee1d51eeceda4a6dc0f",
+    "short_sha": "65fd47f",
+    "message": "\ud83c\udf10 Update translations for pt (add-missing) (#15883)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:42:52Z",
+    "url": "https://github.com/fastapi/fastapi/commit/65fd47ffa0077da9760d4ee1d51eeceda4a6dc0f"
+  },
+  {
+    "sha": "0982d3c2ae1059adcf64a2ec51a41e96c891bbd7",
+    "short_sha": "0982d3c",
+    "message": "\ud83c\udf10 Update translations for ja (add-missing) (#15882)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:41:19Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0982d3c2ae1059adcf64a2ec51a41e96c891bbd7"
+  },
+  {
+    "sha": "2b0f1561936a31291757304e52cd3ece5c90afd4",
+    "short_sha": "2b0f156",
+    "message": "\ud83c\udf10 Update translations for zh (add-missing) (#15885)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:40:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2b0f1561936a31291757304e52cd3ece5c90afd4"
+  },
+  {
+    "sha": "f382703ff71b1a45ecbfed754bc3eeb2e70b2902",
+    "short_sha": "f382703",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:37:33Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f382703ff71b1a45ecbfed754bc3eeb2e70b2902"
+  },
+  {
+    "sha": "75737c19da4b6b4e1e823b7a18cbbbc5d023c3c3",
+    "short_sha": "75737c1",
+    "message": "\ud83c\udf10 Update translations for tr (add-missing) (#15887)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:37:00Z",
+    "url": "https://github.com/fastapi/fastapi/commit/75737c19da4b6b4e1e823b7a18cbbbc5d023c3c3"
+  },
+  {
+    "sha": "92cf50e546b2ff92c97a0c16cf48370d7b8f23ad",
+    "short_sha": "92cf50e",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:36:23Z",
+    "url": "https://github.com/fastapi/fastapi/commit/92cf50e546b2ff92c97a0c16cf48370d7b8f23ad"
+  },
+  {
+    "sha": "f3e6899127daf4949b868bd4aa2b8d2515884b36",
+    "short_sha": "f3e6899",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:35:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f3e6899127daf4949b868bd4aa2b8d2515884b36"
+  },
+  {
+    "sha": "c9f99ef24f75e573690d49df2fac8d1b83dcf627",
+    "short_sha": "c9f99ef",
+    "message": "\ud83c\udf10 Update translations for uk (add-missing) (#15886)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:34:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c9f99ef24f75e573690d49df2fac8d1b83dcf627"
+  },
+  {
+    "sha": "241b9a70a89c390195ec1f0ba087d8418987692a",
+    "short_sha": "241b9a7",
+    "message": "\ud83c\udf10 Update translations for fr (add-missing) (#15881)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:34:11Z",
+    "url": "https://github.com/fastapi/fastapi/commit/241b9a70a89c390195ec1f0ba087d8418987692a"
+  },
+  {
+    "sha": "a3aa0703a638886d2a72777a24804f57a54d94ac",
+    "short_sha": "a3aa070",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:33:25Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a3aa0703a638886d2a72777a24804f57a54d94ac"
+  },
+  {
+    "sha": "065e7deee4b944684c12a8fa4a808760ff428759",
+    "short_sha": "065e7de",
+    "message": "\ud83c\udf10 Update translations for de (add-missing) (#15884)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:32:25Z",
+    "url": "https://github.com/fastapi/fastapi/commit/065e7deee4b944684c12a8fa4a808760ff428759"
+  },
+  {
+    "sha": "bf41b93fafb6540f254edba93a007e79d65c1947",
+    "short_sha": "bf41b93",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:31:59Z",
+    "url": "https://github.com/fastapi/fastapi/commit/bf41b93fafb6540f254edba93a007e79d65c1947"
+  },
+  {
+    "sha": "f206f06f1a44e743720fdd5153a68af038098a5f",
+    "short_sha": "f206f06",
+    "message": "\ud83c\udf10 Update translations for ru (add-missing) (#15879)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:31:35Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f206f06f1a44e743720fdd5153a68af038098a5f"
+  },
+  {
+    "sha": "0df0261757e65fc8a8f22e2b8dff194ea349ddeb",
+    "short_sha": "0df0261",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-07-01T10:21:05Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0df0261757e65fc8a8f22e2b8dff194ea349ddeb"
+  },
+  {
+    "sha": "3ac41743924ca9e8fb4e391fe3c7b5bbccacafc6",
+    "short_sha": "3ac4174",
+    "message": "\ud83d\udc65 Update FastAPI People - Contributors and Translators (#15878)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-07-01T10:20:39Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3ac41743924ca9e8fb4e391fe3c7b5bbccacafc6"
+  },
+  {
+    "sha": "bf8283b4444acfbe6bd6ac1de923760acf5e167a",
+    "short_sha": "bf8283b",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-30T18:58:00Z",
+    "url": "https://github.com/fastapi/fastapi/commit/bf8283b4444acfbe6bd6ac1de923760acf5e167a"
+  },
+  {
+    "sha": "8da95e1842e2eaa9c12e3ee5a7e3c5522376922e",
+    "short_sha": "8da95e1",
+    "message": "\ud83d\udc77 Remove not needed `allow-unsafe-pr-checkout: true` (#15876)",
+    "author": "Yurii Motov",
+    "date": "2026-06-30T18:57:35Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8da95e1842e2eaa9c12e3ee5a7e3c5522376922e"
+  },
+  {
+    "sha": "fe450d9a414572cf9a7354cef77d99e8d16e7d73",
+    "short_sha": "fe450d9",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-30T12:34:14Z",
+    "url": "https://github.com/fastapi/fastapi/commit/fe450d9a414572cf9a7354cef77d99e8d16e7d73"
+  },
+  {
+    "sha": "f6f3d25d1088045199209a234b8d106ac2c43163",
+    "short_sha": "f6f3d25",
+    "message": "\u2b06 Bump the github-actions group with 5 updates (#15872)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-30T12:33:41Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f6f3d25d1088045199209a234b8d106ac2c43163"
+  },
+  {
+    "sha": "02f80bc4d026bbbcbfcd9a79d4c674086764d9e7",
+    "short_sha": "02f80bc",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-30T09:21:16Z",
+    "url": "https://github.com/fastapi/fastapi/commit/02f80bc4d026bbbcbfcd9a79d4c674086764d9e7"
+  },
+  {
+    "sha": "66a2ad87c17bae25e9e9cab44e285ba84b72734c",
+    "short_sha": "66a2ad8",
+    "message": "\u2b06 Bump the python-packages group across 1 directory with 10 updates (#15870)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-30T09:20:46Z",
+    "url": "https://github.com/fastapi/fastapi/commit/66a2ad87c17bae25e9e9cab44e285ba84b72734c"
+  },
+  {
+    "sha": "a5d220ddbf49789f1d76d12e33b34b909ed4b019",
+    "short_sha": "a5d220d",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-30T08:53:18Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a5d220ddbf49789f1d76d12e33b34b909ed4b019"
+  },
+  {
+    "sha": "4a298abff1d8c85c9d50e8f3600bb76b427b7f5a",
+    "short_sha": "4a298ab",
+    "message": "\u2b06 Bump CodSpeedHQ/action from 4.17.0 to 4.17.5 in the github-actions group (#15826)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-30T08:52:46Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4a298abff1d8c85c9d50e8f3600bb76b427b7f5a"
+  },
+  {
+    "sha": "702fea83bb3ef0b558104835d7936af49650fb2d",
+    "short_sha": "702fea8",
+    "message": "\ud83d\udd16 Release version 0.138.2 (#15864)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-29T12:06:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/702fea83bb3ef0b558104835d7936af49650fb2d"
+  },
+  {
+    "sha": "6466865eec63cb545869d80e2ee6fbc54c4d364e",
+    "short_sha": "6466865",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-29T11:58:23Z",
+    "url": "https://github.com/fastapi/fastapi/commit/6466865eec63cb545869d80e2ee6fbc54c4d364e"
+  },
+  {
+    "sha": "b790e14cb686506df663959ac4879053cfed38db",
+    "short_sha": "b790e14",
+    "message": "\u267b\ufe0f Make `app.frontend()` return 404 for methods other than `GET` or `HEAD` with no static file matches (#15863)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-29T11:57:59Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b790e14cb686506df663959ac4879053cfed38db"
+  },
+  {
+    "sha": "c2708d981729c96437dcc1d7cfa40cd15128bc60",
+    "short_sha": "c2708d9",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-29T11:21:22Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c2708d981729c96437dcc1d7cfa40cd15128bc60"
+  },
+  {
+    "sha": "403b1fa16f9519f4b5ab52413daae059479fae4a",
+    "short_sha": "403b1fa",
+    "message": "\ud83d\udd27 Update sponsors: remove Stainless (#15862)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-29T11:20:57Z",
+    "url": "https://github.com/fastapi/fastapi/commit/403b1fa16f9519f4b5ab52413daae059479fae4a"
+  },
+  {
+    "sha": "1929ac23195136e8616ed1b7c3fd84c65b26d234",
+    "short_sha": "1929ac2",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-27T12:48:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1929ac23195136e8616ed1b7c3fd84c65b26d234"
+  },
+  {
+    "sha": "cba41585675ecb0e119d3ca258821659f07ec3f7",
+    "short_sha": "cba4158",
+    "message": "\u267b\ufe0f Refactor how sponsors data is handled for banners (#15852)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-27T12:47:35Z",
+    "url": "https://github.com/fastapi/fastapi/commit/cba41585675ecb0e119d3ca258821659f07ec3f7"
+  },
+  {
+    "sha": "b90c49aefad4958abdfbcacf9c2f816940a8f0e2",
+    "short_sha": "b90c49a",
+    "message": "\ud83d\udd16 Release version 0.138.1 (#15842)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-25T15:38:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b90c49aefad4958abdfbcacf9c2f816940a8f0e2"
+  },
+  {
+    "sha": "1f2f3df4852bf7cb29be1187806d95a0fdc7ea40",
+    "short_sha": "1f2f3df",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-25T15:31:17Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1f2f3df4852bf7cb29be1187806d95a0fdc7ea40"
+  },
+  {
+    "sha": "0af003a85da454dcf6b6783e0ad3f0dd687e944f",
+    "short_sha": "0af003a",
+    "message": "\u267b\ufe0f Refactor Library Skills, make info easier to find for agents (#15841)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-25T15:30:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0af003a85da454dcf6b6783e0ad3f0dd687e944f"
+  },
+  {
+    "sha": "d5494c1f01796350fa082cf8a82b124e95162e9d",
+    "short_sha": "d5494c1",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-24T22:37:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d5494c1f01796350fa082cf8a82b124e95162e9d"
+  },
+  {
+    "sha": "82c527e714f16bf9e07202aff0fb91cada329844",
+    "short_sha": "82c527e",
+    "message": "\ud83d\udc77 Simplify pull request workflow triggers (#15836)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-24T22:35:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/82c527e714f16bf9e07202aff0fb91cada329844"
+  },
+  {
+    "sha": "3f28dbe6d84cdac19bdb2b41e1664981e37359ab",
+    "short_sha": "3f28dbe",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-24T12:28:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3f28dbe6d84cdac19bdb2b41e1664981e37359ab"
+  },
+  {
+    "sha": "f6ea6b1f12e6d1a45c630a8fdf5d4c7c0959dad9",
+    "short_sha": "f6ea6b1",
+    "message": "\ud83d\udc77 Update issue-manager to 0.7.1 (#15833)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-24T12:23:58Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f6ea6b1f12e6d1a45c630a8fdf5d4c7c0959dad9"
+  },
+  {
+    "sha": "219ac634ab82b6321492ef97fb223b618ce13948",
+    "short_sha": "219ac63",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-23T23:16:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/219ac634ab82b6321492ef97fb223b618ce13948"
+  },
+  {
+    "sha": "fcc8e1f99431a0b381eaef03e07446e6975422b7",
+    "short_sha": "fcc8e1f",
+    "message": "\u2b06\ufe0f Update issue-manager to 0.7.0 (#15831)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-23T23:15:12Z",
+    "url": "https://github.com/fastapi/fastapi/commit/fcc8e1f99431a0b381eaef03e07446e6975422b7"
+  },
+  {
+    "sha": "457f4c705c0287e49d7aa4ddec292db6185d16e3",
+    "short_sha": "457f4c7",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-23T21:04:44Z",
+    "url": "https://github.com/fastapi/fastapi/commit/457f4c705c0287e49d7aa4ddec292db6185d16e3"
+  },
+  {
+    "sha": "29fc8f61660b52cb626190f865680364d0f32ff2",
+    "short_sha": "29fc8f6",
+    "message": "\ud83d\udd27 Update sponsors: Add TestMu again (#15830)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-23T21:04:19Z",
+    "url": "https://github.com/fastapi/fastapi/commit/29fc8f61660b52cb626190f865680364d0f32ff2"
+  },
+  {
+    "sha": "a497a025e7114ca442478ed28da7e0a1cdc6177a",
+    "short_sha": "a497a02",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-21T19:39:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a497a025e7114ca442478ed28da7e0a1cdc6177a"
+  },
+  {
+    "sha": "8f3db3d3e79465a97cbfd9ae47506aca67a58e0f",
+    "short_sha": "8f3db3d",
+    "message": "\ud83d\udd12\ufe0f Update zizmor workflow security checks (#15820)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-21T19:39:25Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8f3db3d3e79465a97cbfd9ae47506aca67a58e0f"
+  },
+  {
+    "sha": "0cb4a8e284b450abbccb71c543ad7757de46c0b2",
+    "short_sha": "0cb4a8e",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T16:31:34Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0cb4a8e284b450abbccb71c543ad7757de46c0b2"
+  },
+  {
+    "sha": "d69774c23db11e12474d5237b832dc54fd12bffa",
+    "short_sha": "d69774c",
+    "message": "\u2b06 Bump pydantic-settings from 2.14.1 to 2.14.2 (#15799)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-20T16:31:07Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d69774c23db11e12474d5237b832dc54fd12bffa"
+  },
+  {
+    "sha": "4b83b0d409009c8de9df4070fe163838b1a700c7",
+    "short_sha": "4b83b0d",
+    "message": "\ud83d\udd16 Release version 0.138.0 (#15808)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T01:14:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4b83b0d409009c8de9df4070fe163838b1a700c7"
+  },
+  {
+    "sha": "041cb0cdfa2d0f705d14ed07c2c2e0f92ef5f32c",
+    "short_sha": "041cb0c",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T01:07:09Z",
+    "url": "https://github.com/fastapi/fastapi/commit/041cb0cdfa2d0f705d14ed07c2c2e0f92ef5f32c"
+  },
+  {
+    "sha": "10393846ede7a2947cec594d15a43f813001cab4",
+    "short_sha": "1039384",
+    "message": "\ud83d\udcdd Fix typo in release notes (#15807)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T01:06:46Z",
+    "url": "https://github.com/fastapi/fastapi/commit/10393846ede7a2947cec594d15a43f813001cab4"
+  },
+  {
+    "sha": "0303491b69ff84a4632c0314e6db4df74f2f93f9",
+    "short_sha": "0303491",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T00:59:37Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0303491b69ff84a4632c0314e6db4df74f2f93f9"
+  },
+  {
+    "sha": "190f6e2033c8b886b25027be284d8c8c1893f28c",
+    "short_sha": "190f6e2",
+    "message": "\ud83d\udcdd Add Frontend instructions to Agent Library Skill (#15805)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T00:59:14Z",
+    "url": "https://github.com/fastapi/fastapi/commit/190f6e2033c8b886b25027be284d8c8c1893f28c"
+  },
+  {
+    "sha": "17945e5ab7f25234340c152a40d232a98857e079",
+    "short_sha": "17945e5",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T00:51:57Z",
+    "url": "https://github.com/fastapi/fastapi/commit/17945e5ab7f25234340c152a40d232a98857e079"
+  },
+  {
+    "sha": "2260afaf433103c8104b34d256cf0b96b058823b",
+    "short_sha": "2260afa",
+    "message": "\ud83d\udc1b Fix failing test, update format for raised errors (#15804)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T00:51:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2260afaf433103c8104b34d256cf0b96b058823b"
+  },
+  {
+    "sha": "0cd5001d0ef80a07e2d775c5c75522391a3e06d7",
+    "short_sha": "0cd5001",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T00:45:46Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0cd5001d0ef80a07e2d775c5c75522391a3e06d7"
+  },
+  {
+    "sha": "7cb1ab6264bc03319832f553730b511192a0c0d3",
+    "short_sha": "7cb1ab6",
+    "message": "\ud83d\udc77 Fix test-alls-green (#15803)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T00:45:19Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7cb1ab6264bc03319832f553730b511192a0c0d3"
+  },
+  {
+    "sha": "9c7eceb00ff6e1d37980954418f7c9dab30a4cd5",
+    "short_sha": "9c7eceb",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T00:30:21Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9c7eceb00ff6e1d37980954418f7c9dab30a4cd5"
+  },
+  {
+    "sha": "d176e00b9fb136ea8324c092c84528fdc3e16919",
+    "short_sha": "d176e00",
+    "message": "\ud83d\udcdd Udpate release notes link (#15802)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T00:29:58Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d176e00b9fb136ea8324c092c84528fdc3e16919"
+  },
+  {
+    "sha": "71e608e00e16c88c90bd5b6ffd04b5253a5b4133",
+    "short_sha": "71e608e",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T00:26:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/71e608e00e16c88c90bd5b6ffd04b5253a5b4133"
+  },
+  {
+    "sha": "459a51097be8187115047149d77dab983a361fb3",
+    "short_sha": "459a510",
+    "message": "\u270f\ufe0f Update white space characters in bigger apps (#15801)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T00:26:04Z",
+    "url": "https://github.com/fastapi/fastapi/commit/459a51097be8187115047149d77dab983a361fb3"
+  },
+  {
+    "sha": "e12833aaa2338d5ff31a71afb6b2d396ae18145f",
+    "short_sha": "e12833a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-20T00:21:10Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e12833aaa2338d5ff31a71afb6b2d396ae18145f"
+  },
+  {
+    "sha": "4d3dc78b262c609daf8a23baa00f31221b386d52",
+    "short_sha": "4d3dc78",
+    "message": "\u2728 Add support for `app.frontend(\"/\", directory=\"dist\")` and `router.frontend(\"/\", directory=\"dist\")` (#15800)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-20T00:20:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4d3dc78b262c609daf8a23baa00f31221b386d52"
+  },
+  {
+    "sha": "f1d750fddad90e2faad6c3cc5c85c7687b787e89",
+    "short_sha": "f1d750f",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-19T22:28:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/f1d750fddad90e2faad6c3cc5c85c7687b787e89"
+  },
+  {
+    "sha": "22f99d9ad33676a60496379c749d3669f10f5410",
+    "short_sha": "22f99d9",
+    "message": "\ud83d\udd27 Enable checking `release-notes.md` for typos (#15796)",
+    "author": "Yurii Motov",
+    "date": "2026-06-19T22:28:24Z",
+    "url": "https://github.com/fastapi/fastapi/commit/22f99d9ad33676a60496379c749d3669f10f5410"
+  },
+  {
+    "sha": "2d0047087526d2af3eca4cee77d56539c52651d1",
+    "short_sha": "2d00470",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-19T20:16:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2d0047087526d2af3eca4cee77d56539c52651d1"
+  },
+  {
+    "sha": "6e6c74fc162a4cc6421deb928ad403c9ee0f9d4f",
+    "short_sha": "6e6c74f",
+    "message": "\ud83c\udf10 Enable Hindi docs translations (#15554)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Yurii Motov",
+    "date": "2026-06-19T20:16:06Z",
+    "url": "https://github.com/fastapi/fastapi/commit/6e6c74fc162a4cc6421deb928ad403c9ee0f9d4f"
+  },
+  {
+    "sha": "1b68e378eff63dd6e5f26bbcffea364618965d25",
+    "short_sha": "1b68e37",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-19T09:30:09Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1b68e378eff63dd6e5f26bbcffea364618965d25"
+  },
+  {
+    "sha": "da9d05bc7abe2803db8d892ae3d856b0d93739cb",
+    "short_sha": "da9d05b",
+    "message": "\u270f\ufe0f Fix grammar, typos, and broken links in docs (#15694)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+    "author": "Yurii Motov",
+    "date": "2026-06-19T09:29:44Z",
+    "url": "https://github.com/fastapi/fastapi/commit/da9d05bc7abe2803db8d892ae3d856b0d93739cb"
+  },
+  {
+    "sha": "c61384e3d72cc4d32050e05ee409fd8a5d345844",
+    "short_sha": "c61384e",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-18T10:15:47Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c61384e3d72cc4d32050e05ee409fd8a5d345844"
+  },
+  {
+    "sha": "08321394abb9f5a3994f38b0fa3d3565f9e15946",
+    "short_sha": "0832139",
+    "message": "\ud83d\udcdd Tweak wording about deploying to FastAPI Cloud (#15793)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-18T10:15:16Z",
+    "url": "https://github.com/fastapi/fastapi/commit/08321394abb9f5a3994f38b0fa3d3565f9e15946"
+  },
+  {
+    "sha": "c744991f968f44b5dc6eb3c1636866986e653747",
+    "short_sha": "c744991",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-18T09:00:03Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c744991f968f44b5dc6eb3c1636866986e653747"
+  },
+  {
+    "sha": "2f4ba0bdd1f29c4aae3b308fb3aec8a9a5640f61",
+    "short_sha": "2f4ba0b",
+    "message": "\ud83d\udd28 Use `gpt-5.5` model in `translate.py`, specify `-chat` to avoid warnings (#15792)",
+    "author": "Yurii Motov",
+    "date": "2026-06-18T08:59:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2f4ba0bdd1f29c4aae3b308fb3aec8a9a5640f61"
+  },
+  {
+    "sha": "6a0ba7bb1f5015383cdceb3822ca1abed6e32b82",
+    "short_sha": "6a0ba7b",
+    "message": "\ud83d\udd16 Release version 0.137.2 (#15790)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-18T06:56:45Z",
+    "url": "https://github.com/fastapi/fastapi/commit/6a0ba7bb1f5015383cdceb3822ca1abed6e32b82"
+  },
+  {
+    "sha": "5d421ae9774acf3b15ceaaa4f4ed6d68a165e0a1",
+    "short_sha": "5d421ae",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-18T06:50:13Z",
+    "url": "https://github.com/fastapi/fastapi/commit/5d421ae9774acf3b15ceaaa4f4ed6d68a165e0a1"
+  },
+  {
+    "sha": "6ac122071d2c9e6add587e1271eb010dd6acbed0",
+    "short_sha": "6ac1220",
+    "message": "\u2728 Add `iter_route_contexts()` for advanced use cases that used to use `router.routes` (e.g. Jupyverse) (#15785)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-18T06:49:38Z",
+    "url": "https://github.com/fastapi/fastapi/commit/6ac122071d2c9e6add587e1271eb010dd6acbed0"
+  },
+  {
+    "sha": "7feb17f80a483e70efa26f01addb94d0070d42ee",
+    "short_sha": "7feb17f",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-17T20:50:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7feb17f80a483e70efa26f01addb94d0070d42ee"
+  },
+  {
+    "sha": "d514109e42fc90590a7050e982a37ac6ecf561ab",
+    "short_sha": "d514109",
+    "message": "\ud83d\udd27 Update sponsors: add BairesDev (#15787)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-17T20:50:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d514109e42fc90590a7050e982a37ac6ecf561ab"
+  },
+  {
+    "sha": "1c1edb9b55c29b90762b7165cddbefd1276358cf",
+    "short_sha": "1c1edb9",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-17T20:36:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1c1edb9b55c29b90762b7165cddbefd1276358cf"
+  },
+  {
+    "sha": "32d711f6d24224f2aed3395cac428222cbe9b1fb",
+    "short_sha": "32d711f",
+    "message": "\ud83d\udd28 Update sponsors script to simplify previews (#15786)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-17T20:36:24Z",
+    "url": "https://github.com/fastapi/fastapi/commit/32d711f6d24224f2aed3395cac428222cbe9b1fb"
+  },
+  {
+    "sha": "202b2d2f5f331db9102b5dbcef071a9e09bed10e",
+    "short_sha": "202b2d2",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T20:10:12Z",
+    "url": "https://github.com/fastapi/fastapi/commit/202b2d2f5f331db9102b5dbcef071a9e09bed10e"
+  },
+  {
+    "sha": "e26e64381c35ac6cf3d25bf6accb53b94a66dd8f",
+    "short_sha": "e26e643",
+    "message": "\u2b06 Bump the python-packages group across 1 directory with 7 updates (#15777)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-16T20:09:35Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e26e64381c35ac6cf3d25bf6accb53b94a66dd8f"
+  },
+  {
+    "sha": "c66d1c222bf0aa1c90d6436164292b84ca8d4361",
+    "short_sha": "c66d1c2",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T18:01:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c66d1c222bf0aa1c90d6436164292b84ca8d4361"
+  },
+  {
+    "sha": "705324ed2977f99dec4df45175ee27a2bf26c17f",
+    "short_sha": "705324e",
+    "message": "\u2b06 Bump cryptography from 46.0.7 to 48.0.1 (#15779)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-16T18:01:02Z",
+    "url": "https://github.com/fastapi/fastapi/commit/705324ed2977f99dec4df45175ee27a2bf26c17f"
+  },
+  {
+    "sha": "627636b617427794c56589814046db2e0669bf23",
+    "short_sha": "627636b",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T17:59:45Z",
+    "url": "https://github.com/fastapi/fastapi/commit/627636b617427794c56589814046db2e0669bf23"
+  },
+  {
+    "sha": "84304df58f837352cdd9503bef4f46f0da852111",
+    "short_sha": "84304df",
+    "message": "\u2b06 Bump aiohttp from 3.14.0 to 3.14.1 (#15781)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-16T17:59:13Z",
+    "url": "https://github.com/fastapi/fastapi/commit/84304df58f837352cdd9503bef4f46f0da852111"
+  },
+  {
+    "sha": "aaf70c196c85bd9e0ba4b12f37a1b0650063773b",
+    "short_sha": "aaf70c1",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T15:47:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/aaf70c196c85bd9e0ba4b12f37a1b0650063773b"
+  },
+  {
+    "sha": "69f8d87fb7aa2d6028331af16ec28d7b02636183",
+    "short_sha": "69f8d87",
+    "message": "\u2b06 Bump starlette from 1.2.1 to 1.3.1 (#15780)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-16T15:47:19Z",
+    "url": "https://github.com/fastapi/fastapi/commit/69f8d87fb7aa2d6028331af16ec28d7b02636183"
+  },
+  {
+    "sha": "a62dd7502219a0f0ae0b47504b00b8e45f44fe89",
+    "short_sha": "a62dd75",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T15:29:42Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a62dd7502219a0f0ae0b47504b00b8e45f44fe89"
+  },
+  {
+    "sha": "2c77ae3f76a2ec9db0f9ae9b114583a7881fa368",
+    "short_sha": "2c77ae3",
+    "message": "\u2b06 Bump astral-sh/setup-uv from 8.1.0 to 8.2.0 in the github-actions group (#15776)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-16T15:29:07Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2c77ae3f76a2ec9db0f9ae9b114583a7881fa368"
+  },
+  {
+    "sha": "06074e739b3c9c29d4a27a42ee607537fafcc690",
+    "short_sha": "06074e7",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T12:54:08Z",
+    "url": "https://github.com/fastapi/fastapi/commit/06074e739b3c9c29d4a27a42ee607537fafcc690"
+  },
+  {
+    "sha": "5ebf2ab2d17bacd95154a2c87caa182fa34c6c85",
+    "short_sha": "5ebf2ab",
+    "message": "\u2b06 Bump https://github.com/crate-ci/typos from v1.47.1 to v1.47.2 in the pre-commit group (#15775)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-16T12:53:10Z",
+    "url": "https://github.com/fastapi/fastapi/commit/5ebf2ab2d17bacd95154a2c87caa182fa34c6c85"
+  },
+  {
+    "sha": "88683944c7e088f21082d13114397d0b627cde47",
+    "short_sha": "8868394",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T12:29:19Z",
+    "url": "https://github.com/fastapi/fastapi/commit/88683944c7e088f21082d13114397d0b627cde47"
+  },
+  {
+    "sha": "9ca069f2be3e619fcda6d33fb1ed7025d6f9a419",
+    "short_sha": "9ca069f",
+    "message": "\u2b06 Bump python-multipart from 0.0.30 to 0.0.32 (#15778)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-16T12:28:41Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9ca069f2be3e619fcda6d33fb1ed7025d6f9a419"
+  },
+  {
+    "sha": "2f5ba0d5032df6cb0e3bb2ca31ed99bcd04b1912",
+    "short_sha": "2f5ba0d",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T11:38:50Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2f5ba0d5032df6cb0e3bb2ca31ed99bcd04b1912"
+  },
+  {
+    "sha": "44e5b99853e086bb28c803b33972965951abfd1a",
+    "short_sha": "44e5b99",
+    "message": "\ud83c\udf10 Fix broken Markdown in Korean custom response docs (#15774)",
+    "author": "\uad6c\ud76c\ucc2c",
+    "date": "2026-06-16T11:38:18Z",
+    "url": "https://github.com/fastapi/fastapi/commit/44e5b99853e086bb28c803b33972965951abfd1a"
+  },
+  {
+    "sha": "2f836a9e70b344ab8a0584b35ea0d61e84ce95ba",
+    "short_sha": "2f836a9",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-16T08:34:59Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2f836a9e70b344ab8a0584b35ea0d61e84ce95ba"
+  },
+  {
+    "sha": "818b97a68b7956e2a409203193110082046508cb",
+    "short_sha": "818b97a",
+    "message": "\u23ea\ufe0f Revert removing scripts, only remove `coverage.sh` (#15772)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-16T08:34:25Z",
+    "url": "https://github.com/fastapi/fastapi/commit/818b97a68b7956e2a409203193110082046508cb"
+  },
+  {
+    "sha": "aa5eeb3652e1305b8aac57ff1d547cf852a97016",
+    "short_sha": "aa5eeb3",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T22:12:18Z",
+    "url": "https://github.com/fastapi/fastapi/commit/aa5eeb3652e1305b8aac57ff1d547cf852a97016"
+  },
+  {
+    "sha": "090386b10e23b9105c5d12ab6ce8779ef43b129a",
+    "short_sha": "090386b",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T22:11:15Z",
+    "url": "https://github.com/fastapi/fastapi/commit/090386b10e23b9105c5d12ab6ce8779ef43b129a"
+  },
+  {
+    "sha": "aeeb29f6d05ddea1942753b6a7584e21b66cc718",
+    "short_sha": "aeeb29f",
+    "message": "\ud83c\udf10 Update translations for fr (update-outdated) (#15761)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T22:10:59Z",
+    "url": "https://github.com/fastapi/fastapi/commit/aeeb29f6d05ddea1942753b6a7584e21b66cc718"
+  },
+  {
+    "sha": "b401cb71c0681686f65cc0b654bba3f54e3af5c9",
+    "short_sha": "b401cb7",
+    "message": "\ud83c\udf10 Update translations for zh-hant (update-outdated) (#15760)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T22:10:42Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b401cb71c0681686f65cc0b654bba3f54e3af5c9"
+  },
+  {
+    "sha": "76008f778bbf2b55a337b2e3be3ea71ae5db51a4",
+    "short_sha": "76008f7",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T21:25:25Z",
+    "url": "https://github.com/fastapi/fastapi/commit/76008f778bbf2b55a337b2e3be3ea71ae5db51a4"
+  },
+  {
+    "sha": "011da093e154a70853f936c9b47242583f80b8be",
+    "short_sha": "011da09",
+    "message": "\ud83c\udf10 Update translations for de (update-outdated) (#15759)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T21:24:43Z",
+    "url": "https://github.com/fastapi/fastapi/commit/011da093e154a70853f936c9b47242583f80b8be"
+  },
+  {
+    "sha": "132c533acea52e575cbdee94702efcff182bb46a",
+    "short_sha": "132c533",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T21:14:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/132c533acea52e575cbdee94702efcff182bb46a"
+  },
+  {
+    "sha": "2f69b265ef32f5bfbe6f77b286f2c7231e86a654",
+    "short_sha": "2f69b26",
+    "message": "\ud83c\udf10 Update translations for ko (update-outdated) (#15757)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T21:13:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2f69b265ef32f5bfbe6f77b286f2c7231e86a654"
+  },
+  {
+    "sha": "89fcd722e30a4867e7cbe65b977aa66a9c3bc6e4",
+    "short_sha": "89fcd72",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T21:09:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/89fcd722e30a4867e7cbe65b977aa66a9c3bc6e4"
+  },
+  {
+    "sha": "3b9f938e50e2e81d1b46459cc86d74b9f282a6ec",
+    "short_sha": "3b9f938",
+    "message": "\ud83c\udf10 Update translations for uk (update-outdated) (#15756)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T21:08:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3b9f938e50e2e81d1b46459cc86d74b9f282a6ec"
+  },
+  {
+    "sha": "a4bd128ed50b4955a41cf9785b404312c4689ab3",
+    "short_sha": "a4bd128",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T20:12:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a4bd128ed50b4955a41cf9785b404312c4689ab3"
+  },
+  {
+    "sha": "8012339dc25368bc1c24c12666aae80c8341363f",
+    "short_sha": "8012339",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T20:12:22Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8012339dc25368bc1c24c12666aae80c8341363f"
+  },
+  {
+    "sha": "d026f79b82006d3deaf557e7436fbd47c24d73eb",
+    "short_sha": "d026f79",
+    "message": "\ud83c\udf10 Update translations for zh (update-outdated) (#15755)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T20:12:19Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d026f79b82006d3deaf557e7436fbd47c24d73eb"
+  },
+  {
+    "sha": "43520809e96cc87d95cad1cf1a417118ea2088f7",
+    "short_sha": "4352080",
+    "message": "\ud83c\udf10 Update translations for tr (update-outdated) (#15754)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T20:11:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/43520809e96cc87d95cad1cf1a417118ea2088f7"
+  },
+  {
+    "sha": "93610bbbcc687a8b3219a2b75794e9ca2bf8dd68",
+    "short_sha": "93610bb",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T19:51:12Z",
+    "url": "https://github.com/fastapi/fastapi/commit/93610bbbcc687a8b3219a2b75794e9ca2bf8dd68"
+  },
+  {
+    "sha": "b82ab2fb41bce1c84445cbed8d35f3bb072ba5f5",
+    "short_sha": "b82ab2f",
+    "message": "\ud83c\udf10 Update translations for pt (update-outdated) (#15753)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T19:50:40Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b82ab2fb41bce1c84445cbed8d35f3bb072ba5f5"
+  },
+  {
+    "sha": "451eb49bbcd1599ebcea1799fee9cf1398c91a07",
+    "short_sha": "451eb49",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T19:33:11Z",
+    "url": "https://github.com/fastapi/fastapi/commit/451eb49bbcd1599ebcea1799fee9cf1398c91a07"
+  },
+  {
+    "sha": "96592d954b2f0f12941505863f8fffd78c07519b",
+    "short_sha": "96592d9",
+    "message": "\ud83c\udf10 Update translations for es (update-outdated) (#15752)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T19:32:43Z",
+    "url": "https://github.com/fastapi/fastapi/commit/96592d954b2f0f12941505863f8fffd78c07519b"
+  },
+  {
+    "sha": "eaf1d9492502c1d3f962729b38e1a827d6af8630",
+    "short_sha": "eaf1d94",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T19:09:23Z",
+    "url": "https://github.com/fastapi/fastapi/commit/eaf1d9492502c1d3f962729b38e1a827d6af8630"
+  },
+  {
+    "sha": "9871e03c8a045b2cfb16a7cdb5d405f790de9759",
+    "short_sha": "9871e03",
+    "message": "\ud83c\udf10 Update translations for ja (update-outdated) (#15751)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T19:08:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9871e03c8a045b2cfb16a7cdb5d405f790de9759"
+  },
+  {
+    "sha": "c9d3e8250063b1e57ee98105325bc7cf01cde3a6",
+    "short_sha": "c9d3e82",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T18:37:06Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c9d3e8250063b1e57ee98105325bc7cf01cde3a6"
+  },
+  {
+    "sha": "864c29f0756d21cfd76732efcd9af5156a66c489",
+    "short_sha": "864c29f",
+    "message": "\ud83c\udf10 Update translations for ru (update-outdated) (#15758)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T18:36:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/864c29f0756d21cfd76732efcd9af5156a66c489"
+  },
+  {
+    "sha": "1b284435ee798087076320689d10fcc1d0dde61c",
+    "short_sha": "1b28443",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T16:04:17Z",
+    "url": "https://github.com/fastapi/fastapi/commit/1b284435ee798087076320689d10fcc1d0dde61c"
+  },
+  {
+    "sha": "c054476c6f26ce3377eb58cd1ddae28b1c85607a",
+    "short_sha": "c054476",
+    "message": "\ud83d\udd25 Remove unused scripts (#15771)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T16:03:45Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c054476c6f26ce3377eb58cd1ddae28b1c85607a"
+  },
+  {
+    "sha": "8c5a830b6d32e21794e301fc7e5dbaaa272ba0f7",
+    "short_sha": "8c5a830",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T15:54:17Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8c5a830b6d32e21794e301fc7e5dbaaa272ba0f7"
+  },
+  {
+    "sha": "b7de2b7feb207b0a157b81c237b5a0cba6e21cb9",
+    "short_sha": "b7de2b7",
+    "message": "\ud83d\udd27 Add ty configs to check docs sources (#15770)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T15:53:46Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b7de2b7feb207b0a157b81c237b5a0cba6e21cb9"
+  },
+  {
+    "sha": "4473a0cd9129f9623f8d23d1a3bc86914967d9c5",
+    "short_sha": "4473a0c",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T14:31:50Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4473a0cd9129f9623f8d23d1a3bc86914967d9c5"
+  },
+  {
+    "sha": "76876e5a812268860148ba3a2059795b4d65ae55",
+    "short_sha": "76876e5",
+    "message": "\ud83d\udd27 Add ty configs to check docs sources (#15769)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T14:31:14Z",
+    "url": "https://github.com/fastapi/fastapi/commit/76876e5a812268860148ba3a2059795b4d65ae55"
+  },
+  {
+    "sha": "a82e5f2fac102a8b12c0795da80b2cb1d2a8b016",
+    "short_sha": "a82e5f2",
+    "message": "\ud83d\udd16 Release version 0.137.1 (#15766)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T11:26:48Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a82e5f2fac102a8b12c0795da80b2cb1d2a8b016"
+  },
+  {
+    "sha": "edd1461589287bb432c8eb81ace92d000fd5c1b3",
+    "short_sha": "edd1461",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T11:20:24Z",
+    "url": "https://github.com/fastapi/fastapi/commit/edd1461589287bb432c8eb81ace92d000fd5c1b3"
+  },
+  {
+    "sha": "b78c82262f5170831ebd3f27873b09d8e579bac2",
+    "short_sha": "b78c822",
+    "message": "\ud83d\udea8 Fix typing checks for APIRoute (#15765)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T11:19:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b78c82262f5170831ebd3f27873b09d8e579bac2"
+  },
+  {
+    "sha": "e0f8cadf094bb4cb7a21e7757333d5dfbae46712",
+    "short_sha": "e0f8cad",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-15T10:55:32Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e0f8cadf094bb4cb7a21e7757333d5dfbae46712"
+  },
+  {
+    "sha": "d8aad201eba558b20419a832e51a026b0e6ede0e",
+    "short_sha": "d8aad20",
+    "message": "\ud83d\udc1b Fix bug, allow empty path in path operation in prefixless router (#15763)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-15T10:55:06Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d8aad201eba558b20419a832e51a026b0e6ede0e"
+  },
+  {
+    "sha": "9a9c4ad5d06f5fe8ee6775a5aeaa2f83c854f263",
+    "short_sha": "9a9c4ad",
+    "message": "\ud83d\udd16 Release version 0.137.0 (#15748)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-14T12:47:28Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9a9c4ad5d06f5fe8ee6775a5aeaa2f83c854f263"
+  },
+  {
+    "sha": "c6d58978269b51304ccd8f0fb644f35ecbed94ce",
+    "short_sha": "c6d5897",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-14T12:40:20Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c6d58978269b51304ccd8f0fb644f35ecbed94ce"
+  },
+  {
+    "sha": "31d097f286b63c2c7bc9954aa605571e0f3d1e15",
+    "short_sha": "31d097f",
+    "message": "\ud83d\udcdd Update release notes (#15747)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-14T12:39:49Z",
+    "url": "https://github.com/fastapi/fastapi/commit/31d097f286b63c2c7bc9954aa605571e0f3d1e15"
+  },
+  {
+    "sha": "ba609a8946e9054c050ca4cf7afa2a222694bfc9",
+    "short_sha": "ba609a8",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-14T12:36:16Z",
+    "url": "https://github.com/fastapi/fastapi/commit/ba609a8946e9054c050ca4cf7afa2a222694bfc9"
+  },
+  {
+    "sha": "8e1d774cef03ab9e2552c26e850cbfc0c63974c3",
+    "short_sha": "8e1d774",
+    "message": "\u267b\ufe0f Refactor internals to preserve `APIRouter` and `APIRoute` instances (#15745)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-14T12:35:48Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8e1d774cef03ab9e2552c26e850cbfc0c63974c3"
+  },
+  {
+    "sha": "016ab760faba1813ba235d5582a014a58bd2f417",
+    "short_sha": "016ab76",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-13T18:22:48Z",
+    "url": "https://github.com/fastapi/fastapi/commit/016ab760faba1813ba235d5582a014a58bd2f417"
+  },
+  {
+    "sha": "e2fcd5562f41f2a0d01b1ff43773711bbeeb19e8",
+    "short_sha": "e2fcd55",
+    "message": "\ud83d\udd27 Update sponsors: remove TalorData (#15744)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-13T18:22:22Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e2fcd5562f41f2a0d01b1ff43773711bbeeb19e8"
+  },
+  {
+    "sha": "d3e6a2931f95dcb044c09cbfc39e4b0e9e620fd4",
+    "short_sha": "d3e6a29",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-10T23:14:26Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d3e6a2931f95dcb044c09cbfc39e4b0e9e620fd4"
+  },
+  {
+    "sha": "e4b6a36c4fc0d0b37871fe317ab29fe074a3cdbe",
+    "short_sha": "e4b6a36",
+    "message": "\ud83d\udd27 Update sponsors: remove ExoFlare (#15736)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-10T23:13:56Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e4b6a36c4fc0d0b37871fe317ab29fe074a3cdbe"
+  },
+  {
+    "sha": "944fb706228734cc64fd5f8d5937bc97792c346b",
+    "short_sha": "944fb70",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-10T23:05:07Z",
+    "url": "https://github.com/fastapi/fastapi/commit/944fb706228734cc64fd5f8d5937bc97792c346b"
+  },
+  {
+    "sha": "5d2dae82c4c6ff107147167d70d4fdbd35bc0706",
+    "short_sha": "5d2dae8",
+    "message": "\ud83d\udd27 Update sponsors: remove InterviewPal (#15735)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-10T23:04:41Z",
+    "url": "https://github.com/fastapi/fastapi/commit/5d2dae82c4c6ff107147167d70d4fdbd35bc0706"
+  },
+  {
+    "sha": "e680fd6c8c1c7e3682c9e02d675a9b4c643493e8",
+    "short_sha": "e680fd6",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-10T22:59:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e680fd6c8c1c7e3682c9e02d675a9b4c643493e8"
+  },
+  {
+    "sha": "ee036a111ed1e96a7cb425158bda3dc0b45e3d0e",
+    "short_sha": "ee036a1",
+    "message": "\ud83d\udd27 Update sponsors: remove Liblab (#15731)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-10T22:59:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/ee036a111ed1e96a7cb425158bda3dc0b45e3d0e"
+  },
+  {
+    "sha": "b98fb552e6ba43364f7ae39fd6ef96ecc6f38873",
+    "short_sha": "b98fb55",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-10T22:44:58Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b98fb552e6ba43364f7ae39fd6ef96ecc6f38873"
+  },
+  {
+    "sha": "e52919282ab7ae101bcea400542088ff5791f4c4",
+    "short_sha": "e529192",
+    "message": "\ud83d\udd27 Update sponsors: remove Scalar (#15730)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-10T22:44:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e52919282ab7ae101bcea400542088ff5791f4c4"
+  },
+  {
+    "sha": "b31720337af8b5ba5c78e4f0c44ac0ce25d7a5e2",
+    "short_sha": "b317203",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-09T22:07:36Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b31720337af8b5ba5c78e4f0c44ac0ce25d7a5e2"
+  },
+  {
+    "sha": "e133ffbc1b41bd9f2b4f96f9887e2eb1383530bc",
+    "short_sha": "e133ffb",
+    "message": "\u2b06 Bump the python-packages group across 1 directory with 6 updates (#15721)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-09T22:05:55Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e133ffbc1b41bd9f2b4f96f9887e2eb1383530bc"
+  },
+  {
+    "sha": "4be770779e93519b35f233f5adaf302ed9ff5dc2",
+    "short_sha": "4be7707",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-09T22:04:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4be770779e93519b35f233f5adaf302ed9ff5dc2"
+  },
+  {
+    "sha": "2015b63561b47b52306563c02590748db1d03eaf",
+    "short_sha": "2015b63",
+    "message": "\u2b06 Bump python-multipart from 0.0.29 to 0.0.30 (#15723)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-09T22:04:26Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2015b63561b47b52306563c02590748db1d03eaf"
+  },
+  {
+    "sha": "3c5d5bb497469d5004c89f0b5f90dbfd51dd12c2",
+    "short_sha": "3c5d5bb",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-09T21:55:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3c5d5bb497469d5004c89f0b5f90dbfd51dd12c2"
+  },
+  {
+    "sha": "13b2b4cb346eb2ba18041decf709a528ca05043d",
+    "short_sha": "13b2b4c",
+    "message": "\u2b06 Bump the github-actions group with 3 updates (#15720)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-09T21:54:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/13b2b4cb346eb2ba18041decf709a528ca05043d"
+  },
+  {
+    "sha": "b6ed4666fe0a78c392692679fd66937a1b2e7748",
+    "short_sha": "b6ed466",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-09T21:52:25Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b6ed4666fe0a78c392692679fd66937a1b2e7748"
+  },
+  {
+    "sha": "8b80abfbf3bb93f5af2f1b25fbbffcb5177d7e1c",
+    "short_sha": "8b80abf",
+    "message": "\u2b06 Bump starlette from 1.1.0 to 1.2.1 (#15722)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-09T21:51:55Z",
+    "url": "https://github.com/fastapi/fastapi/commit/8b80abfbf3bb93f5af2f1b25fbbffcb5177d7e1c"
+  },
+  {
+    "sha": "e42d913c604f506da17feb445fc8385b841cac65",
+    "short_sha": "e42d913",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-09T21:50:10Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e42d913c604f506da17feb445fc8385b841cac65"
+  },
+  {
+    "sha": "0cf3f76e7c23dd8396a66c30317bf7352bb61898",
+    "short_sha": "0cf3f76",
+    "message": "\u2b06 Bump https://github.com/crate-ci/typos from v1.46.0 to v1.47.1 in the pre-commit group (#15719)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-09T21:49:44Z",
+    "url": "https://github.com/fastapi/fastapi/commit/0cf3f76e7c23dd8396a66c30317bf7352bb61898"
+  },
+  {
+    "sha": "706e20da5e6c6729299cc643ed2ff383c0bd5440",
+    "short_sha": "706e20d",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-09T12:05:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/706e20da5e6c6729299cc643ed2ff383c0bd5440"
+  },
+  {
+    "sha": "71ea74fb8f331e6c24cc0a8cdcd28a8cc76d2a35",
+    "short_sha": "71ea74f",
+    "message": "\ud83d\udcdd Update FastAPI Cloud deployment instructions (#15724)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Alejandra",
+    "date": "2026-06-09T12:05:27Z",
+    "url": "https://github.com/fastapi/fastapi/commit/71ea74fb8f331e6c24cc0a8cdcd28a8cc76d2a35"
+  },
+  {
+    "sha": "5cdf820c8046edaf83c306ebd7435f038fc4a75a",
+    "short_sha": "5cdf820",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-04T12:45:13Z",
+    "url": "https://github.com/fastapi/fastapi/commit/5cdf820c8046edaf83c306ebd7435f038fc4a75a"
+  },
+  {
+    "sha": "782476e7db6c1f008ad4321c597691e25e5a1f72",
+    "short_sha": "782476e",
+    "message": "\ud83d\udd27 Update sponsors, add Rapidproxy (#15689)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-04T12:44:48Z",
+    "url": "https://github.com/fastapi/fastapi/commit/782476e7db6c1f008ad4321c597691e25e5a1f72"
+  },
+  {
+    "sha": "7eb2bf5c4eb9942085b488a8227a8d8bb1b4d03d",
+    "short_sha": "7eb2bf5",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-04T12:31:15Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7eb2bf5c4eb9942085b488a8227a8d8bb1b4d03d"
+  },
+  {
+    "sha": "b3b6aba5ab1bb1cd348026421c969c87d174cb48",
+    "short_sha": "b3b6aba",
+    "message": "\ud83d\udd27 Update sponsors: Remove TestMu (#15688)",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-04T12:30:46Z",
+    "url": "https://github.com/fastapi/fastapi/commit/b3b6aba5ab1bb1cd348026421c969c87d174cb48"
+  },
+  {
+    "sha": "433a7ef39b4283d61491d7ebe7c28980f8dc47d2",
+    "short_sha": "433a7ef",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-04T12:24:31Z",
+    "url": "https://github.com/fastapi/fastapi/commit/433a7ef39b4283d61491d7ebe7c28980f8dc47d2"
+  },
+  {
+    "sha": "df3c778ae610e49c0859c0471ead322086f0e760",
+    "short_sha": "df3c778",
+    "message": "\u2b06 Bump the python-packages group across 1 directory with 11 updates (#15683)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-04T12:24:07Z",
+    "url": "https://github.com/fastapi/fastapi/commit/df3c778ae610e49c0859c0471ead322086f0e760"
+  },
+  {
+    "sha": "09e615a6fc5ea99a4b6e5fb4e767470613d7ada3",
+    "short_sha": "09e615a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-04T10:38:33Z",
+    "url": "https://github.com/fastapi/fastapi/commit/09e615a6fc5ea99a4b6e5fb4e767470613d7ada3"
+  },
+  {
+    "sha": "81c243f86dd226401392634ee56b345fe8ad1097",
+    "short_sha": "81c243f",
+    "message": "\u2b06 Bump aiohttp from 3.13.4 to 3.14.0 (#15681)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-04T10:38:07Z",
+    "url": "https://github.com/fastapi/fastapi/commit/81c243f86dd226401392634ee56b345fe8ad1097"
+  },
+  {
+    "sha": "5d2320fca63c2810c124580f97539873089c9b66",
+    "short_sha": "5d2320f",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-04T08:49:36Z",
+    "url": "https://github.com/fastapi/fastapi/commit/5d2320fca63c2810c124580f97539873089c9b66"
+  },
+  {
+    "sha": "e95d3aab287687b2e5c5f4d9b40bb83e0f3d089c",
+    "short_sha": "e95d3aa",
+    "message": "\u2b06 Bump the github-actions group with 2 updates (#15682)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-04T08:49:11Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e95d3aab287687b2e5c5f4d9b40bb83e0f3d089c"
+  },
+  {
+    "sha": "2441eff8375593ed4e2cbe258e9974e288245871",
+    "short_sha": "2441eff",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-04T08:43:06Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2441eff8375593ed4e2cbe258e9974e288245871"
+  },
+  {
+    "sha": "460f8d2cc8fb5ed5fe9b0a58d06e7a62a09a9f00",
+    "short_sha": "460f8d2",
+    "message": "\u2b06 Bump starlette from 1.0.0 to 1.1.0 (#15684)\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+    "author": "dependabot[bot]",
+    "date": "2026-06-04T08:42:42Z",
+    "url": "https://github.com/fastapi/fastapi/commit/460f8d2cc8fb5ed5fe9b0a58d06e7a62a09a9f00"
+  },
+  {
+    "sha": "3d2aace42fdfe34077647e47f3ee9688161e2651",
+    "short_sha": "3d2aace",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T17:55:53Z",
+    "url": "https://github.com/fastapi/fastapi/commit/3d2aace42fdfe34077647e47f3ee9688161e2651"
+  },
+  {
+    "sha": "566bc53187d56cfb8866e45fef82ddd82a22e9c7",
+    "short_sha": "566bc53",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T17:55:37Z",
+    "url": "https://github.com/fastapi/fastapi/commit/566bc53187d56cfb8866e45fef82ddd82a22e9c7"
+  },
+  {
+    "sha": "4cc0e5b3ce9a82764ba579e4f79939d04885f313",
+    "short_sha": "4cc0e5b",
+    "message": "\ud83c\udf10 Update translations for zh-hant (update-outdated) (#15671)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T17:55:14Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4cc0e5b3ce9a82764ba579e4f79939d04885f313"
+  },
+  {
+    "sha": "d144531caa1528e3982ce87c8c3e942b50657cf8",
+    "short_sha": "d144531",
+    "message": "\ud83c\udf10 Update translations for es (update-outdated) (#15670)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T17:54:40Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d144531caa1528e3982ce87c8c3e942b50657cf8"
+  },
+  {
+    "sha": "57b42cc1380c0e01465352b0471a96596fff0357",
+    "short_sha": "57b42cc",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T17:54:15Z",
+    "url": "https://github.com/fastapi/fastapi/commit/57b42cc1380c0e01465352b0471a96596fff0357"
+  },
+  {
+    "sha": "2d5e2a4b295eb8f220adbd4b26912f9105b2dc7b",
+    "short_sha": "2d5e2a4",
+    "message": "\ud83c\udf10 Update translations for fr (update-outdated) (#15669)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T17:53:50Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2d5e2a4b295eb8f220adbd4b26912f9105b2dc7b"
+  },
+  {
+    "sha": "6999d21e98b5b80d8dcdc00adc42f34062d5b404",
+    "short_sha": "6999d21",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T17:49:54Z",
+    "url": "https://github.com/fastapi/fastapi/commit/6999d21e98b5b80d8dcdc00adc42f34062d5b404"
+  },
+  {
+    "sha": "c4cf1341a1482357cfab2a157e9fb54eece47304",
+    "short_sha": "c4cf134",
+    "message": "\ud83d\udc65 Update FastAPI People - Experts (#15677)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T17:49:30Z",
+    "url": "https://github.com/fastapi/fastapi/commit/c4cf1341a1482357cfab2a157e9fb54eece47304"
+  },
+  {
+    "sha": "a5a68f14e7624d4996ffadda310ecc88d3386193",
+    "short_sha": "a5a68f1",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T15:20:38Z",
+    "url": "https://github.com/fastapi/fastapi/commit/a5a68f14e7624d4996ffadda310ecc88d3386193"
+  },
+  {
+    "sha": "69266562475f455feeb4d63b7fd9f4c09568f80c",
+    "short_sha": "6926656",
+    "message": "\ud83d\udc65 Update FastAPI GitHub topic repositories (#15675)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T15:20:05Z",
+    "url": "https://github.com/fastapi/fastapi/commit/69266562475f455feeb4d63b7fd9f4c09568f80c"
+  },
+  {
+    "sha": "9f4f3fdc5b943386deefd9d55426d2604619122e",
+    "short_sha": "9f4f3fd",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T11:56:34Z",
+    "url": "https://github.com/fastapi/fastapi/commit/9f4f3fdc5b943386deefd9d55426d2604619122e"
+  },
+  {
+    "sha": "d6629f7dfce7e10826616ac1983bd11383253779",
+    "short_sha": "d6629f7",
+    "message": "\ud83c\udf10 Update translations for ja (update-outdated) (#15668)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T11:56:02Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d6629f7dfce7e10826616ac1983bd11383253779"
+  },
+  {
+    "sha": "dbe984018bc0da065212c34ee1439326a77b9787",
+    "short_sha": "dbe9840",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T10:57:22Z",
+    "url": "https://github.com/fastapi/fastapi/commit/dbe984018bc0da065212c34ee1439326a77b9787"
+  },
+  {
+    "sha": "46bc43a04ac56c3686e28ae22be69f02a926f1c8",
+    "short_sha": "46bc43a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T10:56:17Z",
+    "url": "https://github.com/fastapi/fastapi/commit/46bc43a04ac56c3686e28ae22be69f02a926f1c8"
+  },
+  {
+    "sha": "4bdda67fb2279dca3cf7f6361b6e61dfe3d30d9f",
+    "short_sha": "4bdda67",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T10:55:45Z",
+    "url": "https://github.com/fastapi/fastapi/commit/4bdda67fb2279dca3cf7f6361b6e61dfe3d30d9f"
+  },
+  {
+    "sha": "2b70d68942ad67acbb793c4c39f6cafad25721a0",
+    "short_sha": "2b70d68",
+    "message": "\ud83c\udf10 Update translations for pt (update-outdated) (#15667)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T10:54:59Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2b70d68942ad67acbb793c4c39f6cafad25721a0"
+  },
+  {
+    "sha": "2aa88900dfc34c957aa49b8f9c405c2a465b9b95",
+    "short_sha": "2aa8890",
+    "message": "\ud83c\udf10 Update translations for tr (update-outdated) (#15666)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T10:54:44Z",
+    "url": "https://github.com/fastapi/fastapi/commit/2aa88900dfc34c957aa49b8f9c405c2a465b9b95"
+  },
+  {
+    "sha": "7b262b3d54b791591717e4bf2dcdf5f746cdcb67",
+    "short_sha": "7b262b3",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T10:54:29Z",
+    "url": "https://github.com/fastapi/fastapi/commit/7b262b3d54b791591717e4bf2dcdf5f746cdcb67"
+  },
+  {
+    "sha": "d822aefc8a9fb55aae1588e600b51c5cb49b4117",
+    "short_sha": "d822aef",
+    "message": "\ud83c\udf10 Update translations for zh (update-outdated) (#15665)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T10:54:26Z",
+    "url": "https://github.com/fastapi/fastapi/commit/d822aefc8a9fb55aae1588e600b51c5cb49b4117"
+  },
+  {
+    "sha": "502d20c4416fc54a5de012a6aa5e4ebc47a15925",
+    "short_sha": "502d20c",
+    "message": "\ud83c\udf10 Update translations for ko (update-outdated) (#15664)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T10:53:57Z",
+    "url": "https://github.com/fastapi/fastapi/commit/502d20c4416fc54a5de012a6aa5e4ebc47a15925"
+  },
+  {
+    "sha": "cf2369a59769a6d0731a69bf4a5e66dd9fd07c4a",
+    "short_sha": "cf2369a",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T10:29:51Z",
+    "url": "https://github.com/fastapi/fastapi/commit/cf2369a59769a6d0731a69bf4a5e66dd9fd07c4a"
+  },
+  {
+    "sha": "674a625ae9f3d89333b75e5d4e2746c8c6716649",
+    "short_sha": "674a625",
+    "message": "\ud83c\udf10 Update translations for de (update-outdated) (#15673)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T10:29:20Z",
+    "url": "https://github.com/fastapi/fastapi/commit/674a625ae9f3d89333b75e5d4e2746c8c6716649"
+  },
+  {
+    "sha": "e1c1299bb52e0aabb2e0049ed5fe84f0cfd6931e",
+    "short_sha": "e1c1299",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T10:28:32Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e1c1299bb52e0aabb2e0049ed5fe84f0cfd6931e"
+  },
+  {
+    "sha": "bb6dbdb6cd4b97ecea3e3590febc03cc516e891a",
+    "short_sha": "bb6dbdb",
+    "message": "\ud83c\udf10 Update translations for uk (update-outdated) (#15672)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+    "author": "Sebasti\u00e1n Ram\u00edrez",
+    "date": "2026-06-01T10:28:01Z",
+    "url": "https://github.com/fastapi/fastapi/commit/bb6dbdb6cd4b97ecea3e3590febc03cc516e891a"
+  },
+  {
+    "sha": "e29b179705168749456ff7958ef7655738fcf70f",
+    "short_sha": "e29b179",
+    "message": "\ud83d\udcdd Update release notes\n\n[skip ci]",
+    "author": "github-actions[bot]",
+    "date": "2026-06-01T08:42:21Z",
+    "url": "https://github.com/fastapi/fastapi/commit/e29b179705168749456ff7958ef7655738fcf70f"
+  }
+]

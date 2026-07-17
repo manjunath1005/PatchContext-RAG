@@ -1,0 +1,23 @@
+# --- Secrets: NEVER commit this ---
+.env
+
+# --- Python ---
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- NOTE: data/ and index/ are intentionally NOT ignored ---
+# The scraped commits/PRs/issues (data/*.json) and the built FAISS index
+# (index/) are committed on purpose, so a fresh clone or deployment has a
+# working system immediately without re-scraping GitHub or rebuilding the
+# index from scratch.
