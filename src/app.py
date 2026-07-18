@@ -1,13 +1,6 @@
 """
 PatchContext - Streamlit UI
-
 Run with: streamlit run src/app.py
-
-NOTE: This file is presentation-layer only. It does not modify retrieval,
-generation, the hallucination guard, prompts, or evaluation logic — those
-all live in rag_pipeline.py / hallucination_guard.py / evaluate_ragas.py.
-Every call into the pipeline here is unchanged from the original version;
-only layout, styling, and how results are displayed have been reworked.
 """
 
 import json
@@ -17,10 +10,7 @@ from rag_pipeline import PatchContextPipeline
 
 st.set_page_config(page_title="PatchContext", page_icon="🔍", layout="wide")
 
-# ---------------------------------------------------------------------------
-# Light global styling. Only touches typography/spacing/badges — no layout
-# logic lives in CSS, so nothing here can break if a browser ignores it.
-# ---------------------------------------------------------------------------
+# Global CSS styles for badges, cards, and text layout
 st.markdown(
     """
     <style>
@@ -52,9 +42,7 @@ EXAMPLE_QUESTIONS = [
 ]
 
 
-# ---------------------------------------------------------------------------
-# Header
-# ---------------------------------------------------------------------------
+# Main header
 col_title, col_meta = st.columns([3, 1])
 with col_title:
     st.title("🔍 PatchContext")
@@ -76,22 +64,52 @@ with col_meta:
 st.divider()
 
 
-# ---------------------------------------------------------------------------
-# Sidebar — architecture summary + live corpus stats (reads saved data files
-# purely for display; does not touch retrieval/generation in any way).
-# ---------------------------------------------------------------------------
+# Sidebar statistics and pipeline summary
 @st.cache_data
 def get_corpus_stats():
     data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
-    stats = {}
-    for name, key in [("commits.json", "commits"), ("prs.json", "PRs"), ("issues.json", "issues")]:
+    commits, prs, issues = [], [], []
+    for name, lst in [("commits.json", commits), ("prs.json", prs), ("issues.json", issues)]:
         path = os.path.join(data_dir, name)
-        try:
-            with open(path) as f:
-                stats[key] = len(json.load(f))
-        except Exception:
-            stats[key] = None
-    return stats
+        if os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    lst.extend(json.load(f))
+            except Exception:
+                pass
+
+    primary_commit_shas = {c["sha"] for c in commits if "sha" in c}
+    primary_pr_numbers = {p["number"] for p in prs if "number" in p}
+    primary_issue_numbers = {i["number"] for i in issues if "number" in i}
+
+    historical_dir = os.path.join(data_dir, "historical")
+    if os.path.exists(historical_dir):
+        for fname in sorted(os.listdir(historical_dir)):
+            if fname.endswith(".json"):
+                fpath = os.path.join(historical_dir, fname)
+                try:
+                    with open(fpath, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                    for c in data.get("commits", []):
+                        if c.get("sha") not in primary_commit_shas:
+                            commits.append(c)
+                            primary_commit_shas.add(c["sha"])
+                    for p in data.get("prs", []):
+                        if p.get("number") not in primary_pr_numbers:
+                            prs.append(p)
+                            primary_pr_numbers.add(p["number"])
+                    for i in data.get("issues", []):
+                        if i.get("number") not in primary_issue_numbers:
+                            issues.append(i)
+                            primary_issue_numbers.add(i["number"])
+                except Exception:
+                    pass
+
+    return {
+        "commits": len(commits) if commits else None,
+        "PRs": len(prs) if prs else None,
+        "issues": len(issues) if issues else None,
+    }
 
 
 with st.sidebar:
@@ -115,17 +133,12 @@ with st.sidebar:
         "- **Guard:** citation grounding + NLI entailment "
         "(bart-large-mnli) + speculation detection\n"
         "- **Self-correction:** 1 bounded repair attempt on flagged answers\n"
-        "- **Eval judge:** Gemini 2.0 Flash (kept separate from the "
+        "- **Eval judge:** Gemini 3.1 Flash Lite (kept separate from the "
         "generator to avoid self-preference bias)"
     )
 
-    st.markdown("---")
-    st.caption("All components are free-tier / locally run — no paid API keys anywhere.")
 
-
-# ---------------------------------------------------------------------------
-# Pipeline loading
-# ---------------------------------------------------------------------------
+# Load vector index and models
 @st.cache_resource(show_spinner="Loading index and models (first run only)...")
 def get_pipeline():
     try:
@@ -147,9 +160,7 @@ def get_pipeline():
 pipeline = get_pipeline()
 
 
-# ---------------------------------------------------------------------------
-# Question input + example chips
-# ---------------------------------------------------------------------------
+# Example question chips and text input
 if "pc_question" not in st.session_state:
     st.session_state.pc_question = ""
 
@@ -170,9 +181,7 @@ question = st.text_input(
 ask_clicked = st.button("🔍 Ask", type="primary")
 
 
-# ---------------------------------------------------------------------------
-# Answer
-# ---------------------------------------------------------------------------
+# Generate and display answers
 if ask_clicked and question:
     try:
         with st.spinner("Retrieving relevant history and generating a grounded answer..."):
@@ -187,15 +196,14 @@ if ask_clicked and question:
     guard = result["guard"]
     first_guard = result["attempt_history"][0]["guard"]
 
-    # --- Metadata row ---
+    # Display execution stats
     m1, m2, m3, m4 = st.columns(4)
     m1.metric("Sources retrieved", len(result["retrieved_docs"]))
     m2.metric("Citations used", len(result["citations"]))
     m3.metric("Repair attempts", result["repair_attempts"])
     m4.metric("Guard status", "Safe" if guard["is_safe"] or guard["grounding_passed"] else "Flagged")
 
-    # --- Guard status banner (reuses the exact logic from the previous
-    # version — only the presentation changed) ---
+    # Show warning or success banner based on guard result
     if not result["guard_intervened"] and guard["is_safe"]:
         st.success(
             "✅ **Hallucination guard: passed on first try** — citations grounded, "
@@ -226,12 +234,12 @@ if ask_clicked and question:
             "self-correct — showing a safe fallback instead."
         )
 
-    # --- Answer ---
+    # Display the generated answer
     st.markdown("### Answer")
     with st.container(border=True):
         st.markdown(result["answer"])
 
-    # --- Guard details (technical, collapsed by default) ---
+    # Collapsible attempt-by-attempt guard logs
     with st.expander("🛡️ Guard details (per-attempt breakdown)"):
         for i, attempt in enumerate(result["attempt_history"]):
             label = "Original draft" if i == 0 else f"Repair attempt {i}"
@@ -258,7 +266,7 @@ if ask_clicked and question:
             if i < len(result["attempt_history"]) - 1:
                 st.divider()
 
-    # --- Sources, as cards ---
+    # Clickable source cards
     st.markdown("### Sources")
     if result["citations"]:
         src_cols = st.columns(min(len(result["citations"]), 3))
@@ -273,7 +281,7 @@ if ask_clicked and question:
     else:
         st.caption("No citations were retrieved for this question.")
 
-    # --- Raw retrieved context (technical, collapsed by default) ---
+    # Collapsible raw document contexts
     with st.expander("📄 Raw retrieved context"):
         for d in result["retrieved_docs"]:
             icon = SOURCE_ICON.get(d.metadata.get("source_type"), "📄")
@@ -285,8 +293,6 @@ elif ask_clicked and not question:
     st.warning("Type a question first (or click one of the examples above).")
 
 st.markdown(
-    '<div class="pc-footer">PatchContext — a RAG pipeline over the FastAPI repository, '
-    "built for the Celebal AnaVerse 2.0 final project. All models used are free-tier "
-    "or run locally.</div>",
+    '<div class="pc-footer">PatchContext — a Retrieval-Augmented Generation (RAG) pipeline over the FastAPI repository.</div>',
     unsafe_allow_html=True,
 )
