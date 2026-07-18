@@ -1,26 +1,12 @@
 """
 PatchContext - Stage 4: RAGAs evaluation.
-
-Runs the pipeline over the 50-question benchmark and scores it with RAGAs
-metrics: faithfulness, answer_relevancy, context_utilization (the reference-free
-variant of context_precision — see note below).
-
-RAGAs needs an LLM "judge" internally. We use Google Gemini's free tier for this,
-deliberately separate from Groq (which the pipeline itself uses to generate
-answers) — see the comment above judge_llm below for why. Everything is still
-free; no paid API keys anywhere in this project.
-
-Generation is resumable and incremental: progress is checkpointed to
-data/pipeline_outputs_checkpoint.json after EVERY question, so this script can
-be safely stopped and re-run across multiple days if you're limited by a daily
-token quota (e.g. `python evaluate_ragas.py --limit 5` to only generate 5 new
-questions this run). RAGAs scoring is skipped automatically until all questions
-are generated, unless you pass --score-partial.
 """
 
 import os
 import json
 import argparse
+import time
+import asyncio
 import pandas as pd
 from dotenv import load_dotenv
 from datasets import Dataset
@@ -32,6 +18,34 @@ from ragas import evaluate
 from ragas.metrics import faithfulness, answer_relevancy, ContextUtilization
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings import LangchainEmbeddingsWrapper
+from ragas.run_config import RunConfig
+
+class PatchedChatGoogleGenerativeAI(ChatGoogleGenerativeAI):
+    def _generate(self, messages, stop=None, run_manager=None, **kwargs):
+        temp = kwargs.pop("temperature", None)
+        if temp is not None:
+            gen_config = kwargs.get("generation_config", None) or {}
+            gen_config = {**gen_config, "temperature": temp}
+            kwargs["generation_config"] = gen_config
+        return super()._generate(messages, stop, run_manager, **kwargs)
+
+    async def _agenerate(self, messages, stop=None, run_manager=None, **kwargs):
+        temp = kwargs.pop("temperature", None)
+        if temp is not None:
+            gen_config = kwargs.get("generation_config", None) or {}
+            gen_config = {**gen_config, "temperature": temp}
+            kwargs["generation_config"] = gen_config
+        return await super()._agenerate(messages, stop, run_manager, **kwargs)
+
+class PacedChatGoogleGenerativeAI(PatchedChatGoogleGenerativeAI):
+    """Subclass of PatchedChatGoogleGenerativeAI to handle request pacing (RPM limiting)."""
+    def _generate(self, messages, stop=None, run_manager=None, **kwargs):
+        time.sleep(5.0)  # Pace sync calls to stay under 15 RPM
+        return super()._generate(messages, stop, run_manager, **kwargs)
+
+    async def _agenerate(self, messages, stop=None, run_manager=None, **kwargs):
+        await asyncio.sleep(5.0)  # Pace async calls to stay under 15 RPM
+        return await super()._agenerate(messages, stop, run_manager, **kwargs)
 
 from rag_pipeline import PatchContextPipeline
 
@@ -39,7 +53,7 @@ load_dotenv()
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 RESULTS_PATH = os.path.join(DATA_DIR, "ragas_results.csv")
-CHECKPOINT_PATH = os.path.join(DATA_DIR, "pipeline_outputs_checkpoint.json")
+CHECKPOINT_PATH = os.path.join(DATA_DIR, "pipeline_outputs.json")
 
 
 def load_questions():
@@ -59,13 +73,19 @@ def save_checkpoint(rows):
         json.dump(rows, f, indent=2)
 
 
-def run_pipeline_incremental(pipeline, questions, limit=None, existing_rows=None):
+def run_pipeline_incremental(pipeline, questions, limit=None, existing_rows=None, delay_seconds=15):
     """
     Resumable, incremental generation: skips questions already in existing_rows
     (matched by question text), saves after EVERY question (not just at the end)
     so a rate-limit failure mid-run never loses progress, and stops early once
     `limit` NEW questions have been processed in this run (to respect a daily
     token budget across multiple days).
+
+    Also sleeps `delay_seconds` between questions to respect Groq's PER-MINUTE
+    token limit (12K TPM), separate from the daily cap. Observed cost was
+    ~2K tokens/question on average (more if a repair attempt fires), so
+    running back-to-back without pacing risks a 429 mid-run well before the
+    daily quota is the binding constraint.
     """
     rows = list(existing_rows) if existing_rows is not None else load_checkpoint()
     done_questions = {r["question"] for r in rows}
@@ -77,7 +97,8 @@ def run_pipeline_incremental(pipeline, questions, limit=None, existing_rows=None
 
     todo = remaining if limit is None else remaining[:limit]
     print(f"{len(done_questions)}/{len(questions)} already done. "
-          f"Generating {len(todo)} more this run ({len(remaining) - len(todo)} left after this).")
+          f"Generating {len(todo)} more this run ({len(remaining) - len(todo)} left after this). "
+          f"Pacing with a {delay_seconds}s delay between questions to stay under Groq's per-minute token limit.")
 
     for i, q in enumerate(todo, 1):
         try:
@@ -93,6 +114,8 @@ def run_pipeline_incremental(pipeline, questions, limit=None, existing_rows=None
         })
         save_checkpoint(rows)  # save after EVERY question, not just at the end
         print(f"  [{i}/{len(todo)}] done: {q[:70]}")
+        if i < len(todo):  # no need to sleep after the last question in this run
+            time.sleep(delay_seconds)
 
     remaining_after = len(questions) - len(rows)
     if remaining_after > 0:
@@ -100,6 +123,28 @@ def run_pipeline_incremental(pipeline, questions, limit=None, existing_rows=None
               f"re-run this script (same command) to continue, e.g. tomorrow once your "
               f"daily quota resets.")
     return rows
+
+
+def gemini_is_finished(response) -> bool:
+    is_finished_list = []
+    for g in response.flatten():
+        resp = g.generations[0][0]
+        if resp.generation_info is not None:
+            finish_reason = resp.generation_info.get("finish_reason")
+            if finish_reason is not None:
+                is_finished_list.append(str(finish_reason).lower() == "stop")
+            else:
+                is_finished_list.append(True)
+        elif hasattr(resp, "message") and resp.message is not None:
+            meta = resp.message.response_metadata
+            finish_reason = meta.get("finish_reason") or meta.get("stop_reason")
+            if finish_reason is not None:
+                is_finished_list.append(str(finish_reason).lower() in ["stop", "end_turn"])
+            else:
+                is_finished_list.append(True)
+        else:
+            is_finished_list.append(True)
+    return all(is_finished_list)
 
 
 def main():
@@ -111,6 +156,12 @@ def main():
     parser.add_argument("--score-partial", action="store_true",
                          help="Run RAGAs scoring even if not all 50 questions are generated yet. "
                               "By default, scoring is skipped until generation is complete.")
+    parser.add_argument("--delay", type=int, default=15,
+                         help="Seconds to wait between questions during generation, to stay "
+                              "under Groq's per-minute token limit (default: 15s).")
+    parser.add_argument("--scoring-workers", type=int, default=1,
+                         help="Number of concurrent workers to use for RAGAs scoring. "
+                              "Keep at 1 for Gemini free tier to stay under the 15 RPM rate limit.")
     args = parser.parse_args()
 
     if not os.getenv("GROQ_API_KEY"):
@@ -141,7 +192,7 @@ def main():
     if remaining:
         print("Loading pipeline...")
         pipeline = PatchContextPipeline()
-        rows = run_pipeline_incremental(pipeline, questions, limit=args.limit, existing_rows=rows)
+        rows = run_pipeline_incremental(pipeline, questions, limit=args.limit, existing_rows=rows, delay_seconds=args.delay)
     else:
         print(f"All {len(questions)} questions already in checkpoint (and match the current "
               f"question set). Nothing to generate.")
@@ -157,45 +208,66 @@ def main():
         print(f"\nScoring partial results ({len(rows)}/{len(questions)} questions) "
               f"as requested via --score-partial.")
 
-    dataset = Dataset.from_list(rows)
+    # Load existing results if they exist to avoid duplicate evaluations
+    existing_df = None
+    evaluated_questions = set()
+    if os.path.exists(RESULTS_PATH):
+        try:
+            existing_df = pd.read_csv(RESULTS_PATH)
+            if "user_input" in existing_df.columns:
+                # Filter out rows that are no longer in the active questions set
+                existing_df = existing_df[existing_df["user_input"].isin(question_set)]
+                evaluated_questions = set(existing_df["user_input"].dropna().tolist())
+        except Exception as e:
+            print(f"Warning: Could not read existing results from {RESULTS_PATH}: {e}")
 
-    # RAGAs judge: deliberately a DIFFERENT model (Gemini, free tier) than the one
-    # being evaluated (Groq/Llama, used by the pipeline itself). Two reasons:
-    #   1. Methodological: using the same model to both generate and judge its own
-    #      answers is a known bias in RAG evaluation (self-preference bias).
-    #   2. Practical: RAGAs scoring makes many LLM calls per question (faithfulness
-    #      alone decomposes each answer into claims and verifies each one), which
-    #      would otherwise burn through Groq's free daily token cap on top of what
-    #      the pipeline itself already used to generate the answers.
-    # Embeddings stay local/free (no API quota involved either way).
-    judge_llm = LangchainLLMWrapper(
-        ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0, api_key=os.getenv("GOOGLE_API_KEY"))
-    )
-    judge_embeddings = LangchainEmbeddingsWrapper(
-        HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
-    )
+    rows_to_evaluate = [r for r in rows if r["question"] not in evaluated_questions]
 
-    # context_precision (RAGAs' default) requires a manually-authored ground-truth
-    # 'reference' answer per question, which we don't have for this project. We use
-    # context_utilization instead — the reference-free variant of the same underlying
-    # metric — which judges precision using only question + retrieved context + answer.
-    context_utilization = ContextUtilization()
+    if not rows_to_evaluate:
+        print("All currently generated questions have already been scored by RAGAs.")
+        df = existing_df
+    else:
+        print(f"Scoring {len(rows_to_evaluate)} new/unscored questions with RAGAs...")
+        dataset = Dataset.from_list(rows_to_evaluate)
 
-    print("Scoring with RAGAs (faithfulness, answer_relevancy, context_utilization)...")
-    scores = evaluate(
-        dataset,
-        metrics=[faithfulness, answer_relevancy, context_utilization],
-        llm=judge_llm,
-        embeddings=judge_embeddings,
-    )
+        # Initialize RAGAs judge LLM (using Gemini to prevent generator bias)
+        judge_llm = LangchainLLMWrapper(
+            PacedChatGoogleGenerativeAI(model="gemini-3.1-flash-lite", api_key=os.getenv("GOOGLE_API_KEY")),
+            is_finished_parser=gemini_is_finished
+        )
+        judge_embeddings = LangchainEmbeddingsWrapper(
+            HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
+        )
 
-    df = scores.to_pandas()
-    df.to_csv(RESULTS_PATH, index=False)
-    print(f"Saved per-question scores to {RESULTS_PATH}")
+        # Use reference-free context_utilization metric
+        context_utilization = ContextUtilization()
+
+        run_config = RunConfig(
+            max_workers=args.scoring_workers,
+            max_retries=10,
+            max_wait=60
+        )
+
+        scores = evaluate(
+            dataset,
+            metrics=[faithfulness, answer_relevancy, context_utilization],
+            llm=judge_llm,
+            embeddings=judge_embeddings,
+            run_config=run_config,
+        )
+
+        new_df = scores.to_pandas()
+        if existing_df is not None:
+            df = pd.concat([existing_df, new_df], ignore_index=True)
+        else:
+            df = new_df
+
+        df.to_csv(RESULTS_PATH, index=False)
+        print(f"Saved per-question scores to {RESULTS_PATH}")
 
     print("\n=== Aggregate scores ===")
     for metric in ["faithfulness", "answer_relevancy", "context_utilization"]:
-        if metric in df.columns:
+        if df is not None and metric in df.columns:
             print(f"{metric}: {df[metric].mean():.3f}")
 
 

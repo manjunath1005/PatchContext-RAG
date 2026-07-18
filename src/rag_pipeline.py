@@ -1,9 +1,5 @@
 """
 PatchContext - Stage 3: RAG pipeline.
-
-Retrieves diverse, relevant chunks via MMR from the FAISS index, generates
-an answer with a free Groq-hosted LLM, runs the answer through the
-hallucination guard, and formats clickable citations.
 """
 
 import os
@@ -126,9 +122,7 @@ class PatchContextPipeline:
 
         attempts = [{"answer": answer_text, "guard": guard_result}]
 
-        # Bounded repair loop: trigger on either a fabricated citation or
-        # detected speculative/hedging language, and give the model one more
-        # shot with the specific problem named.
+        # Bounded self-correction loop for repair attempts
         repair_chain = self.repair_prompt | self.llm
         attempt_count = 0
 
@@ -158,11 +152,7 @@ class PatchContextPipeline:
             guard_result = run_guard(answer_text, docs)
             attempts.append({"answer": answer_text, "guard": guard_result})
 
-        # Final safety net: if grounding still fails after repair attempts,
-        # don't show a fabricated-citation answer — degrade to an honest refusal.
-        # (Lingering speculation language alone doesn't trigger the refusal fallback —
-        # only ungrounded citations do, since speculative phrasing without a fake
-        # citation is a quality issue, not a safety one.)
+        # Fallback response if grounding fails after self-correction
         final_safe = guard_result["grounding_passed"]
         if not final_safe:
             answer_text = (
