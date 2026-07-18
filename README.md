@@ -2,6 +2,8 @@
 
 PatchContext is a Retrieval-Augmented Generation (RAG) pipeline built to analyze the FastAPI repository's development history. It indexes commit history, merged pull requests, and issue discussions to answer design-rationale questions (e.g., "Why was this designed this way?") with grounding in actual developer conversations and clickable citations.
 
+**Live Deployment:** [patchcontext.streamlit.app](https://patchcontext-rag-pbhrwzsrfengw8gbmcbaz7.streamlit.app/)
+
 ## Features
 
 - Retrieves evidence from FastAPI commits, pull requests, and issue discussions.
