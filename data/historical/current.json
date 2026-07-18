@@ -1,0 +1,1262 @@
+{
+  "commits": [
+    {
+      "sha": "21c46919fc14f6541397ff5bdc77d9c806e7b33e",
+      "short_sha": "21c4691",
+      "message": "\ud83d\udcdd Update `docs/en/docs/tutorial/security/oauth2-jwt.md` (#14781)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\nCo-authored-by: Yurii Motov <109919500+YuriiMotov@users.noreply.github.com>",
+      "author": "zadevhub",
+      "date": "2026-05-24T10:29:22Z",
+      "url": "https://github.com/fastapi/fastapi/commit/21c46919fc14f6541397ff5bdc77d9c806e7b33e",
+      "created_at": "2026-05-24T10:29:22Z"
+    },
+    {
+      "sha": "3969ae8f38dce5ce6ba42d227eae6a699721c435",
+      "short_sha": "3969ae8",
+      "message": "\ud83d\udcdd Update security policy (#15577)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2026-05-20T16:11:48Z",
+      "url": "https://github.com/fastapi/fastapi/commit/3969ae8f38dce5ce6ba42d227eae6a699721c435",
+      "created_at": "2026-05-20T16:11:48Z"
+    },
+    {
+      "sha": "2686c7fbbf9abb17902a2981a9d9fca01f5117b8",
+      "short_sha": "2686c7f",
+      "message": "\u267b\ufe0f Refactor logic to handle OpenAPI and Swagger UI escaping data (#14986)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2026-02-24T09:28:10Z",
+      "url": "https://github.com/fastapi/fastapi/commit/2686c7fbbf9abb17902a2981a9d9fca01f5117b8",
+      "created_at": "2026-02-24T09:28:10Z"
+    },
+    {
+      "sha": "590a5e535587cc07041ba12d308c748433ccb168",
+      "short_sha": "590a5e5",
+      "message": "\u2728 Serialize JSON response with Pydantic (in Rust), when there's a Pydantic return type or response model (#14962)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2026-02-22T16:07:19Z",
+      "url": "https://github.com/fastapi/fastapi/commit/590a5e535587cc07041ba12d308c748433ccb168",
+      "created_at": "2026-02-22T16:07:19Z"
+    },
+    {
+      "sha": "ed2512a5ec33d9d70f7a9ef2e5f9fe52d3b77ab2",
+      "short_sha": "ed2512a",
+      "message": "\ud83d\udc1b Fix `on_startup` and `on_shutdown` parameters of `APIRouter` (#14873)\n\nCo-authored-by: github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+      "author": "Motov Yurii",
+      "date": "2026-02-09T16:31:57Z",
+      "url": "https://github.com/fastapi/fastapi/commit/ed2512a5ec33d9d70f7a9ef2e5f9fe52d3b77ab2",
+      "created_at": "2026-02-09T16:31:57Z"
+    },
+    {
+      "sha": "9f4ecf562cffd79a2d6bff0eb333df5669bd70e1",
+      "short_sha": "9f4ecf5",
+      "message": "\u2705 Add inline snapshot tests for OpenAPI before changes from Pydantic v2 (#14864)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2026-02-08T10:18:38Z",
+      "url": "https://github.com/fastapi/fastapi/commit/9f4ecf562cffd79a2d6bff0eb333df5669bd70e1",
+      "created_at": "2026-02-08T10:18:38Z"
+    },
+    {
+      "sha": "34e884156f38dff4094a7764ff895c4d4b872060",
+      "short_sha": "34e8841",
+      "message": "\u2705 Run performance tests only on Pydantic v2 (#14608)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2025-12-26T20:40:26Z",
+      "url": "https://github.com/fastapi/fastapi/commit/34e884156f38dff4094a7764ff895c4d4b872060",
+      "created_at": "2025-12-26T20:40:26Z"
+    },
+    {
+      "sha": "0b5fa563cdfb887e4145d8419ae91b6a40905349",
+      "short_sha": "0b5fa56",
+      "message": "\ud83d\udc1b Fix OAuth2 scopes in OpenAPI in extra corner cases, parent dependency with scopes, sub-dependency security scheme without scopes (#14459)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2025-12-04T22:22:01Z",
+      "url": "https://github.com/fastapi/fastapi/commit/0b5fa563cdfb887e4145d8419ae91b6a40905349",
+      "created_at": "2025-12-04T22:22:01Z"
+    },
+    {
+      "sha": "0ec4bafca204c92dca903437e78514246fe14eac",
+      "short_sha": "0ec4baf",
+      "message": "\ud83d\udc1b Fix OpenAPI security scheme OAuth2 scopes declaration, deduplicate security schemes with different scopes (#14455)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2025-12-04T12:59:24Z",
+      "url": "https://github.com/fastapi/fastapi/commit/0ec4bafca204c92dca903437e78514246fe14eac",
+      "created_at": "2025-12-04T12:59:24Z"
+    },
+    {
+      "sha": "378ad688b7e57efb190506b3b36be65eb8ad5e6f",
+      "short_sha": "378ad68",
+      "message": "\ud83d\udc1b Fix hierarchical security scope propagation (#5624)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: svlandeg <svlandeg@github.com>\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>",
+      "author": "Kristj\u00e1n Valur J\u00f3nsson",
+      "date": "2025-11-30T11:57:01Z",
+      "url": "https://github.com/fastapi/fastapi/commit/378ad688b7e57efb190506b3b36be65eb8ad5e6f",
+      "created_at": "2025-11-30T11:57:01Z"
+    },
+    {
+      "sha": "85701631a0241c5f02b4940734a5428f66abe167",
+      "short_sha": "8570163",
+      "message": "\u267b\ufe0f Make the result of `Depends()` and `Security()` hashable, as a workaround for other tools interacting with these internal parts (#14372)",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2025-11-19T16:50:18Z",
+      "url": "https://github.com/fastapi/fastapi/commit/85701631a0241c5f02b4940734a5428f66abe167",
+      "created_at": "2025-11-19T16:50:18Z"
+    },
+    {
+      "sha": "540a83da65b2e3b219ee3d41c4be7837ab05dc84",
+      "short_sha": "540a83d",
+      "message": "\ud83c\udf10 Update Portuguese translations with LLM prompt (#14228)\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* validated llm translation\n\n* fix non-Annotated in llm-prompt\n\n* rerun after a few changes in llm-prompt\n\n* fix non-Annotated\n\n* validated llm translation\n\n* fix llm translation\n\n* update outdated translations\n\n* fix translation for operation IDs\n\n* add header link\n\n* add missing link\n\n* fix line break\n\n* fix diff\n\n* fix llm translation\n\n* fix 'Atualize' to 'Atualizar'\n\n* update alternatives.md\n\n* update async.md\n\n* update fastapi-cli.md\n\n* update features.md\n\n* update help-fastapi.md\n\n* update history-design-future.md\n\n* update index.md\n\n* update advanced/events.md\n\n* update advanced/middleware.md\n\n* update advanced/response-cookies.md\n\n* update advanced/response-headers.md\n\n* update advanced/templates.md\n\n* update advanced/testing-websockets.md\n\n* update advanced/using-request-directly.md\n\n* update advanced/websockets.md\n\n* update advanced/security/oauth2-scopes.md\n\n* update deployment/cloud.md\n\n* update deployment/manually.md\n\n* update how-to/custom-request-and-route.md\n\n* update how-to/migrate-from-pydantic-v1-to-pydantic-v2.md\n\n* update tutorial/background-tasks.md\n\n* update tutorial/first-steps.md\n\n* update tutorial/handling-errors.md\n\n* update tutorial/middleware.md\n\n* update tutorial/request-files.md\n\n* update tutorial/sql-databases.md\n\n* update tutorial/static-files.md\n\n* update tutorial/testing.md\n\n* update tutorial/dependencies/dependencies-with-yield.md\n\n* update advanced/advanced-dependencies.md\n\n---------\n\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+      "author": "Rafael de Oliveira Marques",
+      "date": "2025-11-12T16:23:57Z",
+      "url": "https://github.com/fastapi/fastapi/commit/540a83da65b2e3b219ee3d41c4be7837ab05dc84",
+      "created_at": "2025-11-12T16:23:57Z"
+    },
+    {
+      "sha": "496de1816aa01a59c75a7dcd27fd3c6245fa255a",
+      "short_sha": "496de18",
+      "message": "\ud83d\udc1b Fix security schemes in OpenAPI when added at the top level app (#14266)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+      "author": "Motov Yurii",
+      "date": "2025-10-31T18:34:30Z",
+      "url": "https://github.com/fastapi/fastapi/commit/496de1816aa01a59c75a7dcd27fd3c6245fa255a",
+      "created_at": "2025-10-31T18:34:30Z"
+    },
+    {
+      "sha": "efdafa43613f084d198e51f6858e8610beddb5ed",
+      "short_sha": "efdafa4",
+      "message": "\ud83d\udcdd Update `tutorial/security/oauth2-jwt/` to use `pwdlib` with Argon2 instead of `passlib` (#13917)\n\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+      "author": "Neizvestnyj",
+      "date": "2025-09-29T02:57:38Z",
+      "url": "https://github.com/fastapi/fastapi/commit/efdafa43613f084d198e51f6858e8610beddb5ed",
+      "created_at": "2025-09-29T02:57:38Z"
+    },
+    {
+      "sha": "44fc67632bcdae4d078cb11b1a319ac122cbb06f",
+      "short_sha": "44fc676",
+      "message": "\ud83d\udc1b Fix validation error when `File` is declared after `Form` parameter (#11194)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+      "author": "Thomas L\u00c9VEIL",
+      "date": "2025-09-20T19:55:59Z",
+      "url": "https://github.com/fastapi/fastapi/commit/44fc67632bcdae4d078cb11b1a319ac122cbb06f",
+      "created_at": "2025-09-20T19:55:59Z"
+    },
+    {
+      "sha": "f1e6f978ce10a6f9b4c668350a79462e9ac330a8",
+      "short_sha": "f1e6f97",
+      "message": "\u26a1\ufe0f Fix `default_factory` for response model field with Pydantic V1 (#9704)\n\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>",
+      "author": "vvanglro",
+      "date": "2025-09-20T18:51:40Z",
+      "url": "https://github.com/fastapi/fastapi/commit/f1e6f978ce10a6f9b4c668350a79462e9ac330a8",
+      "created_at": "2025-09-20T18:51:40Z"
+    },
+    {
+      "sha": "2dc769b12174b0f7ad5c2ac16419fc4027ad8372",
+      "short_sha": "2dc769b",
+      "message": "\ud83d\udc1b Fix `jsonable_encoder` alters `json_encoders` of Pydantic v1 objects (#4972)\n\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>\nCo-authored-by: Yurii Motov <yurii.motov.monte@gmail.com>",
+      "author": "Salim Aboubacar",
+      "date": "2025-09-20T17:57:18Z",
+      "url": "https://github.com/fastapi/fastapi/commit/2dc769b12174b0f7ad5c2ac16419fc4027ad8372",
+      "created_at": "2025-09-20T17:57:18Z"
+    },
+    {
+      "sha": "8ede27223e48386b4cc97302eea0818e2e767187",
+      "short_sha": "8ede272",
+      "message": "\u2728 Allow array values for OpenAPI schema `type` field (#13639)\n\nCo-authored-by: Lukas Rajala <lukas.rajala@klarna.com>\nCo-authored-by: dlax <denis@laxalde.org>\nCo-authored-by: Motov Yurii <109919500+YuriiMotov@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+      "author": "sammasak",
+      "date": "2025-09-20T17:47:24Z",
+      "url": "https://github.com/fastapi/fastapi/commit/8ede27223e48386b4cc97302eea0818e2e767187",
+      "created_at": "2025-09-20T17:47:24Z"
+    },
+    {
+      "sha": "dfe9dde982fe63261aecc13f564670b82011846c",
+      "short_sha": "dfe9dde",
+      "message": "\ud83d\udcdd Add annotations to HTTP middleware example (#11530)\n\nCo-authored-by: Sofie Van Landeghem <svlandeg@users.noreply.github.com>\nCo-authored-by: Sebasti\u00e1n Ram\u00edrez <tiangolo@gmail.com>",
+      "author": "Gabriel",
+      "date": "2025-06-17T10:48:10Z",
+      "url": "https://github.com/fastapi/fastapi/commit/dfe9dde982fe63261aecc13f564670b82011846c",
+      "created_at": "2025-06-17T10:48:10Z"
+    },
+    {
+      "sha": "97fdbdd0d8b3e24b3d850865033f6746ee13f82c",
+      "short_sha": "97fdbdd",
+      "message": "\ud83d\udcdd Update exclude-parameters-from-openapi documentation links (#13600)",
+      "author": "Timon",
+      "date": "2025-06-17T08:05:34Z",
+      "url": "https://github.com/fastapi/fastapi/commit/97fdbdd0d8b3e24b3d850865033f6746ee13f82c",
+      "created_at": "2025-06-17T08:05:34Z"
+    },
+    {
+      "sha": "280fe73c0398c912a38ffbf96e3897fc9cb78a5f",
+      "short_sha": "280fe73",
+      "message": "\u2705 Simplify tests for websockets (#13202)",
+      "author": "Alejandra",
+      "date": "2025-01-19T22:40:39Z",
+      "url": "https://github.com/fastapi/fastapi/commit/280fe73c0398c912a38ffbf96e3897fc9cb78a5f",
+      "created_at": "2025-01-19T22:40:39Z"
+    },
+    {
+      "sha": "20079934334945cf1e527a37582742e1f8d6dbb0",
+      "short_sha": "2007993",
+      "message": "\u2705 Simplify tests for security (#13200)",
+      "author": "Alejandra",
+      "date": "2025-01-19T22:35:40Z",
+      "url": "https://github.com/fastapi/fastapi/commit/20079934334945cf1e527a37582742e1f8d6dbb0",
+      "created_at": "2025-01-19T22:35:40Z"
+    }
+  ],
+  "prs": [
+    {
+      "number": 15745,
+      "title": "\u267b\ufe0f Refactor internals to preserve `APIRouter` and `APIRoute` instances",
+      "body": "## Pull Request\r\n\r\n\u267b\ufe0f Refactor internals to preserve `APIRouter` and `APIRoute` instances\r\n\r\nSupersedes https://github.com/fastapi/fastapi/pull/4794\r\n\r\nUnblocks :sparkles: SO MANY THINGS :sparkles: \r\n\r\nBefore this, `router.include_router(other_router)` would take each path operation from `other_router` and \"clone\" it, or recreate it from scratch.\r\n\r\nThis would mean that in the end there was only one top level router, part of the app.\r\n\r\nThe way it is structured here is that there are a few additional classes to handle intermediate metadata for router and route inclusion. That way the information of \"router X includes Y and Y includes Z\" is stored somewhere, without affecting (recreating / clonning) the final route.\r\n\r\n### Non Objective\r\n\r\nDependencies for 404\r\n\r\nOriginally in the other PR I intended to support dependencies that would be executed even for 404, but that would conflict with the fact that a router could _not_ find a match, but the next router _did_ find a match. Executing dependencies in the router that did not find a match would not make sense, they could consume the request, body, etc.\r\n\r\nThis original idea was discarded.\r\n\r\n### Breaking Change\r\n\r\nNow `router.routes` is no longer a plain list of `APIRoute` objects, it can contain these intermediate objects that can contain additional routers, forming a tree.\r\n\r\nAny logic that depended on iterating on the `router.routes` directly would be affected, that logic cannot expect to be able to extract data from a plain list of routes, as it's no longer a plain list but a tree.\r\n\r\nAdditionally, any logic that iterated on `router.routes` to modify them would now also see these new objects, and would not see all the routes in the app.\r\n\r\n`router.routes` should be considered an internal implementation detail, only passed around to the FastAPI functions that need it.\r\n\r\n### Features\r\n\r\n* Adding routes after a router is included now works, they are reflected as they are not copied.\r\n* Including `subrouter` in `mainrouter` can be done before adding routes (path operations) to `subrouter`, because now the the entire object is stored instead of copying the routes.\r\n* As routes are not copied, in some cases that might save some memory.\r\n\r\n### Alpha Features\r\n\r\nThis is not documented yet, so it's not officially supported yet and could change in the future.\r\n\r\nBut, as `APIRoute` and `APIRouter` instances are now preserved, they could be customized.\r\n\r\n`APIRouter` has two new methods, `.matches()` and `.handle()`, counterpart to the existing ones in `APIRoute`. With this a router could customize how it matches and handles requests. For example, it could match only requests that include some specific header, for example for handling versions in headers.\r\n\r\nStill, for now, consider this very experimental and potentially changing and breaking in the future.\r\n\r\n### Future Features Enabled\r\n\r\n* Custom `APIRoute` subclasses (as desccribed above)\r\n* Custom `APIRouter` subclasses (as described above)\r\n* Dependencies per router\r\n* Exception handlers per router\r\n* Middleware per router\r\n* Other features planned\r\n\r\n<!--\r\nPlease start with a GitHub Discussion.\r\n\r\nOnce a team member asks you to open a PR, create it and link the discussion here.\r\n\r\nObvious typo fixes can be made in a PR without starting a discussion.\r\n-->\r\n\r\nDiscussion: <!-- Link to the GitHub Discussion -->\r\n\r\n## Description\r\n\r\n<!-- Write the description of your PR here -->\r\n\r\n## AI Disclaimer\r\n\r\nCodex with GPT 5.5, through a lot of planning and research iterations, for weeks, then the same for the implementation, with too many iterations to count to clean up the implementation, what's supported and not, docs, types, etc.\r\n\r\nAll code and tests manually reviewed by hand.\r\n\r\n<!-- If using AI, write here the prompt and model used -->\r\n\r\n<details>\r\n<summary>AI transcript</summary>\r\n\r\n<!-- Paste here the entire AI transcript -->\r\n\r\n</details>\r\n\r\n## Checklist\r\n\r\n- [ ] This PR is an obvious typo fix, or it links to a GitHub Discussion for the proposed code change.\r\n- [x] I added tests for the change.\r\n- [x] The new or updated tests fail on the main branch and pass on this PR.\r\n- [x] Coverage stays at 100%.\r\n- [x] The documentation explains the change if needed.\r\n",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-06-14T11:43:03Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 20` untouched benchmarks  \n\n\n\n\n\n---\n\n<sub>Comparing <code>routers</code> (1e70f7c) with <code>master</code> (e2fcd55)[^unexpected-base]</sub>\n\n<a href=\"https://app.codspeed.io/fastapi/fastapi/branches/routers?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n[^unexpected-base]: No successful run was found on <code>master</code> (016ab76) during the generation of this report, so e2fcd55 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2026-06-14T11:44:56Z",
+          "body": "## \ud83d\udcdd Docs preview\n\nLast commit 1e70f7cdc8c05cc16146f9a40c3776912384caf6 at: https://5381aebe.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://5381aebe.fastapitiangolo.pages.dev/advanced/openapi-callbacks/ - ([before](https://fastapi.tiangolo.com/advanced/openapi-callbacks/))\n* https://5381aebe.fastapitiangolo.pages.dev/advanced/path-operation-advanced-configuration/ - ([before](https://fastapi.tiangolo.com/advanced/path-operation-advanced-configuration/))\n* https://5381aebe.fastapitiangolo.pages.dev/how-to/extending-openapi/ - ([before](https://fastapi.tiangolo.com/how-to/extending-openapi/))\n* https://5381aebe.fastapitiangolo.pages.dev/release-notes/ - ([before](https://fastapi.tiangolo.com/release-notes/))\n* https://5381aebe.fastapitiangolo.pages.dev/tutorial/bigger-applications/ - ([before](https://fastapi.tiangolo.com/tutorial/bigger-applications/))\n"
+        }
+      ],
+      "merged_at": "2026-06-14T12:35:48Z",
+      "url": "https://github.com/fastapi/fastapi/pull/15745",
+      "user": "tiangolo",
+      "labels": [
+        "breaking"
+      ],
+      "comments_count": 2,
+      "created_at": "2026-06-14T11:41:20Z",
+      "closed_at": "2026-06-14T12:35:48Z"
+    },
+    {
+      "number": 15577,
+      "title": "\ud83d\udcdd Update security policy",
+      "body": "\ud83d\udcdd Update security policy",
+      "comments": [],
+      "merged_at": "2026-05-20T16:11:49Z",
+      "url": "https://github.com/fastapi/fastapi/pull/15577",
+      "user": "tiangolo",
+      "labels": [
+        "docs"
+      ],
+      "comments_count": 0,
+      "created_at": "2026-05-20T16:06:43Z",
+      "closed_at": "2026-05-20T16:11:49Z"
+    },
+    {
+      "number": 14986,
+      "title": "\u267b\ufe0f Refactor logic to handle OpenAPI and Swagger UI escaping data",
+      "body": "\u267b\ufe0f Refactor logic to handle OpenAPI and Swagger UI escaping data\r\n\r\nOpenAPI, do not store `root_path` in servers: the only way this could be a problem is if there was a misconfigured proxy that somehow allowed an attacker client to set `x-forwarded-*` headers and passed them along. For a proxy (or server) to do this, it normally has to be intentionally/explicitly misconfigured. But again, doesn't hurt to have it there.\r\n\r\nEscape Swagger UI configs: I wouldn't consider this really important, the Swagger UI logic takes only data from the same developer building the app, I don't see a feasible scenario where this could be a problem, but probably also doesn't hurt much to have it there.\r\n\r\n---\r\n\r\nI received several \"security reports\" with this, I suspect some automated scanning tool that checks any JSON inside of HTML or similar. I don't consider these security issues, but also think it's probably fine to have these changes.",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-02-24T09:10:07Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 20` untouched benchmarks  \n\n\n\n---\n\n<sub>Comparing <code>root-path-html</code> (c167c04) with <code>master</code> (0cf27ec)[^unexpected-base]</sub>\n\n<a href=\"https://codspeed.io/fastapi/fastapi/branches/root-path-html?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n[^unexpected-base]: No successful run was found on <code>master</code> (2f9c914) during the generation of this report, so 0cf27ec was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n"
+        }
+      ],
+      "merged_at": "2026-02-24T09:28:10Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14986",
+      "user": "tiangolo",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 1,
+      "created_at": "2026-02-24T09:08:26Z",
+      "closed_at": "2026-02-24T09:28:10Z"
+    },
+    {
+      "number": 14966,
+      "title": "\ud83d\udc77 Do not run codspeed with coverage as it's not tracked",
+      "body": "\ud83d\udc77 Do not run codspeed with coverage as it's not tracked\r\n\r\nThis is done as a PR independent from https://github.com/fastapi/fastapi/pull/14965 to clearly isolate the fake \"performance improvement\" reported in the comment below.\r\n\r\nThe speed up in this PR is just because it's not running everything through coverage but running it directly, so it doesn't really count.\r\n\r\nPerformance improvements in previous PRs do count, as the code before and after changes was run through coverage in both cases, so the coverage overhead was the same. In fact, previous performance improvements were probably much higher than estimated, as coverage would account for a lot of the overhead.\r\n\r\nThis PR is made isolated apart so that it's clear when it's the change in how performance is measured (with and without coverage).\r\n\r\nFuture improvements will be measured against this new baseline without coverage taking overhead.",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-02-22T18:18:55Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by \u00d74.1**\n\n\n\n\n`\u26a1 20` improved benchmarks  \n\n\n\n### Performance Changes\n\n|     | Benchmark | `BASE` | `HEAD` | Efficiency |\n| --- | --------- | ------ | ------ | ---------- |\n| \u26a1 | [`` test_async_receiving_large_payload ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_large_payload&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 13.8 ms | 11.8 ms | +16.51% |\n| \u26a1 | [`` test_sync_return_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_model_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 6.1 ms | 2.1 ms | \u00d72.9 |\n| \u26a1 | [`` test_sync_return_large_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_dict_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 7 ms | 4.2 ms | +68.67% |\n| \u26a1 | [`` test_async_return_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_dict_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 3.2 ms | 1.3 ms | \u00d72.4 |\n| \u26a1 | [`` test_async_return_large_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 212.9 ms | 51.9 ms | \u00d74.1 |\n| \u26a1 | [`` test_sync_return_large_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_model_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 217.7 ms | 55.7 ms | \u00d73.9 |\n| \u26a1 | [`` test_async_receiving_validated_pydantic_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_validated_pydantic_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 5 ms | 1.9 ms | \u00d72.7 |\n| \u26a1 | [`` test_async_return_large_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 5.6 ms | 3.8 ms | +47.24% |\n| \u26a1 | [`` test_sync_return_large_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_dict_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 213.6 ms | 52.1 ms | \u00d74.1 |\n| \u26a1 | [`` test_async_return_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_model_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 5 ms | 1.9 ms | \u00d72.7 |\n| \u26a1 | [`` test_sync_receiving_large_payload ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_receiving_large_payload&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 14.5 ms | 12 ms | +20.52% |\n| \u26a1 | [`` test_sync_return_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 6.1 ms | 2.1 ms | \u00d72.9 |\n| \u26a1 | [`` test_async_return_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_dict_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 4.8 ms | 1.8 ms | \u00d72.7 |\n| \u26a1 | [`` test_async_return_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_model_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 4.9 ms | 1.8 ms | \u00d72.7 |\n| \u26a1 | [`` test_sync_receiving_validated_pydantic_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_receiving_validated_pydantic_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 6.4 ms | 2.3 ms | \u00d72.8 |\n| \u26a1 | [`` test_sync_return_large_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_model_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 7.1 ms | 4.2 ms | +68.53% |\n| \u26a1 | [`` test_sync_return_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 3.8 ms | 1.5 ms | \u00d72.5 |\n| \u26a1 | [`` test_async_return_large_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_model_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 216.8 ms | 55.5 ms | \u00d73.9 |\n| \u26a1 | [`` test_async_return_large_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_model_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 5.6 ms | 3.8 ms | +48.32% |\n| \u26a1 | [`` test_sync_return_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_model_without_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 5.5 ms | 2 ms | \u00d72.8 |\n---\n\n<sub>Comparing <code>benchmark-no-cov</code> (485ea8f) with <code>master</code> (1cea8f6)[^unexpected-base]</sub>\n\n<a href=\"https://codspeed.io/fastapi/fastapi/branches/benchmark-no-cov?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n[^unexpected-base]: No successful run was found on <code>master</code> (c5559a6) during the generation of this report, so 1cea8f6 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n"
+        }
+      ],
+      "merged_at": "2026-02-22T18:21:38Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14966",
+      "user": "tiangolo",
+      "labels": [
+        "internal"
+      ],
+      "comments_count": 1,
+      "created_at": "2026-02-22T18:15:42Z",
+      "closed_at": "2026-02-22T18:21:38Z"
+    },
+    {
+      "number": 14962,
+      "title": "\u2728 Serialize JSON response with Pydantic (in Rust), when there's a Pydantic return type or response model",
+      "body": "\u2728 Serialize JSON response with Pydantic (in Rust), when there's a Pydantic return type or response model",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-02-22T12:29:46Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **improve performance by \u00d72.1**\n\n\n\n\n`\u26a1 4` improved benchmarks  \n`\u2705 16` untouched benchmarks  \n\n\n\n### Performance Changes\n\n|     | Benchmark | `BASE` | `HEAD` | Efficiency |\n| --- | --------- | ------ | ------ | ---------- |\n| \u26a1 | [`` test_sync_return_large_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/serialize-pydantic?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_dict_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 13.2 ms | 7 ms | +88.26% |\n| \u26a1 | [`` test_sync_return_large_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/serialize-pydantic?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_model_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 13.3 ms | 7.1 ms | +89.05% |\n| \u26a1 | [`` test_async_return_large_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/serialize-pydantic?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 11.7 ms | 5.6 ms | \u00d72.1 |\n| \u26a1 | [`` test_async_return_large_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/serialize-pydantic?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_model_with_response_model&runnerMode=Simulation&utm_source=github&utm_medium=comment-v2&utm_content=benchmark) | 11.8 ms | 5.6 ms | \u00d72.1 |\n---\n\n<sub>Comparing <code>serialize-pydantic</code> (880ad19) with <code>master</code> (1e78a36)</sub>\n\n<a href=\"https://codspeed.io/fastapi/fastapi/branches/serialize-pydantic?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2026-02-22T15:53:04Z",
+          "body": "## \ud83d\udcdd Docs preview\n\nLast commit 880ad19087c65436da083118aad4b4b9f4da1503 at: https://061e4ca0.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://061e4ca0.fastapitiangolo.pages.dev/advanced/custom-response/ - ([before](https://fastapi.tiangolo.com/advanced/custom-response/))\n* https://061e4ca0.fastapitiangolo.pages.dev/advanced/response-directly/ - ([before](https://fastapi.tiangolo.com/advanced/response-directly/))\n* https://061e4ca0.fastapitiangolo.pages.dev/how-to/general/ - ([before](https://fastapi.tiangolo.com/how-to/general/))\n* https://061e4ca0.fastapitiangolo.pages.dev/tutorial/response-model/ - ([before](https://fastapi.tiangolo.com/tutorial/response-model/))\n"
+        },
+        {
+          "author": "a-babarytskyi",
+          "created_at": "2026-02-22T16:29:47Z",
+          "body": "A bit stupid question maybe, but If I was already returning pydantic model and response model was that model, I will still get performance boost?"
+        },
+        {
+          "author": "tiangolo",
+          "created_at": "2026-02-22T16:45:28Z",
+          "body": "Yes, you will :rocket: "
+        },
+        {
+          "author": "pmsmanishchauhan",
+          "created_at": "2026-02-23T06:14:40Z",
+          "body": "@tiangolo  currently we are using _**response_model**_  will it also performance improvement ?\r\n```\r\n@router.get(\"/sample\", response_model=Sample)\r\ndef sample_endpoint(\r\n    *,\r\n    db: Session = Depends(deps.get_db),\r\n    store_id: int,\r\n    user_id: Optional[int] = None,\r\n):\r\n```"
+        },
+        {
+          "author": "TheoPascoli",
+          "created_at": "2026-02-23T08:02:54Z",
+          "body": "@pmsmanishchauhan Yes it will"
+        },
+        {
+          "author": "dolfinus",
+          "created_at": "2026-02-23T21:47:46Z",
+          "body": "Same but for parsing HTTP body: #13951"
+        }
+      ],
+      "merged_at": "2026-02-22T16:07:19Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14962",
+      "user": "tiangolo",
+      "labels": [
+        "feature"
+      ],
+      "comments_count": 7,
+      "created_at": "2026-02-22T12:25:19Z",
+      "closed_at": "2026-02-22T16:07:19Z"
+    },
+    {
+      "number": 14953,
+      "title": "\u267b\ufe0f Fix JSON Schema for bytes, use `\"contentMediaType\": \"application/octet-stream\"` instead of `\"format\": \"binary\"`",
+      "body": "\u267b\ufe0f Fix JSON Schema for bytes, use `\"contentMediaType\": \"application/octet-stream\"` instead of `\"format\": \"binary\"`\r\n\r\n## Background\r\n\r\n`format: binary` was defined in OpenAPI 3.0.x, in OpenAPI 3.1.x the schema was aligned with the latest JSON Schema, recommending instead `contentMediaType: application/octet-stream`.\r\n\r\nI suspect the JSON Schema for `bytes` using `\"format\": \"binary\"` comes from my first implementation in Pydantic 1.x.\r\n\r\nIt was defined and suggested in OpenAPI 3.0.x (not in JSON Schema): https://spec.openapis.org/oas/v3.0.3.html#considerations-for-file-uploads\r\n\r\nOpenAPI 3.1.x aligned support with JSON Schema draft 07, so it was suggested to upate file uploads to use the regular JSON Schema format: `\"contentMediaType\": \"application/octet-stream\"`: https://learn.openapis.org/upgrading/v3.0-to-v3.1\r\n\r\nThis is defined in JSON Schema 07: https://json-schema.org/draft-07/json-schema-validation#rfc.section.8.4\r\n\r\n### JSON Schema 2020-12 Note\r\n\r\nNow OpenAPI 3.2 is aligned with JSON Schema 2020-12, which is what Pydantic v2 implements (except for this, I'm implementing it there too).\r\n\r\nIt's the same as in JSON Schema draft 07, so this still applies: https://json-schema.org/draft/2020-12/draft-bhutton-json-schema-validation-01#name-contentmediatype\r\n\r\n### Usage in JSON\r\n\r\nJSON as a format actually doesn't support bytes, everything has to be in UTF-8 strings. Transporting bytes in JSON would require encoding bytes in a string, e.g. with base64.\r\n\r\nBut as JSON Schema is not only defined to declare JSON payloads but also payloads that could have a comparable structure and defined with JSON Schema, it's still there in the spec.",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-02-21T07:26:05Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 20` untouched benchmarks  \n\n\n\n---\n\n<sub>Comparing <code>content-media-type</code> (089be9d) with <code>master</code> (cf05823)[^unexpected-base]</sub>\n\n<a href=\"https://codspeed.io/fastapi/fastapi/branches/content-media-type?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n[^unexpected-base]: No successful run was found on <code>master</code> (d2c17b6) during the generation of this report, so cf05823 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n"
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2026-02-21T07:43:15Z",
+          "body": "But it will now also change schema for other parameters (not only `File` parameters):\r\n\r\n```py\r\nfrom typing import Annotated\r\n\r\nfrom pydantic import BaseModel\r\nfrom fastapi import FastAPI, Query\r\n\r\nclass Model(BaseModel):\r\n    data: bytes\r\n\r\napp = FastAPI()\r\n\r\n@app.get(\"/\")\r\ndef read_root(params: Annotated[Model, Query()]):\r\n    pass\r\n\r\n@app.post(\"/\")\r\ndef post_root(params: Model):\r\n    pass\r\n```\r\n\r\n<details><summary>See schema</summary>\r\n\r\n```json\r\n{\r\n  \"openapi\": \"3.1.0\",\r\n  \"info\": {\r\n    \"title\": \"FastAPI\",\r\n    \"version\": \"0.1.0\"\r\n  },\r\n  \"paths\": {\r\n    \"/\": {\r\n      \"get\": {\r\n        \"summary\": \"Read Root\",\r\n        \"operationId\": \"read_root__get\",\r\n        \"parameters\": [\r\n          {\r\n            \"name\": \"data\",\r\n            \"in\": \"query\",\r\n            \"required\": true,\r\n            \"schema\": {\r\n              \"type\": \"string\",\r\n              \"contentMediaType\": \"application/octet-stream\",  # <= contentMediaType for Query parameter\r\n              \"title\": \"Data\"\r\n            }\r\n          }\r\n        ],\r\n        \"responses\": {\r\n          \"200\": {\r\n            \"description\": \"Successful Response\",\r\n            \"content\": {\r\n              \"application/json\": {\r\n                \"schema\": {\r\n\r\n                }\r\n              }\r\n            }\r\n          },\r\n          \"422\": {\r\n            \"description\": \"Validation Error\",\r\n            \"content\": {\r\n              \"application/json\": {\r\n                \"schema\": {\r\n                  \"$ref\": \"#/components/schemas/HTTPValidationError\"\r\n                }\r\n              }\r\n            }\r\n          }\r\n        }\r\n      },\r\n      \"post\": {\r\n        \"summary\": \"Post Root\",\r\n        \"operationId\": \"post_root__post\",\r\n        \"requestBody\": {\r\n          \"required\": true,\r\n          \"content\": {\r\n            \"application/json\": {\r\n              \"schema\": {\r\n                \"$ref\": \"#/components/schemas/Model\"\r\n              }\r\n            }\r\n          }\r\n        },\r\n        \"responses\": {\r\n          \"200\": {\r\n            \"description\": \"Successful Response\",\r\n            \"content\": {\r\n              \"application/json\": {\r\n                \"schema\": {\r\n\r\n                }\r\n              }\r\n            }\r\n          },\r\n          \"422\": {\r\n            \"description\": \"Validation Error\",\r\n            \"content\": {\r\n              \"application/json\": {\r\n                \"schema\": {\r\n                  \"$ref\": \"#/components/schemas/HTTPValidationError\"\r\n                }\r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\n    }\r\n  },\r\n  \"components\": {\r\n    \"schemas\": {\r\n      \"HTTPValidationError\": {\r\n        \"properties\": {\r\n          \"detail\": {\r\n            \"items\": {\r\n              \"$ref\": \"#/components/schemas/ValidationError\"\r\n            },\r\n            \"type\": \"array\",\r\n            \"title\": \"Detail\"\r\n          }\r\n        },\r\n        \"type\": \"object\",\r\n        \"title\": \"HTTPValidationError\"\r\n      },\r\n      \"Model\": {\r\n        \"properties\": {\r\n          \"data\": {\r\n            \"type\": \"string\",\r\n            \"contentMediaType\": \"application/octet-stream\",  # <= contentMediaType for Json Body\r\n            \"title\": \"Data\"\r\n          }\r\n        },\r\n        \"type\": \"object\",\r\n        \"required\": [\r\n          \"data\"\r\n        ],\r\n        \"title\": \"Model\"\r\n      },\r\n      \"ValidationError\": {\r\n        \"properties\": {\r\n          \"loc\": {\r\n            \"items\": {\r\n              \"anyOf\": [\r\n                {\r\n                  \"type\": \"string\"\r\n                },\r\n                {\r\n                  \"type\": \"integer\"\r\n                }\r\n              ]\r\n            },\r\n            \"type\": \"array\",\r\n            \"title\": \"Location\"\r\n          },\r\n          \"msg\": {\r\n            \"type\": \"string\",\r\n            \"title\": \"Message\"\r\n          },\r\n          \"type\": {\r\n            \"type\": \"string\",\r\n            \"title\": \"Error Type\"\r\n          },\r\n          \"input\": {\r\n            \"title\": \"Input\"\r\n          },\r\n          \"ctx\": {\r\n            \"type\": \"object\",\r\n            \"title\": \"Context\"\r\n          }\r\n        },\r\n        \"type\": \"object\",\r\n        \"required\": [\r\n          \"loc\",\r\n          \"msg\",\r\n          \"type\"\r\n        ],\r\n        \"title\": \"ValidationError\"\r\n      }\r\n    }\r\n  }\r\n}\r\n```\r\n\r\n</details>\r\n\r\nWill it be correct?\r\n"
+        },
+        {
+          "author": "tiangolo",
+          "created_at": "2026-02-21T07:57:29Z",
+          "body": "Ah, the thing is that using `bytes` in Query parameters is undefined/not supported, as a URL can't really have pure bytes, they have to be encoded in ASCII.\r\n\r\nI also checked with Swagger UI and the behavior is the same with both `\"format\": \"binary\"` and `\"contentMediaType\": \"application/octet-stream\"`. In both cases it renders the same and doesn't work.\r\n\r\n<img width=\"2980\" height=\"1248\" alt=\"image\" src=\"https://github.com/user-attachments/assets/eaa53e49-85d4-4c2f-badc-401b8fe6e5b0\" />"
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2026-02-21T08:06:39Z",
+          "body": "> Ah, the thing is that using `bytes` in Query parameters is undefined/not supported, as a URL can't really have pure bytes, they have to be encoded in ASCII.\r\n\r\nI agree about Query parameters (and other non-Body parameters). But it also affects JSON Body parameters (see previous schema example).\r\n\r\nNot sure how useful it is to use `bytes` in JSON `Body` models, but it might probably affect people who re-use existing models (defined somewhere else) to declare parameters"
+        },
+        {
+          "author": "tiangolo",
+          "created_at": "2026-02-21T08:24:04Z",
+          "body": "Ah, yes, this would be the actual correct format. JSON also doesn't support direct bytes, it has to be strings encoded in UTF-8, it would have to be in base64 or similar.\r\n\r\nSo, if anyone is using `bytes` in other places, this would probably fix their JSON Schema, what they have probably doesn't work properly.\r\n\r\nI'm also making a PR to Pydantic, just added here another part to support base64.\r\n\r\nThis would work:\r\n\r\n```Python\r\nfrom fastapi import FastAPI\r\nfrom pydantic import BaseModel\r\n\r\n\r\nclass Model(BaseModel):\r\n    data: bytes\r\n\r\n    model_config = {\"ser_json_bytes\": \"base64\"}\r\n\r\n\r\napp = FastAPI()\r\n\r\n\r\n@app.post(\"/\")\r\ndef post_root(params: Model):\r\n    pass\r\n```\r\n\r\nAnd now it has the proper JSON Schema defininig it, and tools like Swagger UI can represent it correctly:\r\n\r\n<img width=\"2980\" height=\"1248\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6829d56f-a5fe-4422-a23f-83fd52ac10eb\" />\r\n\r\nI also added all the references to the description in this PR."
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2026-02-21T11:32:08Z",
+          "body": "## \ud83d\udcdd Docs preview\n\nLast commit 089be9d25b8a33e023ef5084050c396e4902ae8c at: https://c89b4b46.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://c89b4b46.fastapitiangolo.pages.dev/advanced/json-base64-bytes/ - ([before](https://fastapi.tiangolo.com/advanced/json-base64-bytes/))\n* https://c89b4b46.fastapitiangolo.pages.dev/img/tutorial/json-base64-bytes/image01.png - ([before](https://fastapi.tiangolo.com/img/tutorial/json-base64-bytes/image01.png))\n"
+        },
+        {
+          "author": "pperliti",
+          "created_at": "2026-02-27T10:47:37Z",
+          "body": "Hi @tiangolo,\r\nfrom version 0.129.1 onward, parameters declared as a list of files (e.g., `support_files: Annotated[List[UploadFile], File(description=f\"Optional. Files used to extract data.\")] = None`) are rendered incorrectly in Swagger.\r\n\r\n<img width=\"778\" height=\"691\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9fe63c77-7aeb-46bf-8c8d-01aafcdba4ee\" />\r\n"
+        },
+        {
+          "author": "OscarMCV-SW",
+          "created_at": "2026-02-27T16:47:26Z",
+          "body": "Hi, same issue here. I rolled back my local FastAPI version and noticed that 0.129.1 breaks our schemas. When generating TS clients from openapi.json, some File arrays are now interpreted as arrays of strings.\r\n\r\nIt may be related to [this](https://github.com/OpenAPITools/openapi-generator/issues/20115)."
+        }
+      ],
+      "merged_at": "2026-02-21T13:01:31Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14953",
+      "user": "tiangolo",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 8,
+      "created_at": "2026-02-21T07:21:44Z",
+      "closed_at": "2026-02-21T13:01:31Z"
+    },
+    {
+      "number": 14864,
+      "title": "\u2705 Add inline snapshot tests for OpenAPI before changes from Pydantic v2",
+      "body": "\u2705 Add inline snapshot tests for OpenAPI before changes from Pydantic v2\r\n\r\nIn Pydantic v2, by default, JSON Schemas don't have a title.",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-02-07T11:48:14Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## [CodSpeed Performance Report](https://codspeed.io/fastapi/fastapi/branches/inline-snapshot?utm_source=github&utm_medium=comment&utm_content=header)\n\n### Merging this PR will **not alter performance**\n\n<sub>Comparing <code>inline-snapshot</code> (1f51fa3) with <code>master</code> (2e7d375)[^unexpected-base]</sub>\n[^unexpected-base]: No successful run was found on <code>master</code> (c48539f) during the generation of this report, so 2e7d375 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n\n\n\n### Summary\n\n`\u2705 20` untouched benchmarks  \n\n\n\n"
+        },
+        {
+          "author": "musicinmybrain",
+          "created_at": "2026-02-09T11:28:20Z",
+          "body": "After this commit, I find that several tests fail in a git checkout of FastAPI, using Python 3.14.2 on Fedora 43. I would have expected all tests to pass. Am I missing anything? I still see the same thing on `master`, cd31576d5704b6aef1bdadc43770238cd88aad2b.\r\n\r\n```\r\n$ uv venv --python 3.14\r\n$ . .venv/bin/activate\r\n(fastapi) $ uv sync --extra all && ./scripts/test.sh\r\n[\u2026]\r\n================================================================================= short test summary info ==================================================================================\r\nFAILED tests/test_request_params/test_path/test_required_str.py::test_schema[required-alias] - inline_snapshot._exceptions.UsageError: snapshot value should not change. Use Is(...) for dynamic snapshot parts.\r\nFAILED tests/test_request_params/test_path/test_required_str.py::test_schema[required-validation-alias] - inline_snapshot._exceptions.UsageError: snapshot value should not change. Use Is(...) for dynamic snapshot parts.\r\nFAILED tests/test_request_params/test_path/test_required_str.py::test_schema[required-alias-and-validation-alias] - inline_snapshot._exceptions.UsageError: snapshot value should not change. Use Is(...) for dynamic snapshot parts.\r\nFAILED tests/test_tutorial/test_body_nested_models/test_tutorial001_tutorial002_tutorial003.py::test_openapi_schema[tutorial002_py39] - AssertionError: assert 0 == 1\r\nFAILED tests/test_tutorial/test_body_nested_models/test_tutorial001_tutorial002_tutorial003.py::test_openapi_schema[tutorial002_py310] - AssertionError: assert 0 == 1\r\nFAILED tests/test_tutorial/test_body_nested_models/test_tutorial001_tutorial002_tutorial003.py::test_openapi_schema[tutorial003_py39] - AssertionError: assert 4 == 5\r\nFAILED tests/test_tutorial/test_body_nested_models/test_tutorial001_tutorial002_tutorial003.py::test_openapi_schema[tutorial003_py310] - AssertionError: assert 4 == 5\r\nFAILED tests/test_tutorial/test_custom_response/test_tutorial002_tutorial003_tutorial004.py::test_openapi_schema[tutorial003_py39] - AssertionError: assert 1 == 0\r\nFAILED tests/test_tutorial/test_path_operation_configurations/test_tutorial003_tutorial004.py::test_openapi_schema[tutorial004_py39] - inline_snapshot._exceptions.UsageError: snapshot value should not change. Use Is(...) for dynamic snapshot parts.\r\nFAILED tests/test_tutorial/test_path_operation_configurations/test_tutorial003_tutorial004.py::test_openapi_schema[tutorial004_py310] - inline_snapshot._exceptions.UsageError: snapshot value should not change. Use Is(...) for dynamic snapshot parts.\r\nFAILED tests/test_tutorial/test_query_params_str_validations/test_tutorial010.py::test_openapi_schema[tutorial010_py39] - inline_snapshot.syntax_warnings.InlineSnapshotSyntaxWarning: star-expressions are not supported inside snapshots\r\nFAILED tests/test_tutorial/test_query_params_str_validations/test_tutorial010.py::test_openapi_schema[tutorial010_py310] - inline_snapshot.syntax_warnings.InlineSnapshotSyntaxWarning: star-expressions are not supported inside snapshots\r\nFAILED tests/test_tutorial/test_query_params_str_validations/test_tutorial010.py::test_openapi_schema[tutorial010_an_py39] - inline_snapshot.syntax_warnings.InlineSnapshotSyntaxWarning: star-expressions are not supported inside snapshots\r\nFAILED tests/test_tutorial/test_query_params_str_validations/test_tutorial010.py::test_openapi_schema[tutorial010_an_py310] - inline_snapshot.syntax_warnings.InlineSnapshotSyntaxWarning: star-expressions are not supported inside snapshots\r\n================================================================== 14 failed, 3747 passed, 2 skipped, 9 xfailed in 48.67s ==================================================================\r\n```"
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2026-02-09T14:17:39Z",
+          "body": "@musicinmybrain, thanks for reporting!\r\n\r\nOpened a PR to fix tests: https://github.com/fastapi/fastapi/pull/14875, but we still need to find solution to prevent this from happening again..\r\n\r\nFor now run tests with `--inline-snapshot-disable` option.\r\n\r\n```\r\npytest tests --inline-snapshot=disable\r\n```"
+        }
+      ],
+      "merged_at": "2026-02-08T10:18:39Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14864",
+      "user": "tiangolo",
+      "labels": [
+        "internal"
+      ],
+      "comments_count": 3,
+      "created_at": "2026-02-07T11:43:56Z",
+      "closed_at": "2026-02-08T10:18:39Z"
+    },
+    {
+      "number": 14851,
+      "title": "\u267b\ufe0f Re-implement `on_event` in FastAPI for compatibility with the next Starlette, while keeping backwards compatibility",
+      "body": "\u267b\ufe0f Re-implement `on_event` in FastAPI for compatibility with the next Starlette, while keeping backwards compatibility\r\n\r\nOnce there's a better interface for `lifespan` or a comparable alternative, `on_event` and others will be deprecated and later removed. But while that new interface is available, I'm re-implementing it on the FastAPI side.",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-02-06T14:33:46Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 20` untouched benchmarks  \n\n\n\n---\n\n<sub>Comparing <code>onevent</code> (7e596af) with <code>master</code> (3b8b310)[^unexpected-base]</sub>\n\n<a href=\"https://codspeed.io/fastapi/fastapi/branches/onevent?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n[^unexpected-base]: No successful run was found on <code>master</code> (8e50c55) during the generation of this report, so 3b8b310 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n"
+        },
+        {
+          "author": "Yurzs",
+          "created_at": "2026-02-07T07:56:41Z",
+          "body": "BTW this does not work for startup funcs passed into `FastAPI(on_startup=[...])`.\r\n### `0.128.3`\r\n#### Command:\r\n```zsh\r\n\u279c  ~ docker run --rm python:3.12-slim /bin/sh -c \"pip install -q fastapi==0.128.3 uvicorn && cat > /tmp/app.py <<'PY'\r\nfrom fastapi import FastAPI\r\nimport uvicorn\r\n\r\ndef s_start():\r\n    print('SYNC START', flush=True)\r\n\r\napp = FastAPI(on_startup=[s_start])\r\n\r\n@app.get('/health')\r\nasync def health():\r\n    return {'ok': True}\r\n\r\nPY\r\nuvicorn app:app --app-dir /tmp --host 0.0.0.0 --port 8000 & pid=\\$!; sleep 5; kill \\$pid; wait \\$pid || true\"\r\n```\r\n#### Output:\r\n```\r\nWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.\r\n\r\n[notice] A new release of pip is available: 25.0.1 -> 26.0.1\r\n[notice] To update, run: pip install --upgrade pip\r\nINFO:     Started server process [11]\r\nINFO:     Waiting for application startup.\r\nINFO:     Application startup complete.\r\nINFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)\r\nINFO:     Shutting down\r\nINFO:     Waiting for application shutdown.\r\nINFO:     Application shutdown complete.\r\nINFO:     Finished server process [11]\r\nTerminated\r\n```\r\n------------------\r\n### `0.128.2`:\r\n#### Command:\r\n```zsh\r\n\u279c  ~ docker run --rm python:3.12-slim /bin/sh -c \"pip install -q fastapi==0.128.2 uvicorn && cat > /tmp/app.py <<'PY'\r\nfrom fastapi import FastAPI\r\nimport uvicorn\r\n\r\ndef s_start():\r\n    print('SYNC START', flush=True)\r\n\r\napp = FastAPI(on_startup=[s_start])\r\n\r\n@app.get('/health')\r\nasync def health():\r\n    return {'ok': True}\r\n\r\nPY\r\nuvicorn app:app --app-dir /tmp --host 0.0.0.0 --port 8000 & pid=\\$!; sleep 5; kill \\$pid; wait \\$pid || true\"\r\n```\r\n#### Output:\r\n```\r\nWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.\r\n\r\n[notice] A new release of pip is available: 25.0.1 -> 26.0.1\r\n[notice] To update, run: pip install --upgrade pip\r\nINFO:     Started server process [11]\r\nINFO:     Waiting for application startup.\r\nSYNC START\r\nINFO:     Application startup complete.\r\nINFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)\r\nINFO:     Shutting down\r\nINFO:     Waiting for application shutdown.\r\nINFO:     Application shutdown complete.\r\nINFO:     Finished server process [11]\r\nTerminated\r\n```"
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2026-02-09T08:24:29Z",
+          "body": "@Yurzs, thanks for reporting!\r\nOpened PR to fix this: https://github.com/fastapi/fastapi/pull/14873\r\n\r\nUPD: fixed"
+        }
+      ],
+      "merged_at": "2026-02-06T15:18:31Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14851",
+      "user": "tiangolo",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 3,
+      "created_at": "2026-02-06T14:28:52Z",
+      "closed_at": "2026-02-06T15:18:31Z"
+    },
+    {
+      "number": 14791,
+      "title": "\ud83d\udc1b Update `ValidationError` schema to include `input` and `ctx`",
+      "body": "## Summary\r\n\r\nRelated to #10787\r\n\r\nThe OpenAPI `ValidationError` schema was outdated and didn't reflect the actual error format returned by Pydantic V2.\r\n\r\n## Changes\r\nUpdated `validation_error_definition` in `fastapi/openapi/utils.py` to include:\r\n- `input`: The actual input value that caused the validation error  \r\n- `ctx`: Optional context dictionary with additional error information\r\n\r\n## Testing\r\nAll existing tests pass with the updated schema. The test snapshots have been updated to reflect the new schema structure.",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-02-01T00:20:01Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 20` untouched benchmarks  \n\n\n\n---\n\n<sub>Comparing <code>jonathan-fulton:fix/issue-10787-update-validation-error-schema</code> (5da2e87) with <code>master</code> (c9629e0)[^unexpected-base]</sub>\n\n<a href=\"https://codspeed.io/fastapi/fastapi/branches/jonathan-fulton%3Afix%2Fissue-10787-update-validation-error-schema?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n[^unexpected-base]: No successful run was found on <code>master</code> (0892440) during the generation of this report, so c9629e0 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n"
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2026-02-03T13:03:23Z",
+          "body": "Looks good in general, but would be nice to check and prove that client code generators interpret this schema correctly\r\n\r\n**UPD:** I just tried generating client using `openapi-ts` (which is used in [full-stack-fastapi-template](https://github.com/fastapi/full-stack-fastapi-template)) and everything is good:\r\n\r\n```typescript\r\nexport type ValidationError = {\r\n    loc: Array<(string | number)>;\r\n    msg: string;\r\n    type: string;\r\n    input?: unknown;\r\n    ctx?: {\r\n        [key: string]: unknown;\r\n    };\r\n};\r\n```\r\n"
+        },
+        {
+          "author": "jonathan-fulton",
+          "created_at": "2026-02-03T13:26:01Z",
+          "body": "@YuriiMotov Good point! I did some research on code generator compatibility:\n\n**The Schema:**\n- `ctx` has `type: object` \u2705 - well-supported\n- `input` has no explicit type - this represents \"any type\" which is valid JSON Schema, but some generators handle it better than others\n\n**Testing with openapi-generator:**\n\nI tested generating a Python client with the updated schema:\n```bash\n# Generated with openapi-generator-cli 7.x\nopenapi-generator generate -i openapi.json -g python -o ./client\n```\n\nResult: \u2705 Generated successfully. The `input` field is typed as `Any` in Python, which correctly represents that it can be any JSON value (string, number, object, array, etc. - whatever the invalid input was).\n\n**Why `input` has no type:**\nPydantic's `ValidationError` includes the actual failing input value in the `input` field, which could be any JSON type depending on what the user submitted. This matches Pydantic's behavior and the actual error responses FastAPI returns.\n\n**Alternative if needed:**\nIf we want to be more explicit, we could add:\n```python\n\"input\": {\"title\": \"Input\", \"anyOf\": [{\"type\": \"string\"}, {\"type\": \"number\"}, {\"type\": \"integer\"}, {\"type\": \"boolean\"}, {\"type\": \"array\"}, {\"type\": \"object\"}, {\"type\": \"null\"}]}\n```\n\nBut the current approach (no type = any type) is valid JSON Schema and works with the major generators I tested.\n\nLet me know if you'd like me to test with any specific code generator!"
+        }
+      ],
+      "merged_at": "2026-02-04T14:34:03Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14791",
+      "user": "jonathan-fulton",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 3,
+      "created_at": "2026-02-01T00:15:43Z",
+      "closed_at": "2026-02-04T14:34:03Z"
+    },
+    {
+      "number": 14781,
+      "title": "\ud83d\udcdd Update `docs/en/docs/tutorial/security/oauth2-jwt.md`",
+      "body": "The word emit is difficult to follow. I had to look it up in this context. This change makes the sentence more readable and easier for the user to follow.",
+      "comments": [
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2026-01-29T10:21:44Z",
+          "body": "## \ud83d\udcdd Docs preview\n\nLast commit 793dfff6fc9c8f15885f54c26ebcfbec07ffca1e at: https://9c33fc7d.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://9c33fc7d.fastapitiangolo.pages.dev/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n"
+        },
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-01-29T10:23:32Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## Merging this PR will **not alter performance**\n\n\n\n\n`\u2705 20` untouched benchmarks  \n\n\n\n---\n\n<sub>Comparing <code>zadevhub:master</code> (edb1a97) with <code>master</code> (a3dccae)[^unexpected-base]</sub>\n\n<a href=\"https://codspeed.io/fastapi/fastapi/branches/zadevhub%3Amaster?utm_source=github&utm_medium=comment-v2&utm_content=button\">\n  <picture>\n    <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-dark.svg\">\n    <source media=\"(prefers-color-scheme: light)\" srcset=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\">\n    <img alt=\"Open in CodSpeed\" src=\"https://codspeed.io/pr-report/open-in-codspeed-light.svg\" width=\"169\" height=\"32\">\n  </picture>\n</a>\n\n[^unexpected-base]: No successful run was found on <code>master</code> (9348a5e) during the generation of this report, so a3dccae was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n"
+        }
+      ],
+      "merged_at": "2026-05-24T10:29:23Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14781",
+      "user": "zadevhub",
+      "labels": [
+        "docs"
+      ],
+      "comments_count": 2,
+      "created_at": "2026-01-29T10:19:08Z",
+      "closed_at": "2026-05-24T10:29:23Z"
+    },
+    {
+      "number": 14756,
+      "title": "\ud83d\udcdd Use `WSGIMiddleware` from `a2wsgi` instead of deprecated `fastapi.middleware.wsgi.WSGIMiddleware`",
+      "body": "`fastapi.middleware.wsgi.WSGIMiddleware` (re-exported from Starlette) is deprecated:\r\n\r\nhttps://github.com/Kludex/starlette/blob/501b86185461d107869917ced367d5624f82e3fb/starlette/middleware/wsgi.py#L15-L20",
+      "comments": [
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2026-01-22T11:17:36Z",
+          "body": "## \ud83d\udcdd Docs preview\n\nLast commit 97d19ee3eab4c7e75aa04f8b3ad3d5ef3b4b9ee8 at: https://5dd7650b.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://5dd7650b.fastapitiangolo.pages.dev/advanced/wsgi/ - ([before](https://fastapi.tiangolo.com/advanced/wsgi/))\n* https://5dd7650b.fastapitiangolo.pages.dev/reference/middleware/ - ([before](https://fastapi.tiangolo.com/reference/middleware/))\n"
+        },
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2026-01-22T11:19:12Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## [CodSpeed Performance Report](https://codspeed.io/fastapi/fastapi/branches/use-external-WSGIMiddleware?utm_source=github&utm_medium=comment&utm_content=header)\n\n### Merging this PR will **not alter performance**\n\n<sub>Comparing <code>use-external-WSGIMiddleware</code> (97d19ee) with <code>master</code> (7a05894)[^unexpected-base]</sub>\n[^unexpected-base]: No successful run was found on <code>master</code> (8c32e91) during the generation of this report, so 7a05894 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n\n\n\n### Summary\n\n`\u2705 20` untouched benchmarks  \n\n\n\n"
+        },
+        {
+          "author": "mynewestgitaccount",
+          "created_at": "2026-01-24T18:26:44Z",
+          "body": "WSGIMiddleware in Starlette has been deprecated for a very long time.\r\n\r\nThe deprecation warning that is causing CI issues in #14695 from the newest version of Starlette is causing issues because Starlette [changed the stacklevel of the warning](https://github.com/Kludex/starlette/pull/3082).\r\n\r\nI think the correct fix from the FastAPI side would be updating the existing warning filter in pyproject.toml: https://github.com/fastapi/fastapi/blob/597b435ae7f0c4694f654bce6c7c27206aa690ef/pyproject.toml#L234"
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2026-01-24T21:33:12Z",
+          "body": "@mynewestgitaccount, thanks for pointing to that warning filter! I missed it.\r\n\r\nI still think we should update docs to teach people use recommended `a2wsgi.WSGIMiddleware`. Starlette's version is deprecated and will be removed at some point, we need to prepare for this"
+        }
+      ],
+      "merged_at": "2026-02-04T11:54:24Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14756",
+      "user": "YuriiMotov",
+      "labels": [
+        "docs"
+      ],
+      "comments_count": 4,
+      "created_at": "2026-01-22T11:12:17Z",
+      "closed_at": "2026-02-04T11:54:24Z"
+    },
+    {
+      "number": 14608,
+      "title": "\u2705 Run performance tests only on Pydantic v2",
+      "body": "\u2705 Run performance tests only on Pydantic v2, in preparation to drop support for Pydantic v1",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2025-12-26T20:39:38Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## [CodSpeed Performance Report](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?utm_source=github&utm_medium=comment&utm_content=header)\n\n### Merging #14608 will create unknown performance changes\n\n<sub>Comparing <code>performance-pv2</code> (77f41c6) with <code>master</code> (cd90c78)</sub>\n\n\n\n### Summary\n\n`\ud83c\udd95 20` new  \n`\u23e9 40` skipped[^skipped]  \n\n\n\n### Benchmarks breakdown\n\n|     | Benchmark | `BASE` | `HEAD` | Efficiency |\n| --- | --------- | ------ | ------ | ---------- |\n| \ud83c\udd95 | [`` test_sync_return_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 3.8 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_large_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_model_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 11.9 ms | N/A |\n| \ud83c\udd95 | [`` test_async_receiving_large_payload ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_large_payload&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 13.8 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_return_large_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_dict_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 13.2 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_dict_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 4.9 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_large_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 11.8 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_return_large_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_model_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 262.7 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_return_large_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_dict_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 258.6 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_large_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 257.9 ms | N/A |\n| \ud83c\udd95 | [`` test_async_receiving_validated_pydantic_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_validated_pydantic_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 5 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_receiving_validated_pydantic_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_receiving_validated_pydantic_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 6.5 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_receiving_large_payload ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_receiving_large_payload&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 14.6 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_model_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 4.9 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_dict_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_dict_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 3.2 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_return_large_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_model_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 13.4 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_model_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 5.1 ms | N/A |\n| \ud83c\udd95 | [`` test_async_return_large_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_model_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 262.1 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_return_model_without_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_model_without_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 5.6 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_return_dict_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 6.1 ms | N/A |\n| \ud83c\udd95 | [`` test_sync_return_model_with_response_model ``](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_model_with_response_model&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark) | N/A | 6.2 ms | N/A |\n\n[^skipped]: 40 benchmarks were skipped, so the baseline results were used instead. If they were deleted from the codebase, [click here and archive them to remove them from the performance reports](https://codspeed.io/fastapi/fastapi/branches/performance-pv2?sectionId=benchmark-comparison-section-baseline-result-skipped&utm_source=github&utm_medium=comment&utm_content=archive).\n"
+        }
+      ],
+      "merged_at": "2025-12-26T20:40:27Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14608",
+      "user": "tiangolo",
+      "labels": [
+        "internal"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-12-26T20:27:29Z",
+      "closed_at": "2025-12-26T20:40:27Z"
+    },
+    {
+      "number": 14558,
+      "title": "\ud83d\udc77 Add performance tests with CodSpeed",
+      "body": "\ud83d\udc77 Add performance tests with CodSpeed",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2025-12-17T18:35:39Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## [CodSpeed Performance Report](https://codspeed.io/fastapi/fastapi/branches/codspeed?utm_source=github&utm_medium=comment&utm_content=header)\n\n\n### Congrats! CodSpeed is installed \ud83c\udf89\n\n`\ud83c\udd95` **40 new benchmarks were detected.**\n\nYou will start to see performance impacts in the reports once the benchmarks are run from your default branch.\n\n<details>\n  <summary><h3>Detected benchmarks</h3></summary>\n\n- [`` test_async_receiving_validated_pydantic_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_validated_pydantic_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 5.6 ms\n- [`` test_async_receiving_large_payload[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_large_payload%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 13.8 ms\n- [`` test_async_return_dict_with_response_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_dict_with_response_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 5.3 ms\n- [`` test_async_receiving_validated_pydantic_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_validated_pydantic_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 5.1 ms\n- [`` test_sync_receiving_validated_pydantic_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_receiving_validated_pydantic_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 6.9 ms\n- [`` test_async_receiving_large_payload[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_receiving_large_payload%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 56.1 ms\n- [`` test_sync_return_dict_without_response_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_without_response_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 3.8 ms\n- [`` test_sync_return_dict_with_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_with_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 6.1 ms\n- [`` test_sync_return_dict_with_response_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_with_response_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 6.5 ms\n- [`` test_async_return_dict_with_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_dict_with_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 4.9 ms\n- [`` test_sync_return_dict_without_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_dict_without_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 3.8 ms\n- [`` test_async_return_large_dict_with_response_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_with_response_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 577.8 ms\n- [`` test_sync_return_model_without_response_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_model_without_response_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 5.7 ms\n- [`` test_async_return_large_dict_without_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_without_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 265.5 ms\n- [`` test_sync_return_large_model_with_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_model_with_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 13.4 ms\n- [`` test_async_return_dict_without_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_dict_without_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 3.2 ms\n- [`` test_sync_return_large_model_without_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_model_without_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 270.3 ms\n- [`` test_async_return_large_dict_without_response_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_async_return_large_dict_without_response_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 265.5 ms\n- [`` test_sync_return_large_dict_without_response_model[pydantic-v2] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_large_dict_without_response_model%5Bpydantic-v2%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 266 ms\n- [`` test_sync_return_model_with_response_model[pydantic-v1] ``](https://codspeed.io/fastapi/fastapi/branches/codspeed?uri=tests%2Fbenchmarks%2Ftest_general_performance.py%3A%3Atest_sync_return_model_with_response_model%5Bpydantic-v1%5D&runnerMode=Instrumentation&utm_source=github&utm_medium=comment&utm_content=benchmark): 6.6 ms\n- ...\n\n<br/>\n\n> :information_source: _Only the first 20 benchmarks are displayed. [Go to the app to view all benchmarks](https://codspeed.io/fastapi/fastapi/branches/codspeed?utm_source=github&utm_medium=comment&utm_content=all_benchmarks)._\n\n</details>\n"
+        }
+      ],
+      "merged_at": "2025-12-18T13:24:09Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14558",
+      "user": "tiangolo",
+      "labels": [
+        "internal"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-12-17T18:32:36Z",
+      "closed_at": "2025-12-18T13:24:09Z"
+    },
+    {
+      "number": 14479,
+      "title": "\ud83d\udeb8 Improve error message for invalid query parameter type annotations",
+      "body": "When I bumped FastAPI from 0.181.1 to 0.181.2, project started crashing on startup with AssertionError. The traceback didn\u2019t provide any helpful context. After debugging, I found that issue was caused by incorrectly typed query parameters after the changes introduced in PR #12942 \r\n\r\nThis PR adds a clearer error message to assertion, indicating that query parameter type is incorrect, and updates tests to ensure that new message is present.\r\n\r\nBelow is an example of a wrongly typed query parameter that didn\u2019t fail before 0.181.2, but starts failing in 0.181.2 and later:\r\n```python\r\nfrom typing import Annotated, Any\r\nfrom fastapi import FastAPI, Query\r\nfrom pydantic import BeforeValidator, WithJsonSchema\r\n\r\napp = FastAPI()\r\n\r\nFilterableStr = Annotated[\r\n    str | dict,\r\n    BeforeValidator(lambda x: x),\r\n    WithJsonSchema({\"type\": \"string\"}, mode=\"serialization\"),\r\n]\r\n\r\n@app.get(\"/hello\")\r\nasync def get_hello(data: FilterableStr | None = Query(default=None)) -> Any:\r\n    return data\r\n```\r\n\r\n\r\nStacktrace before:\r\n```python\r\n  File \"/Users/tony/Projects/fastapi_exampl/.venv/lib/python3.13/site-packages/fastapi/routing.py\", line 630, in __init__\r\n    self.dependant = get_dependant(path=self.path_format, call=self.endpoint)\r\n                     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"/Users/tony/Projects/fastapi_exampl/.venv/lib/python3.13/site-packages/fastapi/dependencies/utils.py\", line 293, in get_dependant\r\n    param_details = analyze_param(\r\n        param_name=param_name,\r\n    ...<2 lines>...\r\n        is_path_param=is_path_param,\r\n    )\r\n  File \"/Users/tony/Projects/fastapi_exampl/.venv/lib/python3.13/site-packages/fastapi/dependencies/utils.py\", line 510, in analyze_param\r\n    is_scalar_field(field)\r\n    ...<5 lines>...\r\n    )\r\nAssertionError\r\n```\r\n\r\nStacktrace after:\r\n```python\r\n  File \"/Users/tony/Projects/fastapi_exampl/.venv/lib/python3.13/site-packages/fastapi/dependencies/utils.py\", line 293, in get_dependant\r\n    param_details = analyze_param(\r\n        param_name=param_name,\r\n    ...<2 lines>...\r\n        is_path_param=is_path_param,\r\n    )\r\n  File \"/Users/tony/Projects/fastapi_exampl/.venv/lib/python3.13/site-packages/fastapi/dependencies/utils.py\", line 510, in analyze_param\r\n    is_scalar_field(field)\r\n    ...<5 lines>...\r\n    )\r\nAssertionError: Query param 'data' must be of one of the supported types\r\n```",
+      "comments": [
+        {
+          "author": "codspeed-hq[bot]",
+          "created_at": "2025-12-24T12:44:43Z",
+          "body": "<!-- __CODSPEED_PERFORMANCE_REPORT_COMMENT__ -->\n## [CodSpeed Performance Report](https://codspeed.io/fastapi/fastapi/branches/retwish%3Aimprove_query_param_type_handling?utm_source=github&utm_medium=comment&utm_content=header)\n\n### Merging #14479 will **not alter performance**\n\n<sub>Comparing <code>retwish:improve_query_param_type_handling</code> (cf4b822) with <code>master</code> (d9b7b65)[^unexpected-base]</sub>\n[^unexpected-base]: No successful run was found on <code>master</code> (53d2453) during the generation of this report, so d9b7b65 was used instead as the comparison base. There might be some changes unrelated to this pull request in this report.\n\n\n\n### Summary\n\n`\u2705 20` untouched  \n`\u23e9 40` skipped[^skipped]  \n\n\n\n\n[^skipped]: 40 benchmarks were skipped, so the baseline results were used instead. If they were deleted from the codebase, [click here and archive them to remove them from the performance reports](https://codspeed.io/fastapi/fastapi/branches/retwish%3Aimprove_query_param_type_handling?sectionId=benchmark-comparison-section-baseline-result-skipped&utm_source=github&utm_medium=comment&utm_content=archive).\n"
+        }
+      ],
+      "merged_at": "2026-02-04T13:24:59Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14479",
+      "user": "retwish",
+      "labels": [
+        "feature"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-12-09T19:33:21Z",
+      "closed_at": "2026-02-04T13:24:59Z"
+    },
+    {
+      "number": 14459,
+      "title": "\ud83d\udc1b Fix OAuth2 scopes in OpenAPI in extra corner cases, parent dependency with scopes, sub-dependency security scheme without scopes",
+      "body": "\ud83d\udc1b Fix OAuth2 scopes in OpenAPI in extra corner cases, parent dependency with scopes, sub-dependency security scheme without scopes, and the same security scheme used as another sub-dependency without scopes in a different path operation.\r\n\r\nThe dependency without scopes would be cached for OpenAPI and for the one with scopes, it would render without scopes.\r\n\r\nThis also refactors the internals of how dependencies are handled, and how scopes and security schemes are passed through the code, removing duplication and simplifying parts, making them more robust and less error-prone. :muscle: \r\n\r\nThis should fix https://github.com/fastapi/fastapi/issues/14454 (strike 2 :baseball:)",
+      "comments": [
+        {
+          "author": "tiangolo",
+          "created_at": "2025-12-04T22:24:17Z",
+          "body": "This was released in FastAPI 0.123.9 :rocket: "
+        }
+      ],
+      "merged_at": "2025-12-04T22:22:01Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14459",
+      "user": "tiangolo",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-12-04T22:07:41Z",
+      "closed_at": "2025-12-04T22:22:01Z"
+    },
+    {
+      "number": 14455,
+      "title": "\ud83d\udc1b Fix OpenAPI security scheme OAuth2 scopes declaration, deduplicate security schemes with different scopes",
+      "body": "\ud83d\udc1b Fix OpenAPI security scheme OAuth2 scopes declaration, deduplicate security schemes with different scopes\r\n\r\nThis should fix https://github.com/fastapi/fastapi/issues/14454",
+      "comments": [
+        {
+          "author": "tiangolo",
+          "created_at": "2025-12-04T13:02:15Z",
+          "body": "This was released in FastAPI 0.123.8 :tada: "
+        }
+      ],
+      "merged_at": "2025-12-04T12:59:24Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14455",
+      "user": "tiangolo",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-12-04T12:51:15Z",
+      "closed_at": "2025-12-04T12:59:24Z"
+    },
+    {
+      "number": 14372,
+      "title": "\u267b\ufe0f Make the result of `Depends()` and `Security()` hashable, as a workaround for other tools interacting with these internal parts",
+      "body": "\u267b\ufe0f Make the result of `Depends()` and `Security()` hashable, as a workaround for other tools interacting with these internal parts\r\n\r\n---\r\n\r\nThis comes from https://github.com/fastapi/fastapi/pull/14320\r\n\r\nAs a note, FastAPI doesn't really have official support for extending its internals in ways that are not documented in the docs.\r\n\r\nSo this is not a long-term commitment to keep some specific behavior, but a quick workaround to make things easier for current tools that interact with FastAPI internals in some way.\r\n\r\n---\r\n\r\nAt some point in the future, I'll refactor the internals of FastAPI to make them more explicitly private, and then also figure out the right ways to expose any points of connection with external components that currently need to interact with the internals in some way, and formalize that better.\r\n\r\n---\r\n\r\nBefore that, I need to handle a few issues, bugs, features, refactors, deprecations, etc. And then I'll be able to come back to this idea of figuring out how and what to expose. :nerd_face: ",
+      "comments": [
+        {
+          "author": "njsbhu",
+          "created_at": "2025-11-21T03:26:05Z",
+          "body": "I would like to update analyze_param function in - fastapi/dependencies/utils.py\r\n1) In Extract Annotated info\r\n```\r\ndef analyze_param(\r\n    *,\r\n    param_name: str,\r\n    annotation: Any,\r\n    value: Any,\r\n    is_path_param: bool,\r\n) -> ParamDetails:\r\n    field_info = None\r\n    depends = None\r\n    type_annotation: Any = Any\r\n    use_annotation: Any = Any\r\n    if annotation is not inspect.Signature.empty:\r\n        use_annotation = annotation\r\n        type_annotation = annotation\r\n\r\n    # Extract Annotated info\r\n    if get_origin(use_annotation) is Annotated:\r\n        annotated_args = get_args(use_annotation)  # <-- use the resolved value\r\n        # first arg is the type\r\n        type_annotation = annotated_args[0] if annotated_args else type_annotation\r\n        fastapi_annotations = [\r\n            arg\r\n            for arg in annotated_args[1:]\r\n            if isinstance(arg, (FieldInfo, may_v1.FieldInfo, params.Depends))\r\n        ]\r\n\r\n        fastapi_specific_annotations = [\r\n            arg\r\n            for arg in fastapi_annotations\r\n            if isinstance(\r\n                arg,\r\n                (\r\n                    params.Param,\r\n                    temp_pydantic_v1_params.Param,\r\n                    params.Body,\r\n                    temp_pydantic_v1_params.Body,\r\n                    params.Depends,\r\n                ),\r\n            )\r\n        ]\r\n\r\n        fastapi_annotation = fastapi_specific_annotations[-1] if fastapi_specific_annotations else None\r\n\r\n        # Annotated FieldInfo handling\r\n        if isinstance(fastapi_annotation, (FieldInfo, may_v1.FieldInfo)):\r\n            # Copy `field_info` because we mutate `field_info.default` below.\r\n            field_info = copy_field_info(field_info=fastapi_annotation, annotation=use_annotation)\r\n            assert field_info.default in {\r\n                Undefined,\r\n                may_v1.Undefined,\r\n            } or field_info.default in {RequiredParam, may_v1.RequiredParam}, (\r\n                f\"`{field_info.__class__.__name__}` default value cannot be set in\"\r\n                f\" `Annotated` for {param_name!r}. Set the default value with `=` instead.\"\r\n            )\r\n            if value is not inspect.Signature.empty:\r\n                assert not is_path_param, \"Path parameters cannot have default values\"\r\n                field_info.default = value\r\n            else:\r\n                field_info.default = RequiredParam\r\n\r\n        # Annotated Depends handling\r\n        elif isinstance(fastapi_annotation, params.Depends):\r\n            depends = fastapi_annotation\r\n```\r\n\r\n2) In _get_multidict_value function - safe _get_multidict_value for Headers\r\n```\r\ndef _get_multidict_value(\r\n    field: ModelField, values: Mapping[str, Any], alias: Union[str, None] = None\r\n) -> Any:\r\n    alias = alias or field.alias\r\n    if is_sequence_field(field) and hasattr(values, \"getlist\"):\r\n        # ImmutableMultiDict supports getlist; Headers does not.\r\n        value = values.getlist(alias)  # type: ignore[attr-defined]\r\n    elif is_sequence_field(field) and isinstance(values, Headers):\r\n        # Headers in Starlette exposes getall (or multiple values in raw), try getall/getlist fallback\r\n        try:\r\n            value = values.getall(alias)  # type: ignore[attr-defined]\r\n        except Exception:\r\n            # Fallback: single header value -> put in list if present\r\n            v = values.get(alias, None)\r\n            value = [v] if v is not None else []\r\n    else:\r\n        value = values.get(alias, None)\r\n    ...\r\n```\r\n3) safer response header deletion in solve_dependencies\r\nReplace:\r\n```\r\nif response is None:\r\n    response = Response()\r\n    del response.headers[\"content-length\"]\r\n    response.status_code = None  # type: ignore\r\n```\r\nwith:\r\n```\r\nif response is None:\r\n    response = Response()\r\n    # remove content-length if present; be tolerant if not\r\n    response.headers.pop(\"content-length\", None)\r\n    response.status_code = None  # type: ignore\r\n```\r\n4)  Avoid AttributeError in _extract_form_body when reading files. Assume value.read exists for objects in value list. Improve check:\r\n```\r\nif is_bytes_sequence_field(field) and isinstance(field_info, (params.File, temp_pydantic_v1_params.File)) and value_is_sequence(value):\r\n    # Ensure items are UploadFile-like and have read() coroutine method\r\n    results: List[Union[bytes, str]] = []\r\n\r\n    async def process_fn(fn):\r\n        result = await fn()\r\n        results.append(result)\r\n\r\n    async with anyio.create_task_group() as tg:\r\n        for sub_value in value:\r\n            if hasattr(sub_value, \"read\"):\r\n                tg.start_soon(process_fn, sub_value.read)\r\n            else:\r\n                # fallback: append raw value\r\n                results.append(sub_value)\r\n    value = serialize_sequence_value(field=field, value=results)\r\n```"
+        }
+      ],
+      "merged_at": "2025-11-19T16:50:18Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14372",
+      "user": "tiangolo",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-11-19T16:27:39Z",
+      "closed_at": "2025-11-19T16:50:18Z"
+    },
+    {
+      "number": 14371,
+      "title": "\ud83d\udc1b Fix parameter aliases",
+      "body": "This PR fixes the rest of failing tests in #14358.\r\n\r\n---\r\n\r\n**Note:** for `validation_aliases` only string value is currently supported. We can later think of supporting `AliasPath` and `AliasChoices`\r\n\r\n\r\n**Will also fix issues:**\r\n\r\n<details>\r\n\r\n* https://github.com/fastapi/fastapi/discussions/8535\r\n* https://github.com/fastapi/fastapi/discussions/10014\r\n\r\n</details>",
+      "comments": [
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-12-02T04:44:18Z",
+          "body": "This pull request has a merge conflict that needs to be resolved."
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-12-11T16:21:52Z",
+          "body": "This pull request has a merge conflict that needs to be resolved."
+        },
+        {
+          "author": "rensoostenbachBL",
+          "created_at": "2026-01-05T13:25:13Z",
+          "body": "A little bit late to the party, but I am curious if https://github.com/fastapi/fastapi/discussions/9099 is also fixed by this PR. Either way, thanks for this work @YuriiMotov!"
+        }
+      ],
+      "merged_at": "2025-12-12T14:56:58Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14371",
+      "user": "YuriiMotov",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 3,
+      "created_at": "2025-11-19T07:00:32Z",
+      "closed_at": "2025-12-12T14:56:58Z"
+    },
+    {
+      "number": 14306,
+      "title": "\ud83d\udeb8  Improve tracebacks by adding endpoint metadata",
+      "body": "Today, when validation errors occur, error messages don't indicate what endpoint caused the problem, which can make debugging difficult. \r\n\r\nThis PR adds endpoint context metadata to validation error messages to show the filepath (clickable in IDEs!) and line number, function name and HTTP method and route where applicable. The endpoint context is extracted once per endpoint and then cached to avoid any additional performance overhead on subsequent requests. Just to double check, I also ran a rough benchmark (100k requests):\r\n```\r\nBaseline (without changes):     0.0006s\r\nUncached:     \t\t\t\t\t1.3281s (13.28\u00b5s per request)\r\n**Cached**:       \t\t\t\t0.0060s (0.06\u00b5s per request)\r\n```\r\n\r\nEndpoint context only appears in the exception's string representation (server logs). It is **not** exposed to clients in HTTP responses. Clients still receive the standard 422 response with validation error details.\r\n\r\n## Examples\r\n\r\n### ResponseValidationError\r\n\r\n**Before:**\r\n```\r\nfastapi.exceptions.ResponseValidationError: 1 validation error:\r\n  {'type': 'missing', 'loc': ('response', 'id'), 'msg': 'Field required', 'input': {'name': 'Widget'}}\r\n```\r\n\r\n**After:**\r\n```\r\nfastapi.exceptions.ResponseValidationError: 1 validation error:\r\n  {'type': 'missing', 'loc': ('response', 'id'), 'msg': 'Field required', 'input': {'name': 'Widget'}}\r\n\r\n  File \"/Users/savannah/work/fastapi/capture_real_examples.py\", line 43, in create_item\r\n    POST /items/\r\n```\r\n\r\n### RequestValidationError\r\n\r\n**Before:**\r\n```\r\nfastapi.exceptions.RequestValidationError: 1 validation error:\r\n  {'type': 'int_parsing', 'loc': ('path', 'user_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'invalid'}\r\n```\r\n\r\n**After:**\r\n```\r\nfastapi.exceptions.RequestValidationError: 1 validation error:\r\n  {'type': 'int_parsing', 'loc': ('path', 'user_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'invalid'}\r\n\r\n  File \"/Users/savannah/work/fastapi/capture_real_examples.py\", line 38, in get_user\r\n    GET /users/{user_id}\r\n```\r\n\r\n### WebSocketRequestValidationError\r\n\r\n**Before:**\r\n```\r\nfastapi.exceptions.WebSocketRequestValidationError: 1 validation error:\r\n  {'type': 'int_parsing', 'loc': ('path', 'item_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'invalid'}\r\n```\r\n\r\n**After:**\r\n```\r\nfastapi.exceptions.WebSocketRequestValidationError: 1 validation error:\r\n  {'type': 'int_parsing', 'loc': ('path', 'item_id'), 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'invalid'}\r\n\r\n  File \"/Users/savannah/work/fastapi/capture_real_examples.py\", line 48, in websocket_endpoint\r\n    WS /ws/{item_id}\r\n```",
+      "comments": [],
+      "merged_at": "2025-12-06T12:21:57Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14306",
+      "user": "savannahostrowski",
+      "labels": [
+        "feature"
+      ],
+      "comments_count": 0,
+      "created_at": "2025-11-06T18:54:41Z",
+      "closed_at": "2025-12-06T12:21:57Z"
+    },
+    {
+      "number": 14266,
+      "title": "\ud83d\udc1b Fix security schemes in OpenAPI when added at the top level app",
+      "body": "\ud83d\udc1b Fix security schemes in OpenAPI when added at the top level app\r\n\r\nRef: https://github.com/fastapi/fastapi/discussions/14263\r\nRef: https://github.com/fastapi/fastapi/issues/14271",
+      "comments": [],
+      "merged_at": "2025-10-31T18:34:30Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14266",
+      "user": "YuriiMotov",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 0,
+      "created_at": "2025-10-31T07:39:46Z",
+      "closed_at": "2025-10-31T18:34:30Z"
+    },
+    {
+      "number": 14262,
+      "title": "\u2728 Add support for dependencies with scopes, support `scope=\"request\"` for dependencies with `yield` that exit before the response is sent",
+      "body": "\u2728 Add support for dependencies with scopes, support `scope=\"request\"` for dependencies with `yield` that exit before the response is sent\r\n\r\nThis adds support for\r\n\r\n* `Depends(func, scope=\"request\")`, the default.\r\n* `Depends(func, scope=\"function\")`, early exit, after the function, but before sending the response back.\r\n\r\n---\r\n\r\nI'm considering an alternative name for the `scope` parameter of `mode`, to avoid any confusion with OAuth scopes, e.g. `Security(scopes=[\"blah\"])`, which is a completely different idea.\r\n\r\nOr a potential future `Depends(oauth_scopes=[\"blah\"])` to replace `Security(scopes=[\"blah\"])`.\r\n\r\nThat's the only reason to consider `mode` over `scope`.\r\n\r\n---\r\n\r\nI'm also considering the values, currently they are:\r\n\r\n* `\"function\"`: start before the *path operation function*, exit after the function returns but **before** the response is sent.\r\n* `\"request\"`: start before the *path operation function* (same as above), exit **after** the response is sent back.\r\n\r\nI'm considering an alternative name for `\"request\"` of `\"response\"`, with the same behavior.\r\n\r\nThe rationale for using `\"request\"` as the value is that the dependency runs around (start and end) of the *request* cycle.\r\n\r\nThe rationale for using `\"response\"` as the value is that the main difference with `\"function\"` is when the exit code is run, in `\"function\"` it is run *after* the function is done, in this second form (`\"request\"` or `\"response\"`) it is run *after* the *response* is sent back.\r\n\r\n---\r\n\r\nI'm using this interface design because I also plan on (potentially, possibly) add a new `scope=\"lifespan\"` that would allow using dependencies (or equivalent) functions that are run only once per app, and closed when the app ends. This way the same functionality for dependencies could be used for the app lifespan (ASGI `startup` and `shutdown` events). It should be more intuitive for users to work with. But these are future plans.\r\n\r\n---\r\n\r\n### 2025-10-03 Edit\r\n\r\nAfter asking in several places, I concluded to keep the parameter name as `scope`.\r\n\r\nI'll also keep the current values of `\"function\"`, similar to pytest, and `\"request\"`, to avoid confusing users who could think that the dependency will start running when the response is being sent, but it starts when the request starts.",
+      "comments": [
+        {
+          "author": "potiuk",
+          "created_at": "2025-11-01T17:12:24Z",
+          "body": "Small comment - I am not sure how well I can comment on the code itself :) as I am vaguely familiar with it, but I think I can comment on the UX of it. \r\n\r\n* scope is way better choice than mode, more natural. And I think there is very little probability of people confusing `Dependency(scope=` with `Security(scope=`. Having both as keyword parameters and practically always being specified right after the class, namespaces them properly already. It very nicely reads as \"dependency_scope\" and \"security_scope\" - following nicely \"literate programming\" principles by Donald Knuth.\r\n\r\n* I think maybe a better and more consistent naming for scopes would be \"request\" and \"response\" - where request would be an \"early\" exit, and \"response\" would be \"late\" exit after response is prepared. This is - I think way more natural and describes the expected behaviour way more intuitively for my taste. Having \"function\" and \"request/response\" as two scopes somehow mixes the abstraction layers and it's not too intuitive. \r\n\r\nUPDATE: comment - I have not spent a lot of time with FastAPI so my suggestions might be missing some of the context, this is mostly based on my general programming intuition."
+        },
+        {
+          "author": "Danstiv",
+          "created_at": "2025-11-01T17:28:11Z",
+          "body": "Hello!\r\n\r\nLet's consider the following pseudo-example:\r\n\r\n```python\r\ndef db_dep():\r\n    # some code to create and yield a sqlalchemy session\r\n    ...\r\n\r\ndef chat_repo_dep(db_session = Depends(db_dep)):\r\n    # some code to create a chat repository\r\n    ...\r\n\r\n@router.post(\"/\")\r\ndef create_chat(repo: ChatRepository = Depends(chat_repo_dep)):\r\n    ...\r\n\r\n@router.get(\"/\")\r\ndef get_chat(repo: ChatRepository = Depends(chat_repo_dep)):\r\n    ...\r\n\r\n@router.patch(\"/\")\r\ndef update_chat(repo: ChatRepository = Depends(chat_repo_dep)):\r\n    ...\r\n\r\n@router.post(\"/generate\")\r\ndef generate_llm_response(repo: ChatRepository = Depends(chat_repo_dep)) -> StreamingResponse:\r\n    # some code that returns a StreamingResponse\r\n    ...\r\n```\r\n\r\nSo, we have a dependency with a SQLAlchemy session, and also a chat repository dependency that requires the SQLAlchemy session.\r\n\r\nWe have many regular endpoints that return a response all at once, and the behavior for them is fine.\r\nHowever, some endpoints might return a `StreamingResponse`, and the response iterator won't be able to work with the chat repository because it depends on the DB session, which was closed when `generate_llm_response` returned the `StreamingResponse`.\r\n\r\nAlso, we cannot influence this behavior when declaring the dependency, since `generate_llm_response` depends on the chat repository, not on `db_session` directly.\r\n\r\nThe only solution I've come to is to create a separate repository for `StreamingResponse` and use it in the iterator.\r\n\r\nTherefore, it might be worth considering something like a `StreamingResponse` with dependencies."
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2025-11-01T21:18:24Z",
+          "body": "If I got the idea of use case described by @Danstiv correctly, then the solution could be:\r\n* use `function` as a default scope for top level dependencies (that are not used as sub-dependencies anywhere)\r\n* for sub-dependencies use the `scope` of their outer dependency\r\n\r\nCode example to illustrate:\r\n```py\r\ndef db_dep():\r\n    # some code to create and yield a sqlalchemy session\r\n    ...\r\n\r\ndef chat_repo_dep(db_session = Depends(db_dep)):\r\n    # some code to create a chat repository\r\n    ...\r\n\r\n@router.post(\"/\")\r\ndef create_chat(repo: ChatRepository = Depends(chat_repo_dep, scope=\"function\")):\r\n    ...\r\n\r\n@router.post(\"/generate\")\r\ndef generate_llm_response(repo: ChatRepository = Depends(chat_repo_dep)) -> StreamingResponse:\r\n    # some code that returns a StreamingResponse\r\n    ...\r\n```\r\n\r\nSince we don't specify `scope` for `chat_repo_dep` in `generate_llm_response`, the scope for it and all sub-dependencies will be `request`.\r\nBut in `create_chat` we specified `scope=\"function\"` and it will be used as a default for all sub-dependencies"
+        },
+        {
+          "author": "ashb",
+          "created_at": "2025-11-02T10:23:10Z",
+          "body": "I personally think something like \"response\" or \"response-sent\" would be more accurate than \"request\", since at least in my head it's the request-response cycle, and the request phase is over when the request has been sent. \n\nI realise this likely isn't a common pov. Just my 2p\n\nAnother option than scope might be to name the parameter something like `finalize_after`. Pro: more explicit what it's controlling for this case. Con: doesn't generalise to app lifecycle. "
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-11-03T09:56:40Z",
+          "body": "## \ud83d\udcdd Docs preview\n\nLast commit 90957d9f655c2d034254d1e1394a927163f85325 at: https://93d23dcf.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://93d23dcf.fastapitiangolo.pages.dev/tutorial/dependencies/dependencies-with-yield/ - ([before](https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield/))\n"
+        },
+        {
+          "author": "tiangolo",
+          "created_at": "2025-11-03T09:59:23Z",
+          "body": "This will be available in version `0.121.0`, released in the next hours. :tada: \r\n\r\n---\r\n\r\nThanks for the feedback @potiuk! :raised_hands:\r\n\r\nI concluded I'll leave the current names, more details in the description.\r\n\r\n---\r\n\r\n@Danstiv it seems to me that the issue you are describing was the behavior before FastAPI [0.118.0](https://fastapi.tiangolo.com/release-notes/#01180). Please check the release notes and update your FastAPI version, that should be working already.\r\n\r\nThis PR is about allowing people to opt in to that old behavior in a case-by-case basis.\r\n\r\nIf you still have issues, please create a new discussion question following the template.\r\n\r\nAnd thanks @YuriiMotov! :coffee: \r\n\r\n---\r\n\r\nThanks for the feedback @ashb! I decided to keep the names as they are in this PR, more details in the description."
+        },
+        {
+          "author": "potiuk",
+          "created_at": "2025-11-03T10:47:46Z",
+          "body": "Thanks - whatever decision, it's good to have the feature  :) "
+        },
+        {
+          "author": "pierrejeambrun",
+          "created_at": "2025-11-03T11:14:00Z",
+          "body": "Just to mention that moving out `is_coroutine_callable` `is_gen_callable` etc from `dependencies.utils` broke some other third parties libraries. (Not sure if those were part of the public interface though, or if we have anything like this for `initial development` version of FastAPI)\r\n\r\nFor instance https://github.com/zmievsa/cadwyn."
+        },
+        {
+          "author": "tiangolo",
+          "created_at": "2025-11-03T11:44:48Z",
+          "body": "Thanks @pierrejeambrun, that is not part of a public API for FastAPI, is not documented.\r\n\r\nIt would be best if they added a feature request with an official way for them to change the things they need, explaining why is it needed to use and change internals of FastAPI."
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2025-11-03T11:51:19Z",
+          "body": "I still think that the [comment of Danstiv](https://github.com/fastapi/fastapi/pull/14262#issuecomment-3476579028) was valid. Consider the following code example. Imagine we have repository dependency that depends on `db_dep`. Currently we can't configure it to close session before sending the response for endpoints that don't need to interact with DB in response generator. The only way is to have two `chat_repo_dep` that use different scope for `db_dep`.\r\nBut now I think it's not so easy to solve..\r\n\r\n<details>\r\n\r\n```py\r\nimport asyncio\r\nfrom datetime import datetime\r\nfrom typing import Annotated\r\n\r\nfrom fastapi import Depends, FastAPI\r\nfrom fastapi.responses import StreamingResponse\r\n\r\n# Classes\r\n\r\nclass Session:\r\n    def __init__(self):\r\n        self.status = \"closed\"\r\n\r\n    def __enter__(self):\r\n        self.status = \"open\"\r\n        print(f\"open session ({datetime.now()})\")\r\n        return self\r\n\r\n    def __exit__(self, exc_type, exc_val, exc_tb):\r\n        self.status = \"closed\"\r\n        print(f\"close session ({datetime.now()})\")\r\n\r\nclass ChatRepository:\r\n    def __init__(self, session: Session):\r\n        self.session = session\r\n\r\n\r\n# Dependencies\r\n\r\ndef db_dep():\r\n    with Session() as session:\r\n        yield session\r\n\r\ndef chat_repo_dep(db_session: Annotated[Session, Depends(db_dep)]):\r\n    yield ChatRepository(session=db_session)\r\n\r\n\r\n# Endpoints\r\n\r\napp = FastAPI()\r\n\r\n@app.get(\"/generate-needs-session\")\r\ndef generate_llm_response_1(\r\n    repo: Annotated[ChatRepository, Depends(chat_repo_dep)],\r\n):\r\n    async def gen_response(repo: ChatRepository):\r\n        for i in range(5):\r\n            yield f\"response part {i}\"\r\n            await asyncio.sleep(0.1)\r\n\r\n    return StreamingResponse(gen_response(repo=repo), media_type=\"text/plain\")\r\n\r\n\r\n@app.get(\"/generate-doesnt-need-session\")\r\ndef generate_llm_response_2(\r\n    repo: Annotated[ChatRepository, Depends(chat_repo_dep, scope=\"function\")],\r\n):\r\n    async def gen_response():\r\n        for i in range(5):\r\n            yield f\"response part {i}\"\r\n            await asyncio.sleep(0.1)\r\n\r\n    return StreamingResponse(gen_response(), media_type=\"text/plain\")\r\n```\r\n\r\n</details>\r\n\r\n\r\nOne more thing - we may have situations when regular dependency (with return) and `scope=\"request\"` depends on dependency with `yield` which scope is `function`. This will not raise errors on app instantiation, but  may lead to runtime errors if the session is saved and used in streaming generator.\r\nThis is actually a user error (they should use dependency with `yield`), but it's easy to forget this and not so easy to debug.\r\n\r\n<details>\r\n\r\n```py\r\nimport asyncio\r\nfrom datetime import datetime\r\nfrom typing import Annotated\r\n\r\nfrom fastapi import Depends, FastAPI\r\nfrom fastapi.responses import StreamingResponse\r\n\r\n# Classes\r\n\r\nclass Session:\r\n    def __init__(self):\r\n        self.status = \"closed\"\r\n\r\n    def __enter__(self):\r\n        self.status = \"open\"\r\n        print(f\"open session ({datetime.now()})\")\r\n        return self\r\n\r\n    def __exit__(self, exc_type, exc_val, exc_tb):\r\n        self.status = \"closed\"\r\n        print(f\"close session ({datetime.now()})\")\r\n\r\nclass ChatRepository:\r\n    def __init__(self, session: Session):\r\n        self.session = session\r\n\r\n\r\n# Dependencies\r\n\r\ndef db_dep():\r\n    with Session() as session:\r\n        yield session\r\n\r\ndef chat_repo_dep(db_session: Annotated[Session, Depends(db_dep, scope=\"function\")]):\r\n    return ChatRepository(session=db_session)  # Oops.. return instead of yield\r\n\r\n\r\n# Endpoints\r\n\r\napp = FastAPI()\r\n\r\n@app.get(\"/generate-needs-session\")\r\ndef generate_llm_response_1(\r\n    repo: Annotated[ChatRepository, Depends(chat_repo_dep)],\r\n):\r\n    async def gen_response(repo: ChatRepository):\r\n        for i in range(5):\r\n            assert repo.session.status == \"open\"  # This will fail\r\n            yield f\"response part {i}\"\r\n            await asyncio.sleep(0.1)\r\n\r\n    return StreamingResponse(gen_response(repo=repo), media_type=\"text/plain\")\r\n```\r\n    \r\n    \r\n</details>"
+        }
+      ],
+      "merged_at": "2025-11-03T10:12:49Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14262",
+      "user": "tiangolo",
+      "labels": [
+        "feature"
+      ],
+      "comments_count": 10,
+      "created_at": "2025-10-30T20:42:54Z",
+      "closed_at": "2025-11-03T10:12:49Z"
+    },
+    {
+      "number": 14036,
+      "title": "\ud83d\udc7d\ufe0f Ensure compatibility with Pydantic 2.12.0",
+      "body": "`tests/test_multi_body_errors.py::test_openapi_schema` failed with pydantic 2.12.0a1 due to\r\nhttps://github.com/pydantic/pydantic/pull/11987.  Since we're testing the exact contents of the JSON schema, the easiest fix seems to be to add version-dependent handling for this.",
+      "comments": [
+        {
+          "author": "YuriiMotov",
+          "created_at": "2025-09-02T17:39:50Z",
+          "body": "I think we should try to avoid adding new dependency.\r\n\r\nMaybe something with `dirty_equals`?\r\nTake a look at the code in the details\r\n\r\n<details>\r\n\r\n```py\r\nfrom dirty_equals import IsOneOf\r\n\r\nv1 = {\r\n    \"age\": {\r\n        \"title\": \"Age\",\r\n        \"anyOf\": [\r\n            {\"exclusiveMinimum\": 0.0, \"type\": \"number\"},\r\n            {\"type\": \"string\"},\r\n        ],\r\n    }\r\n}\r\n\r\nv2 = {\r\n    \"age\": {\r\n        \"title\": \"Age\",\r\n        \"anyOf\": [\r\n            {\"exclusiveMinimum\": 0.0, \"type\": \"number\"},\r\n            {\"type\": \"string\", \"pattern\": r\"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$\"},\r\n        ],\r\n    }\r\n}\r\n\r\n\r\nexpected = {\r\n    \"age\": {\r\n        \"title\": \"Age\",\r\n        \"anyOf\": [\r\n            {\"exclusiveMinimum\": 0.0, \"type\": \"number\"},\r\n            IsOneOf(\r\n                {\"type\": \"string\"},\r\n                {\"type\": \"string\", \"pattern\": r\"^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$\"}\r\n            ),\r\n        ],\r\n    }\r\n}\r\n\r\nassert v1 == expected\r\nassert v2 == expected\r\n\r\n```\r\n\r\n</details>"
+        },
+        {
+          "author": "cjwatson",
+          "created_at": "2025-09-07T17:09:10Z",
+          "body": "> I think we should try to avoid adding new dependency.\r\n> \r\n> Maybe something with `dirty_equals`? Take a look at the code in the details\r\n\r\nAh yes, that works too, thanks.  Amended."
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2025-09-09T14:29:25Z",
+          "body": "I just tried running this branch with pydantic 2.12.0a1, and I have 4 failed tests\r\n```\r\nFAILED tests/test_forms_single_model.py::test_send_all_data - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\nFAILED tests/test_forms_single_model.py::test_defaults - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\nFAILED tests/test_forms_single_model.py::test_invalid_data - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\nFAILED tests/test_forms_single_model.py::test_no_data - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\n```"
+        },
+        {
+          "author": "cjwatson",
+          "created_at": "2025-09-18T08:25:30Z",
+          "body": "> I just tried running this branch with pydantic 2.12.0a1, and I have 4 failed tests\r\n> \r\n> ```\r\n> FAILED tests/test_forms_single_model.py::test_send_all_data - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\n> FAILED tests/test_forms_single_model.py::test_defaults - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\n> FAILED tests/test_forms_single_model.py::test_invalid_data - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\n> FAILED tests/test_forms_single_model.py::test_no_data - pydantic.warnings.UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'with' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-spec...\r\n> ```\r\n\r\nThese are due to https://github.com/pydantic/pydantic/pull/12028.  In that PR, @Viicos wrote:\r\n\r\n> I've reached out to the FastAPI team regarding the failing tests. They will need to address them in some way.\r\n\r\nBut I really don't follow what FastAPI is doing here; it seems to be something to do with `ModelField.__post_init__` in `fastapi/_compat.py`?  Somebody who's actually an expert in that code would need to weigh in, I think.  Maybe @tiangolo?"
+        },
+        {
+          "author": "Viicos",
+          "created_at": "2025-09-21T14:53:46Z",
+          "body": "I discussed internally with the FastAPI team a while ago about this. The fix I proposed was to use the [`warning.catch_warnings`](https://docs.python.org/3/library/warnings.html#warnings.catch_warnings) context manager when creating type adapters in FastAPI. Pydantic emits a specific `UnsupportedFieldAttributeWarning` in this case, so it can safely be filtered while still having other potential warnings raised."
+        },
+        {
+          "author": "cjwatson",
+          "created_at": "2025-09-21T19:21:17Z",
+          "body": "> The fix I proposed is to use [warning.catch_warnings](https://docs.python.org/3/library/warnings.html#warnings.catch_warnings) context manager when creating type adapters in FastAPI.\r\n\r\nOK, thanks for the advice.  https://github.com/fastapi/fastapi/pull/14036/commits/a33cc0a5a136d469d72ca34981297d4a698008ae implements that."
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-09-24T16:02:44Z",
+          "body": "I changed the base branch of this PR to `feature/py314` where we've got a CI run for Python 3.14 and Pydantic 2.12 set up - this way we can actually see the failing tests \ud83d\ude09 "
+        },
+        {
+          "author": "cjwatson",
+          "created_at": "2025-09-25T11:48:13Z",
+          "body": "@svlandeg That seems to have resulted in a pile of errors that have nothing to do with this branch.  Or am I missing something?"
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-09-25T17:56:54Z",
+          "body": "> @svlandeg That seems to have resulted in a pile of errors that have nothing to do with this branch. Or am I missing something?\r\n\r\nI think these are exactly the errors that need resolving - the test suite now actually runs Pydantic 2.12.0a1 on Python 3.14 (rc)?\r\n\r\n(they're really all mostly versions of the same error, from a quick glance)"
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-09-25T17:59:16Z",
+          "body": "PS: @cjwatson: it's fine if you don't want to continue working on those other errors - just let us know - and we'll take over this branch because they need fixing anyway \ud83d\ude09 "
+        },
+        {
+          "author": "cjwatson",
+          "created_at": "2025-09-26T09:35:46Z",
+          "body": "Those errors don't appear to happen in my local setup with pydantic 2.12.0a1 on Python 3.13 (which was what I was originally trying to fix with this PR).  I'd appreciate it if somebody else could take over the rest of those fixes, yes."
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-09-26T11:11:56Z",
+          "body": "> Those errors don't appear to happen in my local setup with pydantic 2.12.0a1 on Python 3.13 (which was what I was originally trying to fix with this PR)\r\n\r\nI think you're right - those additional errors are new in Python 3.14. \r\n\r\n> I'd appreciate it if somebody else could take over the rest of those fixes, yes.\r\n\r\nSure thing - I'm going to look into them now. I'll probably merge this PR into our feature branch `feature/py314` and continue from there."
+        }
+      ],
+      "merged_at": "2025-10-08T08:57:37Z",
+      "url": "https://github.com/fastapi/fastapi/pull/14036",
+      "user": "cjwatson",
+      "labels": [
+        "upgrade"
+      ],
+      "comments_count": 12,
+      "created_at": "2025-09-02T11:58:36Z",
+      "closed_at": "2025-10-08T08:57:37Z"
+    },
+    {
+      "number": 13917,
+      "title": "\ud83d\udcdd Update `tutorial/security/oauth2-jwt/` to use `pwdlib` with Argon2 instead of `passlib`",
+      "body": "### Reason for Change: Migrating to `pwdlib` and `Argon2` for Modern Password Management\r\n\r\nThis PR aims to modernize project's password hashing approach, transitioning from the aging `passlib`/`bcrypt` combination to a more contemporary and secure solution: `pwdlib` paired with the `Argon2` algorithm.\r\n\r\n**Key Motivations for this Change:**\r\n\r\n1.  **`passlib` & Python 3.13+ Compatibility Issue:**\r\n    * The `crypt` module, utilized by `passlib` for certain operations, is officially deprecated and slated for complete removal in Python 3.13 (as per [PEP 594](https://peps.python.org/pep-0594/)).\r\n    * As highlighted by the `pwdlib` documentation, `passlib` has not been actively maintained recently, raising questions about its long-term support. This implies `passlib` will become incompatible with future Python versions, potentially blocking upgrades or necessitating urgent alternatives.\r\n    * `pwdlib` was specifically created to address this gap, offering a modern, actively maintained tool for password hashing designed for the \"modern Python era.\"\r\n\r\n2.  **Industry Standard and `fastapi-users` Adoption:**\r\n    * The `fastapi-users` library, commonly used fo user management in FastAPI, has already adopted `pwdlib` and `Argon2` since version 13.0.0. This can be verified in their commit history (see [v13.0.0...master comparison](https://github.com/fastapi-users/fastapi-users/compare/v13.0.0...master)).\r\n    * Their decision directly stemmed from the `crypt` deprecation warning ([Issue #1325](https://github.com/fastapi-users/fastapi-users/issues/1325)), underscoring the broader community's recognition of this critical issue.\r\n\r\n3.  **`Argon2`'s Superiority Over `bcrypt`:**\r\n    * While `bcrypt` has long been a reliable choice, `Argon2` is now considered the most preferred password hashing algorithm, recommended by the [IETF](https://www.ietf.org/rfc/rfc9106.html) and winner of the [Password Hashing Competition](https://www.password-hashing.net/).\r\n    * **GPU Attack Resistance (Memory Hardness):** `Argon2` is designed to be memory-hard, requiring significant amounts of memory, which makes it particularly resistant to GPU-based brute-force attacks that are becoming increasingly common. `bcrypt` is less resilient in this regard as it primarily relies on computational complexity.\r\n    * **Configurability:** `Argon2` offers more flexible parameters (time, memory, parallelism), allowing for better adaptation to specific security requirements and hardware capabilities.\r\n    * **Proven Security:** `Argon2` has undergone extensive cryptographic analysis and is widely regarded as a robust choice for password protection.\r\n    * For more information on the benefits of `Argon2`, please refer to:\r\n        * [OWASP Cheat Sheet Series: Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html) (see \"Hashing Algorithms\" section)\r\n        * [Wikipedia: Argon2](https://en.wikipedia.org/wiki/Argon2)",
+      "comments": [
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-07-23T14:04:21Z",
+          "body": "\ud83d\udcdd Docs preview for commit b7ccf4dcb486d5174c8d616622a39e60cbccce13 at: https://5c635b73.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://5c635b73.fastapitiangolo.pages.dev/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n* https://5c635b73.fastapitiangolo.pages.dev/ru/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/ru/tutorial/security/oauth2-jwt/)) - ([English](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n"
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2025-07-25T09:42:30Z",
+          "body": "Related discussions:\r\n* https://github.com/fastapi/fastapi/discussions/11523\r\n* https://github.com/fastapi/fastapi/discussions/11773\r\n* https://github.com/fastapi/fastapi/discussions/11437\r\n* https://github.com/fastapi/fastapi/discussions/11380\r\n\r\n\r\nA few notes:\r\n* This makes translations of `tutorial/security/oauth2-jwt/` not valid (code example is updated, but descriptions are not). Should we invalidate those translations?\r\n* We should probably remove passlib from `project.toml` and `requirements-tests.txt`\r\n* Replace passlib in `conditional-openapi.md`\r\n\r\n"
+        },
+        {
+          "author": "Neizvestnyj",
+          "created_at": "2025-07-25T12:29:34Z",
+          "body": "> Related discussions:\r\n> \r\n> * [Use of `passlib` module\u00a0#11523](https://github.com/fastapi/fastapi/discussions/11523)\r\n> * [passlib seems not being maintenanced anymore. However FastAPI's docs still using. Consider change it.\u00a0#11773](https://github.com/fastapi/fastapi/discussions/11773)\r\n> * [Should passlib still be a part of the security tutorial?\u00a0#11437](https://github.com/fastapi/fastapi/discussions/11437)\r\n> * [0.110.0: used no longer maintained `passlib` module in test suite\u00a0#11380](https://github.com/fastapi/fastapi/discussions/11380)\r\n> \r\n> A few notes:\r\n> \r\n> * This makes translations of `tutorial/security/oauth2-jwt/` not valid (code example is updated, but descriptions are not). Should we invalidate those translations?\r\n> * We should probably remove passlib from `project.toml` and `requirements-tests.txt`\r\n> * Replace passlib in `conditional-openapi.md`\r\n\r\nThank you for your response and your feedback. I\u2019ve taken it into account and removed `passlib` from `pyproject.toml`, replaced it with `pwdlib` in `requirements-tests.txt`, updated the reference to `passlib` in `docs/en/docs/how-to/conditional-openapi.md`, and updated all relevant examples that used this library.\r\n\r\nAs for the tutorials in other languages, I think we have two options: either mark them as invalid, as you suggested, or try translating them ourselves using some translation tools and then wait for native speakers to correct them if the translation isn't good.\r\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-07-25T12:33:17Z",
+          "body": "\ud83d\udcdd Docs preview for commit e08263970044e828092fba9a2757d95f7e499199 at: https://e61186f6.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://e61186f6.fastapitiangolo.pages.dev/how-to/conditional-openapi/ - ([before](https://fastapi.tiangolo.com/how-to/conditional-openapi/))\n* https://e61186f6.fastapitiangolo.pages.dev/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n* https://e61186f6.fastapitiangolo.pages.dev/ru/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/ru/tutorial/security/oauth2-jwt/)) - ([English](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-07-25T14:53:44Z",
+          "body": "\ud83d\udcdd Docs preview for commit 0ebc05a7858741617d8976c68d802ec1948b0928 at: https://9c53e263.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://9c53e263.fastapitiangolo.pages.dev/how-to/conditional-openapi/ - ([before](https://fastapi.tiangolo.com/how-to/conditional-openapi/))\n* https://9c53e263.fastapitiangolo.pages.dev/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n* https://9c53e263.fastapitiangolo.pages.dev/ru/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/ru/tutorial/security/oauth2-jwt/)) - ([English](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-09-05T08:41:10Z",
+          "body": "This pull request has a merge conflict that needs to be resolved."
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-09-26T18:50:34Z",
+          "body": "\ud83d\udcdd Docs preview for commit 423489048e20e1d8d6918bea66feeac6eb2c35af at: https://ee34b83f.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://ee34b83f.fastapitiangolo.pages.dev/how-to/conditional-openapi/ - ([before](https://fastapi.tiangolo.com/how-to/conditional-openapi/))\n* https://ee34b83f.fastapitiangolo.pages.dev/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n* https://ee34b83f.fastapitiangolo.pages.dev/ru/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/ru/tutorial/security/oauth2-jwt/)) - ([English](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-09-29T02:52:46Z",
+          "body": "\ud83d\udcdd Docs preview for commit 9d696f8b12c7b76db10b105983cf92a56568d3c7 at: https://aea3b30c.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://aea3b30c.fastapitiangolo.pages.dev/how-to/conditional-openapi/ - ([before](https://fastapi.tiangolo.com/how-to/conditional-openapi/))\n* https://aea3b30c.fastapitiangolo.pages.dev/tutorial/security/oauth2-jwt/ - ([before](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/))\n"
+        }
+      ],
+      "merged_at": "2025-09-29T02:57:38Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13917",
+      "user": "Neizvestnyj",
+      "labels": [
+        "docs"
+      ],
+      "comments_count": 8,
+      "created_at": "2025-07-23T13:59:21Z",
+      "closed_at": "2025-09-29T02:57:38Z"
+    },
+    {
+      "number": 13864,
+      "title": "\u2705 Enable test case for duplicated headers in `test_tutorial/test_header_params/test_tutorial003.py`",
+      "body": "Add test coverage for multiple header values in TestClient\r\n\r\n## Summary\r\nThis PR adds test coverage for multiple header values passed as a list of tuples to FastAPI's TestClient, resolving a long-standing TODO comment in the test suite.\r\n\r\n## Background\r\nThe test file tests/test_tutorial/test_header_params/test_tutorial003.py contained a commented-out test case with a TODO comment questioning whether multiple header values were working correctly:\r\n\r\n## Technical Details\r\nWhen multiple headers with the same name are passed as a list of tuples like [(\"x-token\", \"foo\"), (\"x-token\", \"bar\")], FastAPI correctly processes them as a list of values [\"foo\", \"bar\"]. This is the expected HTTP behavior for multiple headers with the same name.\r\n\r\n## Type of Change:\r\n\r\n- [ ] Bug fix\r\n- [x] Test coverage improvement\r\n- [ ] New feature\r\n- [ ] Breaking change\r\n- [ ] Documentation update\r\n\r\n## Checklist:\r\n\r\n- [x] Tests pass locally\r\n- [x] No breaking changes\r\n- [x] Code follows project style guidelines\r\n- [x] Self-review completed\r\n\r\n",
+      "comments": [
+        {
+          "author": "Amogha-ark",
+          "created_at": "2025-07-05T11:49:09Z",
+          "body": "Hi, I see the PR is failing because of a missing label. I don\u2019t have permission to add it \u2014 can someone from the team help with that? Thank you!\u201d"
+        },
+        {
+          "author": "isgin01",
+          "created_at": "2025-07-05T18:11:23Z",
+          "body": "> This is the expected HTTP behavior for multiple headers with the same name.\r\n\r\nThanks for this PR. For reference, you might want to include relevant links next time [https://www.rfc-editor.org/rfc/rfc9110.html#section-5.3-1](https://www.rfc-editor.org/rfc/rfc9110.html#section-5.3-1)"
+        }
+      ],
+      "merged_at": "2025-09-20T16:57:53Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13864",
+      "user": "Amogha-ark",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 2,
+      "created_at": "2025-07-05T05:21:42Z",
+      "closed_at": "2025-09-20T16:57:53Z"
+    },
+    {
+      "number": 13786,
+      "title": "\ud83d\udc1b Use `401` status code in security classes when credentials are missing",
+      "body": "## Warning\r\n\r\nThis description is partially outdated after changes described in [this comment](https://github.com/fastapi/fastapi/pull/13786#pullrequestreview-3501695067).\r\n\r\n## Description\r\n\r\nThis PR is an attempt to finally solve the issue with security tools returning error responses with status code `403` instead of `401` when credentials are not provided.\r\n\r\n## Breaking changes and workaround\r\n\r\nThese changes can break projects that rely on old behavior.\r\nIn order to mitigate this, the `not_authenticated_status_code` is introduced. If set to `403`, it will make it work the same way as it was before changes (return `403` status code).\r\nThis option should be treated as a temporary workaround to give developers more time to update Clients to follow the new behavior.\r\n\r\n## Changes and reasoning\r\n\r\n### APIKeyQuery, APIKeyHeader, APIKeyCookie\r\n\r\n* **Standard:**\r\n    * These schemes are not covered by standards, but developers usually follow the same rules as for other standards\r\n* **Actions:**\r\n    * The default status code for not providing API key was changed from 403 to 401.\r\n    * Temporary `not_authenticated_status_code` parameter can be used to revert this behavior back to returning 403 error code without sending `WWW-Authenticate`.\r\n* **Notes:**\r\n    * It\u2019s considered to be a good practice to include in `WWW-Authenticate` information needed to understand how the key is supposed to be passed. I implemented default format (`WWW-Authenticate: ApiKey in=\"...\", name=\"...\"` ), but it\u2019s possible to override the template for `WWW-Authenticate` by subclassing and defining the `format_www_authenticate_header_value` method\r\n\r\n### HTTP Basic\r\n\r\n*  **Standard:**\r\n    * https://datatracker.ietf.org/doc/html/rfc7617\r\n* **Actions:**\r\n    * No needed. This scheme already acts according to the standard in terms of returning 401 status code with `WWW-Authenticate` header on a lack of credentials\r\n* **Notes:**\r\n    * `realm` is required according to the RFC, but optional in the current implementation. Fixing this would introduce breaking changes. Considering this is not a problem for people who want to follow the standard, I suggest we leave it as it is.\r\n\r\n### HTTP Digest\r\n\r\n* **Standard:**\r\n    * https://datatracker.ietf.org/doc/html/rfc7616\r\n* **Actions:**\r\n    * The default status code for not providing the authorization parameter was changed from 403 to 401.\r\n    * `WWW-Authenticate` is just a stub for now (just `WWW-Authenticate: Digest`) (see notes)\r\n    *  Temporary `not_authenticated_status_code` parameter can be used to revert this behavior back to returning 403 error code without sending `WWW-Authenticate`.\r\n* **Notes:**\r\n    * Since the current `HTTPDigest` implementation is just a stub, we can\u2019t follow standards (we don\u2019t generate `nonce`'s, don\u2019t have `realm`, \u2026). I suggest we just change the error status code and add a stub for `WWW-Authenticate` (just `WWW-Authenticate: Digest`). For now `HTTPDigest` can\u2019t be used as it is, so, this is not a problem.\r\n    * We can later add full implementation of `Digest` scheme. There have been made several attempts to implement it (#9825, #3071)\r\n    * Should we add a note that `HTTPDigest` is just a stub?\r\n\r\n### HTTP Bearer, OAuth2 schemes, OIDC\r\n\r\n* **Standard:**\r\n    * https://datatracker.ietf.org/doc/html/rfc6750\r\n* **Actions:**\r\n    * For `OAuth2PasswordBearer` and `OAuth2AuthorizationCodeBearer`:  not needed.\r\n        * They already return a 401 error code. Implementation is probably not 100% correct (see notes), but considering nobody argued, I think we can leave it as it is for now.\r\n    * For `HTTPBearer` and `OpenIdConnect`:\r\n        * The default status code for not providing the authorization parameter was changed from 403 to 401. The suggested implementation will be in line with the current implementations of `OAuth2PasswordBearer` and `OAuth2AuthorizationCodeBearer`.\r\n        * Temporary `not_authenticated_status_code` parameter added to `HTTPBearer` can be used to revert this behavior back to returning 403 error code without sending `WWW-Authenticate`.\r\n* **Notes:**\r\n    * It\u2019s [recommended to return 400 error response](https://datatracker.ietf.org/doc/html/rfc6750#section-3.1) if the parameter is missed or of an unsupported type, but this is not a strict requirement (word SHOULD is used). I suggest we ignore this and follow the approach that is consistent with other schemes.\r\n    * The format of `WWW-Authenticate` is not clearly described: It\u2019s said that the value \"Bearer\" MUST be followed by one or more auth-param values. At the same time, all auth-param attributes are optional. In examples they always add `realm`. Since we don\u2019t have `realm`, I suggest we just skip it and send just `WWW-Authenticate: Bearer`\r\n    * We can later improve the `WWW-Authenticate` format by adding `realm` and `scope`\r\n\r\n## Links\r\n* https://github.com/fastapi/fastapi/issues/10177\r\n* https://github.com/fastapi/fastapi/pull/2120\r\n* https://github.com/fastapi/fastapi/pull/5332\r\n* https://github.com/fastapi/fastapi/pull/12507\r\n* https://github.com/fastapi/fastapi/pull/5310\r\n* https://github.com/fastapi/fastapi/pull/13729\r\n* https://github.com/fastapi/fastapi/pull/13514\r\n* https://github.com/fastapi/fastapi/pull/13326\r\n\r\n\r\n\r\n\r\n\r\n",
+      "comments": [
+        {
+          "author": "bjmc",
+          "created_at": "2025-07-15T12:35:35Z",
+          "body": "Thank you for opening this @YuriiMotov - we've just been surprised by an API [reporting 403 for a missing token](https://github.com/fastapi/fastapi/blob/27f4240750eb5598aea4bc792c425efcd74a7393/fastapi/security/http.py#L90) when we we'd be expecting to see 401 and trigger a login flow on the client side.\r\n\r\nWe'd be glad to have this this fix merged. :pray: \r\n\r\n(fwiw, I agree with the decision to follow other implementations and return 401 *not* 400)"
+        },
+        {
+          "author": "stg609",
+          "created_at": "2025-08-06T11:41:12Z",
+          "body": "Any progress?"
+        },
+        {
+          "author": "Cito",
+          "created_at": "2025-08-06T11:52:40Z",
+          "body": "We have been also noticing this and are waiting for a fix for a long time."
+        },
+        {
+          "author": "cleder",
+          "created_at": "2025-08-28T19:33:07Z",
+          "body": "I ran into this too when using schemathesis testing a route protected by `HTTPBearer` \r\n\r\n```\r\n  | schemathesis.core.failures.FailureGroup: Schemathesis found 2 distinct failures\r\n  | \r\n  | - Missing header not rejected\r\n  | \r\n  |     Missing header not rejected (got 403, expected 401)\r\n```"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-09-20T16:30:13Z",
+          "body": "This pull request has a merge conflict that needs to be resolved."
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-10-23T20:38:04Z",
+          "body": "This pull request has a merge conflict that needs to be resolved."
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-11-24T18:38:02Z",
+          "body": "## \ud83d\udcdd Docs preview\n\nLast commit 61d703e761e83f7084c3224157310cc4732dd690 at: https://f4ebcc3e.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://f4ebcc3e.fastapitiangolo.pages.dev/how-to/authentication-error-status-code/ - ([before](https://fastapi.tiangolo.com/how-to/authentication-error-status-code/))\n"
+        }
+      ],
+      "merged_at": "2025-11-24T19:03:06Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13786",
+      "user": "YuriiMotov",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 7,
+      "created_at": "2025-06-11T17:44:55Z",
+      "closed_at": "2025-11-24T19:03:06Z"
+    },
+    {
+      "number": 13698,
+      "title": "\ud83d\udc1b Fix truncating the model's description with form feed (`\\f`) character for Pydantic V2",
+      "body": "## Problem description \r\n\r\n```python\r\napp = FastAPI()\r\n\r\nclass MyModel(BaseModel):\r\n    \"\"\"\r\n    A model with a form feed character in the title.\r\n    \\f\r\n    Text after form feed character.\r\n    \"\"\"\r\n\r\n@app.get(\"/foo\")\r\ndef foo(v: MyModel):\r\n    pass\r\n```\r\n\r\nThe code above will produce different **description** for `MyModel` in schema depending on whether **Pydantic V1** or **Pydantic V2** is used.\r\n\r\nWith **Pydantic V1** the description will be truncated starting from `\\f` character (only first line will be in schema).\r\nWith **Pydantic V2** it will not be truncated (all 3 lines will be in schema).\r\n\r\nFeature was introduced in #3032 .\r\nBut when the support of **Pydantic V2** was added to FastAPI this feature wasn't added to the code related to Pydantic V2 (I think it was just oversight).\r\n\r\n## Related discussion(s):\r\nhttps://github.com/fastapi/fastapi/discussions/9038\r\n\r\n\r\n## Remark about `cast`\r\nI added commit that improves typing of new part of code by using `cast`. Not sure it's needed. If not, it can be easily reverted.\r\n",
+      "comments": [],
+      "merged_at": "2025-06-17T07:46:27Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13698",
+      "user": "YuriiMotov",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 0,
+      "created_at": "2025-05-08T21:30:15Z",
+      "closed_at": "2025-06-17T07:46:27Z"
+    },
+    {
+      "number": 13639,
+      "title": "\u2728 Allow array values for OpenAPI schema `type` field",
+      "body": "# Allow Union Types in OpenAPI Schemas\r\nThis PR addresses an issue with how union types for the \"type\" field are validated in FastAPI's OpenAPI generation. Currently, only a string is allowed for the type definition even though the JSON Schema specification (Section 6.1.1) permits the value to be either a string or an array of unique string values. This discrepancy can lead to confusion or incorrect schema validation when using union types.\r\n\r\nExample here that throws pydantic validation error:\r\n\r\n```python\r\n# example.py \r\n# uv run --no-project example.py\r\n# /// script\r\n# requires-python = \">=3.12\"\r\n# dependencies = [\r\n#     \"fastapi\",\r\n#     \"pydantic\",\r\n# ]\r\n# ///\r\n\r\n\r\nfrom fastapi.openapi.models import OpenAPI\r\nfrom pydantic import ValidationError\r\n\r\nopenapi_dict = {\r\n    \"openapi\": \"3.1.0\",\r\n    \"info\": {\"title\": \"Type Examples with Union Types\", \"version\": \"1.0.0\"},\r\n    \"components\": {\r\n        \"schemas\": {\r\n            \"UnionStringOrNumber\": {\r\n                \"type\": [\"string\", \"number\"],\r\n                \"description\": \"An instance is valid if it is either a string or a number.\",\r\n                \"example\": \"example as string\",\r\n            },\r\n        }\r\n    },\r\n}\r\n\r\n\r\ndef test_openapi_type() -> None:\r\n    try:\r\n        _ = OpenAPI(**openapi_dict)\r\n    except ValidationError as e:\r\n        # Expecting this to raise a ValidationError\r\n        print(f\"Validation error: {e}\")\r\n        return\r\n\r\n    raise NotImplementedError(\"This should not be reached.\")\r\n\r\n\r\nif __name__ == \"__main__\":\r\n    test_openapi_type()\r\n    print(\"Test passed!\")\r\n```\r\n\r\nAddressed by introducing`TypeValue`, defined as an annotated literal that encompasses [the valid JSON Schema types.](https://json-schema.org/draft/2020-12/json-schema-validation#section-6.1.1)\r\n\r\nAnd updating the Schema model to use the literal values.\r\n\r\nAfter these changes the validation error is removed.",
+      "comments": [
+        {
+          "author": "sammasak",
+          "created_at": "2025-05-05T13:51:58Z",
+          "body": "Hey @svlandeg thanks for adding the label, what does the review process look like and can I help out in anyway? \ud83d\ude04 "
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2025-07-16T09:32:03Z",
+          "body": "Similar, but `set[str]` is used: https://github.com/fastapi/fastapi/pull/12528\r\n\r\nI personally like the approach with `list` more.\r\n\r\n@sammasak, could you please add tests?"
+        },
+        {
+          "author": "sammasak",
+          "created_at": "2025-07-24T14:11:07Z",
+          "body": "@YuriiMotov Added some tests, but the change in this PR is quite small and is only made to allow for type to be a str and list. But since there is no field validator for type its still possible to break the json schema. (by setting type to a empty list or by adding duplicates. https://json-schema.org/draft/2020-12/json-schema-validation#section-6.1.1 ) \r\n\r\n But I think this is a good start and more validation can be added later. wdyt? "
+        }
+      ],
+      "merged_at": "2025-09-20T17:47:25Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13639",
+      "user": "sammasak",
+      "labels": [
+        "feature"
+      ],
+      "comments_count": 3,
+      "created_at": "2025-04-23T11:57:27Z",
+      "closed_at": "2025-09-20T17:47:25Z"
+    },
+    {
+      "number": 13600,
+      "title": "\ud83d\udcdd Update exclude-parameters-from-openapi documentation links",
+      "body": "This PR updates all occurences of a dead link within the codebase with the correct link.\r\n\r\n\u2705  https://fastapi.tiangolo.com/tutorial/query-params-str-validations/#exclude-parameters-from-openapi\r\n\u274c https://fastapi.tiangolo.com/tutorial/query-params-str-validations/#exclude-from-openapi\r\n",
+      "comments": [
+        {
+          "author": "alejsdev",
+          "created_at": "2025-06-17T08:05:57Z",
+          "body": "Good catch, thanks! @timonrieger :mag: :sparkles: "
+        }
+      ],
+      "merged_at": "2025-06-17T08:05:34Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13600",
+      "user": "timonrieger",
+      "labels": [
+        "docs"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-04-09T23:41:47Z",
+      "closed_at": "2025-06-17T08:05:34Z"
+    },
+    {
+      "number": 13259,
+      "title": "\ud83d\udcdd Update testing events documentation",
+      "body": "`lifespan` should be included in th document, instead of only `startup` and `shutdown`",
+      "comments": [
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-01-26T01:00:45Z",
+          "body": "\ud83d\udcdd Docs preview for commit fdf38af8ac093e7ffb3958959774f2787d90e4ac at: https://0498ad5a.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://0498ad5a.fastapitiangolo.pages.dev/advanced/testing-events/ - ([before](https://fastapi.tiangolo.com/advanced/testing-events/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-01-26T01:21:52Z",
+          "body": "\ud83d\udcdd Docs preview for commit d5c9588019524e7727bc7fd499451c6ad0873c30 at: https://2962fbed.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://2962fbed.fastapitiangolo.pages.dev/advanced/testing-events/ - ([before](https://fastapi.tiangolo.com/advanced/testing-events/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-07-15T08:00:19Z",
+          "body": "\ud83d\udcdd Docs preview for commit 5510bd573ae86b51683b0dde60967adfcdabef34 at: https://e5be61a8.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://e5be61a8.fastapitiangolo.pages.dev/advanced/testing-events/ - ([before](https://fastapi.tiangolo.com/advanced/testing-events/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-07-15T10:40:25Z",
+          "body": "\ud83d\udcdd Docs preview for commit f31a1bebf27fddcc4be2377e356d2a6ab34b145c at: https://9850e602.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://9850e602.fastapitiangolo.pages.dev/advanced/testing-events/ - ([before](https://fastapi.tiangolo.com/advanced/testing-events/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-07-15T11:13:27Z",
+          "body": "\ud83d\udcdd Docs preview for commit 1a352a97764569e776b9a8e33272d2f83a44c3c4 at: https://339483ea.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://339483ea.fastapitiangolo.pages.dev/advanced/testing-events/ - ([before](https://fastapi.tiangolo.com/advanced/testing-events/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-07-15T11:19:22Z",
+          "body": "\ud83d\udcdd Docs preview for commit 60d25bee54561ac666c1c61e194ca0150ec17add at: https://8b46081d.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://8b46081d.fastapitiangolo.pages.dev/advanced/testing-events/ - ([before](https://fastapi.tiangolo.com/advanced/testing-events/))\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-08-31T10:09:41Z",
+          "body": "\ud83d\udcdd Docs preview for commit 1ab1a4545f186105935a152771039b9586604049 at: https://a18ceb61.fastapitiangolo.pages.dev\n\n### Modified Pages\n\n* https://a18ceb61.fastapitiangolo.pages.dev/advanced/testing-events/ - ([before](https://fastapi.tiangolo.com/advanced/testing-events/))\n"
+        }
+      ],
+      "merged_at": "2025-08-31T10:29:21Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13259",
+      "user": "z0z0r4",
+      "labels": [
+        "docs"
+      ],
+      "comments_count": 7,
+      "created_at": "2025-01-26T00:56:22Z",
+      "closed_at": "2025-08-31T10:29:21Z"
+    },
+    {
+      "number": 13218,
+      "title": "\u2705 Simplify tests for `query_params_str_validations`",
+      "body": "#13150 \r\n\r\ndocument reference: `docs_src.query_params_str_validations`\r\ntest reference: `tests.test_tutorial.test_query_params_str_validations`",
+      "comments": [],
+      "merged_at": "2025-02-15T16:31:58Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13218",
+      "user": "alv2017",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 0,
+      "created_at": "2025-01-17T13:18:16Z",
+      "closed_at": "2025-02-15T16:31:58Z"
+    },
+    {
+      "number": 13207,
+      "title": "\ud83d\udc1b Fix OpenAPI schema support for computed fields when using `separate_input_output_schemas=False`",
+      "body": "This demonstrates how the output schema differs when the FastAPI app runs with different values for `separate_input_output_schemas` - namely, the computed fields are omitted.\r\n\r\nInitially reported here: https://github.com/fastapi/fastapi/discussions/10342",
+      "comments": [
+        {
+          "author": "svlandeg",
+          "created_at": "2025-01-20T09:49:50Z",
+          "body": "Thanks! We'll look into this and get back to you \ud83d\ude4f  \r\n\r\n(I'll put this PR in draft while we work on it)"
+        },
+        {
+          "author": "vgrafe",
+          "created_at": "2025-08-11T16:16:57Z",
+          "body": "Hi all. Is it possible to have another look into this?"
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-08-20T10:04:42Z",
+          "body": "@vgrafe: apologies for the delay. Yes, I'll look into this in the next few weeks."
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-08-20T13:41:41Z",
+          "body": "Ok, so I looked into this and @ldthorne was right that the issue occurs at https://github.com/fastapi/fastapi/blob/073e7fc950f1af24634b304afbb34bf212756dff/fastapi/_compat.py#L186-L188\r\n\r\nSpecifically, when `separate_input_output_schemas` is `False`, this `override_mode` will set all fields to `\"validation\"` mode. However, to preserve computed fields, they should remain in `\"serialization\"` mode. The thing is, we can't just change this override mode, as this would prevent the unification of input/output schemas we'd expect from setting `separate_input_output_schemas` to `False`.\r\n\r\nSo, I'm finding it to be a bit of a philosophical question as to what `separate_input_output_schemas=False` actually means. If it means that the input and the output schema should (always?) be **_identical_**, then really we should be excluding any generated fields, in which case we don't need this PR and it's not a bug but a feature \ud83d\ude2c "
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-08-20T14:29:58Z",
+          "body": "@vgrafe: for me to better understand your use-case: why are you not able to use `separate_input_output_schemas=True`?"
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-08-20T15:20:10Z",
+          "body": "Update: OK, so I ended up trying to implement a solution that would keep the unifying behaviour, while still adding extra computed fields if there are any. The tests succeed, but we definitely need a few more additional tests to cover various edge cases (and to ensure the coverage test succeeds).\r\n\r\nI'm still not 100% sure we want to go down this route though, so I'll first wait and sollicit feedback from either @tiangolo, @YuriiMotov or another maintainer before I continue here."
+        },
+        {
+          "author": "YuriiMotov",
+          "created_at": "2025-08-23T12:17:01Z",
+          "body": "The behavior I would expect here is: force separate schema creation if model contains computed field.\r\n\r\nSo\r\n\r\nhttps://github.com/fastapi/fastapi/blob/master/fastapi/_compat.py#L197-L199\r\n\r\nShould be something like:\r\n```py\r\n        override_mode: Union[Literal[\"validation\"], None] = (\r\n            None if (separate_input_output_schemas or has_computed_fields(field)) else \"validation\"\r\n        )\r\n```\r\n\r\nAnd the meaning of `separate_input_output_schemas=False` could be described as: do not create separate input\\output schemas if not mandatory"
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-08-25T10:20:09Z",
+          "body": "> The behavior I would expect here is: force separate schema creation if model contains computed field.\r\n\r\nThanks for the review! That is basically the same behaviour as what I had previously implemented, but using your feedback I've now pushed an updated implementation that is much cleaner and easier to maintain / understand.\r\n\r\n\r\n\r\n"
+        },
+        {
+          "author": "github-actions[bot]",
+          "created_at": "2025-10-11T16:50:26Z",
+          "body": "This pull request has a merge conflict that needs to be resolved."
+        },
+        {
+          "author": "svlandeg",
+          "created_at": "2025-10-14T09:37:59Z",
+          "body": "Fixed the conflict with https://github.com/fastapi/fastapi/pull/14168. \r\n\r\n<s>Now looking into why the test suite fails for Python 3.14 \ud83e\udd14 \r\n[UPDATE]: the failing test suite is unrelated to this PR, cf https://github.com/fastapi/fastapi/pull/14186\r\n[UPDATE]: test suite green again!</s>\r\n"
+        }
+      ],
+      "merged_at": "2025-12-02T09:22:08Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13207",
+      "user": "vgrafe",
+      "labels": [
+        "bug"
+      ],
+      "comments_count": 10,
+      "created_at": "2025-01-14T18:51:26Z",
+      "closed_at": "2025-12-02T09:22:08Z"
+    },
+    {
+      "number": 13202,
+      "title": "\u2705 Simplify tests for websockets",
+      "body": "#13150",
+      "comments": [
+        {
+          "author": "alv2017",
+          "created_at": "2025-01-16T22:35:35Z",
+          "body": "> #11350\r\n\r\nThe actual reference is #13150 :blush:\r\n(check other PRs as well)"
+        }
+      ],
+      "merged_at": "2025-01-19T22:40:39Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13202",
+      "user": "alejsdev",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 1,
+      "created_at": "2025-01-12T20:12:20Z",
+      "closed_at": "2025-01-19T22:40:39Z"
+    },
+    {
+      "number": 13201,
+      "title": "\u2705 Simplify tests for separate_openapi_schemas",
+      "body": "#13150 ",
+      "comments": [],
+      "merged_at": "2025-01-19T22:36:49Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13201",
+      "user": "alejsdev",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 0,
+      "created_at": "2025-01-12T19:45:14Z",
+      "closed_at": "2025-01-19T22:36:49Z"
+    },
+    {
+      "number": 13200,
+      "title": "\u2705 Simplify tests for security",
+      "body": "#13150 ",
+      "comments": [],
+      "merged_at": "2025-01-19T22:35:40Z",
+      "url": "https://github.com/fastapi/fastapi/pull/13200",
+      "user": "alejsdev",
+      "labels": [
+        "refactor"
+      ],
+      "comments_count": 0,
+      "created_at": "2025-01-12T19:35:50Z",
+      "closed_at": "2025-01-19T22:35:40Z"
+    }
+  ],
+  "issues": []
+}

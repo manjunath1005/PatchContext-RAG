@@ -1,0 +1,168 @@
+{
+  "commits": [
+    {
+      "sha": "90af86814637a2384fe81fcc7cca394c13d9170a",
+      "short_sha": "90af868",
+      "message": ":sparkles: Add security checks for HTTP utils\n\nand tests for them",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-29T19:04:54Z",
+      "url": "https://github.com/fastapi/fastapi/commit/90af86814637a2384fe81fcc7cca394c13d9170a",
+      "created_at": "2018-12-29T19:04:54Z"
+    },
+    {
+      "sha": "5278314f2fbf95d711e94e14e2a5c8becde7e841",
+      "short_sha": "5278314",
+      "message": ":bookmark: Bump version, new security features and bug fixes",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-28T16:40:40Z",
+      "url": "https://github.com/fastapi/fastapi/commit/5278314f2fbf95d711e94e14e2a5c8becde7e841",
+      "created_at": "2018-12-28T16:40:40Z"
+    },
+    {
+      "sha": "0393a093d3a57bf35a4095a855e670267b9dfc50",
+      "short_sha": "0393a09",
+      "message": ":sparkles: Improve security utilities and add tests",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-28T16:35:48Z",
+      "url": "https://github.com/fastapi/fastapi/commit/0393a093d3a57bf35a4095a855e670267b9dfc50",
+      "created_at": "2018-12-28T16:35:48Z"
+    },
+    {
+      "sha": "bbe5f28b77324d4172c11a5c6eea476b904c586b",
+      "short_sha": "bbe5f28",
+      "message": ":memo: Add docs for OAuth2 security",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-24T16:20:48Z",
+      "url": "https://github.com/fastapi/fastapi/commit/bbe5f28b77324d4172c11a5c6eea476b904c586b",
+      "created_at": "2018-12-24T16:20:48Z"
+    },
+    {
+      "sha": "cfb65d0e15899f381474686464539c83c5511023",
+      "short_sha": "cfb65d0",
+      "message": ":bug: Fix utility OAuth2PasswordRequestForm to use forms\n\nand be used as a dependency",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-24T05:34:28Z",
+      "url": "https://github.com/fastapi/fastapi/commit/cfb65d0e15899f381474686464539c83c5511023",
+      "created_at": "2018-12-24T05:34:28Z"
+    },
+    {
+      "sha": "855daa2e5399a328eb3482d694e242bd99916c0f",
+      "short_sha": "855daa2",
+      "message": ":memo: Add tutorial for complete OAuth2 password flow",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-24T05:33:48Z",
+      "url": "https://github.com/fastapi/fastapi/commit/855daa2e5399a328eb3482d694e242bd99916c0f",
+      "created_at": "2018-12-24T05:33:48Z"
+    },
+    {
+      "sha": "de54e85152dd1c0e8c00896a6c8c86cbc5f52d0f",
+      "short_sha": "de54e85",
+      "message": ":memo: Add Security tutorial: Get current user",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-24T04:03:59Z",
+      "url": "https://github.com/fastapi/fastapi/commit/de54e85152dd1c0e8c00896a6c8c86cbc5f52d0f",
+      "created_at": "2018-12-24T04:03:59Z"
+    },
+    {
+      "sha": "b8d3070dafb5fc3c0036fbdbac0d9115bb8a1aed",
+      "short_sha": "b8d3070",
+      "message": ":memo: Add first Security tutorials",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-23T19:25:57Z",
+      "url": "https://github.com/fastapi/fastapi/commit/b8d3070dafb5fc3c0036fbdbac0d9115bb8a1aed",
+      "created_at": "2018-12-23T19:25:57Z"
+    },
+    {
+      "sha": "57ff677027eec19c0d659e050675e7a320123637",
+      "short_sha": "57ff677",
+      "message": ":white_check_mark: Add tests for validation errors in response",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-22T14:20:01Z",
+      "url": "https://github.com/fastapi/fastapi/commit/57ff677027eec19c0d659e050675e7a320123637",
+      "created_at": "2018-12-22T14:20:01Z"
+    },
+    {
+      "sha": "510fec9bee23a9c31157090a2081f2038f7ae5cf",
+      "short_sha": "510fec9",
+      "message": ":recycle: Refactor jsonable_encoder and test it\n\nwith nested arbitrary classes",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-22T13:15:04Z",
+      "url": "https://github.com/fastapi/fastapi/commit/510fec9bee23a9c31157090a2081f2038f7ae5cf",
+      "created_at": "2018-12-22T13:15:04Z"
+    },
+    {
+      "sha": "3180f35bdd88a67294d2f1937973c09628b2109a",
+      "short_sha": "3180f35",
+      "message": ":white_check_mark: Fix OpenAPI test for body schema",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-22T05:00:58Z",
+      "url": "https://github.com/fastapi/fastapi/commit/3180f35bdd88a67294d2f1937973c09628b2109a",
+      "created_at": "2018-12-22T05:00:58Z"
+    },
+    {
+      "sha": "70b0231f64f3cf7a66f4d87fb30e303dcefa18d6",
+      "short_sha": "70b0231",
+      "message": ":memo: Add stubs for Security, multi-files, app configurations",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-15T17:41:36Z",
+      "url": "https://github.com/fastapi/fastapi/commit/70b0231f64f3cf7a66f4d87fb30e303dcefa18d6",
+      "created_at": "2018-12-15T17:41:36Z"
+    },
+    {
+      "sha": "d79534b015832bc6d7d5434188872d3af8cc6bee",
+      "short_sha": "d79534b",
+      "message": ":memo: Move Query params - str validations to better name",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-14T13:25:44Z",
+      "url": "https://github.com/fastapi/fastapi/commit/d79534b015832bc6d7d5434188872d3af8cc6bee",
+      "created_at": "2018-12-14T13:25:44Z"
+    },
+    {
+      "sha": "9febe9af2a4ff28988cb686a40120d277c6ed3fb",
+      "short_sha": "9febe9a",
+      "message": ":sparkles: Update OAuth2 Form model and add strict version",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-14T06:01:33Z",
+      "url": "https://github.com/fastapi/fastapi/commit/9febe9af2a4ff28988cb686a40120d277c6ed3fb",
+      "created_at": "2018-12-14T06:01:33Z"
+    },
+    {
+      "sha": "8c66b3a492bb70fab3e045fdb1ab6da40ecca7bf",
+      "short_sha": "8c66b3a",
+      "message": ":bug: Add ValidationError schema even if only bodies\n\nare declared in the defined endpoints",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-10T20:28:47Z",
+      "url": "https://github.com/fastapi/fastapi/commit/8c66b3a492bb70fab3e045fdb1ab6da40ecca7bf",
+      "created_at": "2018-12-10T20:28:47Z"
+    },
+    {
+      "sha": "315eb88900809938401bea855e8f407da1cb509c",
+      "short_sha": "315eb88",
+      "message": ":white_check_mark: Add tests for OAuth2 Password scheme",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-10T16:12:28Z",
+      "url": "https://github.com/fastapi/fastapi/commit/315eb88900809938401bea855e8f407da1cb509c",
+      "created_at": "2018-12-10T16:12:28Z"
+    },
+    {
+      "sha": "ece32523850d9fa38ef353ee238461229f8ee840",
+      "short_sha": "ece3252",
+      "message": ":sparkles: Add util class for OAuth2 Password Bearer scheme",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-10T16:10:46Z",
+      "url": "https://github.com/fastapi/fastapi/commit/ece32523850d9fa38ef353ee238461229f8ee840",
+      "created_at": "2018-12-10T16:10:46Z"
+    },
+    {
+      "sha": "addfa89b0f750abc193f62be8e457fc487b842ee",
+      "short_sha": "addfa89",
+      "message": ":sparkles: Refactor, update code, several features",
+      "author": "Sebasti\u00e1n Ram\u00edrez",
+      "date": "2018-12-06T19:47:58Z",
+      "url": "https://github.com/fastapi/fastapi/commit/addfa89b0f750abc193f62be8e457fc487b842ee",
+      "created_at": "2018-12-06T19:47:58Z"
+    }
+  ],
+  "prs": [],
+  "issues": []
+}
