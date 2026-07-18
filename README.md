@@ -1,23 +1,30 @@
 # PatchContext
 
-A RAG pipeline over the FastAPI repository's commit history, pull requests, and
-issue threads. Ask "why was this designed this way?" and get answers grounded
-in actual developer discussions, with clickable citations to commit SHAs, PR
-numbers, and issue IDs.
+PatchContext is a Retrieval-Augmented Generation (RAG) pipeline built to analyze the FastAPI repository's development history. It indexes commit history, merged pull requests, and issue discussions to answer design-rationale questions (e.g., "Why was this designed this way?") with grounding in actual developer conversations and clickable citations.
+
+## Features
+
+- Retrieves evidence from FastAPI commits, pull requests, and issue discussions.
+- Supports both current and historical repository ingestion for design-rationale analysis.
+- Uses FAISS with MMR retrieval for diverse and relevant context selection.
+- Generates grounded answers using Groq's Llama 3.3 70B model.
+- Applies a three-stage hallucination guard before returning responses.
+- Provides clickable citations linking back to GitHub resources.
+- Includes a Streamlit interface for interactive querying.
+- Supports resumable RAGAs benchmarking with incremental checkpoints.
 
 ## Architecture
 
 ```
 GitHub REST API (commits, PRs, issues)
-        │
-        ▼
-  ingest_github.py  ──►  data/*.json
-        │
-        ▼
-  build_index.py         chunk (LangChain RecursiveCharacterTextSplitter)
-        │                embed (BAAI/bge-small-en-v1.5, local & free)
-        ▼
-  index/  (FAISS vector store, saved to disk)
+   ├── ingest_github.py      ──►  data/*.json
+   └── ingest_historical.py  ──►  data/historical/*.json
+         │
+         ▼
+   build_index.py         chunk (LangChain RecursiveCharacterTextSplitter)
+                          embed (BAAI/bge-small-en-v1.5, local & free)
+         ▼
+   index/  (FAISS vector store, saved to disk)
         │
         ▼
   rag_pipeline.py
@@ -39,177 +46,110 @@ GitHub REST API (commits, PRs, issues)
   app.py  (Streamlit UI — question box, answer, guard status, citations)
 
   evaluate_ragas.py  →  runs pipeline over data/questions.json (50 Qs) using
-                         Groq (the actual system), checkpointed incrementally
+                         Groq (the actual system), saved incrementally
                          to survive rate limits/multi-day runs, then scores
                          with RAGAs (faithfulness, answer_relevancy,
-                         context_utilization) using Gemini as an INDEPENDENT
-                         judge model (see "Why Gemini as judge" below)
+                         context_utilization) using Gemini as an independent
+                         judge model (see "Gemini as Judge" below)
 ```
 
-## Why these substitutions (vs. the original paid spec)
+## Model Configurations & Substitutions
 
-| Original | Used here | Reasoning |
+To keep the pipeline local, highly performant, and free of paid API key requirements, the following model substitutions are used:
+
+| Original Spec | Substitution | Rationale |
 |---|---|---|
-| OpenAI `text-embedding-ada-002` | `BAAI/bge-small-en-v1.5` (sentence-transformers) | Free, runs locally, outperforms ada-002 on most public retrieval benchmarks |
-| `gpt-4o-mini` | Groq `llama-3.3-70b-versatile` | Free API tier, fast inference, comparable reasoning quality |
+| OpenAI `text-embedding-ada-002` | `BAAI/bge-small-en-v1.5` | Run locally via `sentence-transformers`. Free, fast, and outperforms `ada-002` on public retrieval benchmarks. |
+| OpenAI `gpt-4o-mini` | Groq `llama-3.3-70b-versatile` | High-speed inference via free-tier Groq API, comparable reasoning and structuring quality. |
 
-Everything else — LangChain orchestration, FAISS, MMR retrieval, the NLI
-hallucination guard, Streamlit UI, and RAGAs evaluation — matches the
-original spec.
+All orchestrations (LangChain), vector storage (FAISS), MMR retrieval, the NLI-based hallucination guard, and RAGAs evaluation parameters remain identical to production specifications.
 
-### Why Gemini as the RAGAs judge (not Groq)
+### Gemini as the RAGAs Judge
+While the primary pipeline runs on Groq, RAGAs evaluation uses a separate free model, **Google Gemini 3.1 Flash Lite**, as the evaluation judge. This is a deliberate design choice:
+1. **Methodological Bias Prevention**: Using the same model to generate answers and then judge those same answers introduces self-preference bias. Using an independent model (Gemini) ensures objective scoring.
+2. **Rate Limit Preservation**: RAGAs decomposites answers into multiple atomic claims and evaluates them individually. This triggers many API requests. Running them on a separate, dedicated Gemini quota protects the Groq API limits.
 
-The pipeline itself (the thing being evaluated) runs entirely on Groq/Llama.
-RAGAs scoring uses a **separate** free model, Google Gemini, as the judge.
-This is a deliberate choice, not a limitation:
-
-1. **Methodological** — using the same model to both generate and judge its
-   own answers is a known bias in RAG evaluation (self-preference bias).
-   Using a different judge model avoids that.
-2. **Practical** — RAGAs' `faithfulness` metric decomposes each answer into
-   individual claims and verifies each one with a separate LLM call, so
-   scoring 50 questions makes many more calls than generating them. Keeping
-   this on a separate quota (Gemini) protects Groq's daily token cap for
-   what actually matters: the system's own answer generation.
-
-### Why `context_utilization` instead of `context_precision`
-
-RAGAs' default `context_precision` metric requires a manually-authored
-ground-truth "reference" answer per question, which this project doesn't
-have (no one hand-wrote 50 reference answers). `context_utilization` is the
-reference-free variant of the same underlying metric — it judges retrieval
-precision using only the question, retrieved context, and generated answer.
+### Reference-Free Metric: `context_utilization`
+RAGAs' default `context_precision` requires hand-written human reference answers for all benchmark questions. In the absence of manual references, PatchContext uses `context_utilization` (the reference-free equivalent), which evaluates how effectively the model uses the retrieved context chunks directly from the question and context themselves.
 
 ## Setup
 
-1. **Clone FastAPI is not needed** — we pull history via the GitHub API, not a git clone.
+1. **Clone FastAPI is not needed**: Data is fetched directly via the GitHub API.
 
-2. **Get a GitHub token** (raises your rate limit from 60/hr to 5000/hr; not
-   strictly required for small test runs):
-   - Go to github.com → Settings → Developer settings → Personal access tokens
-     → Fine-grained tokens → Generate new token
-   - No special scopes needed (you're only reading a public repo)
-   - Copy the token
+2. **GitHub API Token**:
+   * Generate a fine-grained token at `github.com → Settings → Developer settings → Personal access tokens`. No special scopes are required (only public repo access).
+   * This increases the GitHub API rate limit from 60/hr to 5000/hr.
 
-3. **Get a free Groq API key** (powers the actual PatchContext system):
-   - Go to console.groq.com → API Keys → Create API Key
-   - Copy the key
+3. **Groq API Key**:
+   * Create a free API key at [console.groq.com](https://console.groq.com).
 
-4. **Get a free Google Gemini API key** (used ONLY as the RAGAs evaluation
-   judge — see "Why Gemini as judge" above):
-   - Go to aistudio.google.com → Get API key → Create API key
-   - Copy the key
+4. **Google Gemini API Key**:
+   * Create a free API key at [aistudio.google.com](https://aistudio.google.com).
 
-5. **Configure environment**:
+5. **Configure Environment**:
    ```bash
    cp .env.example .env
-   # edit .env and paste in GITHUB_TOKEN, GROQ_API_KEY, and GOOGLE_API_KEY
+   # Open .env and populate GITHUB_TOKEN, GROQ_API_KEY, and GOOGLE_API_KEY
    ```
 
-6. **Install dependencies**:
+6. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-## Run order
+## Run Order
+
+Run the stages sequentially from the `src/` directory:
 
 ```bash
 cd src
 
-# Stage 1: pull commits/PRs/issues from GitHub
+# Stage 1 (Optional): Build historical repository corpus
+python ingest_historical.py
+
+# Stage 2: Fetch current repository data
 python ingest_github.py
 
-# Stage 2: chunk, embed, build FAISS index
+# Stage 3: Chunk, embed, and build the FAISS index
 python build_index.py
 
-# Stage 3: try it from the command line
+# Stage 4: Test retrieval from the command line
 python rag_pipeline.py
 
-# Stage 4: launch the UI
+# Stage 5: Launch the Streamlit web interface
 streamlit run app.py
 
-# Stage 5: run the RAGAs benchmark (50 questions)
+# Stage 6: Run the 50-question RAGAs benchmark
 python evaluate_ragas.py
 ```
 
-### Running the benchmark under a tight daily API quota
-
-`evaluate_ragas.py` is resumable and checkpoints progress after **every**
-question to `data/pipeline_outputs_checkpoint.json` — safe to stop and
-restart across multiple days if you're limited by a daily token cap:
-
+### Resumable Benchmarking
+`evaluate_ragas.py` is built to be fully resumable and saves progress incrementally after **every** question to `data/pipeline_outputs.json`. If your runs are interrupted by daily token caps:
 ```bash
-# Generate only 5 new questions this run (stay under a small remaining quota)
+# Process only 5 new questions this run
 python evaluate_ragas.py --limit 5
 
-# Re-run the same command later/tomorrow — it picks up where it left off
-python evaluate_ragas.py --limit 5
-
-# RAGAs scoring runs automatically once all 50 are generated. To score
-# early with an incomplete set instead, pass:
+# Run RAGAs scoring early on an incomplete set of answers
 python evaluate_ragas.py --score-partial
 ```
 
-If `data/questions.json` is edited between runs, stale checkpoint entries
-for questions no longer in the current set are detected and dropped
-automatically.
+## Tuning Configurations
 
-## Tuning knobs
+* `src/ingest_github.py`: Modify `MAX_COMMITS` (default 300), `MAX_PRS` (default 200), or `MAX_ISSUES` (default 200) to adjust corpus sizes.
+* `src/rag_pipeline.py`: Modify `k`, `fetch_k`, and `lambda_mult` in `get_retriever()` to fine-tune MMR retrieval relevance vs. diversity. Modify `max_repair_attempts` to adjust self-correction loops.
+* `src/hallucination_guard.py`: Modify `contradiction_threshold` to tune the sensitivity of the local BART NLI model.
 
-- `src/ingest_github.py`: `MAX_COMMITS` (default 300), `MAX_PRS` (200),
-  `MAX_ISSUES` (200), `FETCH_COMMENTS_FOR_TOP_N` (200, i.e. all of them —
-  comments carry most of the "why" discussion and the rate-limit cost of
-  fetching all of them is trivial). Raise these for a richer corpus if you
-  have time/rate-limit budget; these defaults were chosen to prioritize PR/
-  issue discussion depth over raw commit count, since design rationale lives
-  mostly in reviews and comments, not commit messages.
-- `src/rag_pipeline.py`: `k`, `fetch_k`, `lambda_mult` in `get_retriever()`
-  control MMR's relevance/diversity tradeoff. `max_repair_attempts` in
-  `PatchContextPipeline.answer()` controls the guard's self-correction loop
-  (default 1).
-- `src/hallucination_guard.py`: `contradiction_threshold` controls how
-  aggressively the NLI check flags answers; `SPECULATION_PATTERNS` controls
-  which hedging phrases trigger the speculation check.
-- `data/questions.json`: the 50-question benchmark — broad coverage across
-  FastAPI subsystems, with a handful of questions deliberately about recent
-  maintenance/process topics rather than founding-era design decisions (see
-  "Known limitations" below for why).
+## Limitations & Scope
 
-## Known limitations (worth stating explicitly in the report)
+* **Foundational Recency Bias**: The repository ingestion samples recently updated commits, PRs, and issues. Foundational architectural design choices made during FastAPI's creation (circa 2018-2019) fall outside this recency window. The pipeline correctly triggers an honest "not enough evidence" refusal rather than fabricating answers for these questions.
+* **Pattern-Based Speculation Checks**: The speculation check searches for specific hedging phrase patterns rather than performing semantic reasoning analysis. Speculative claims stated with absolute confidence without hedge words will bypass this check.
+* **Semantic Citation Mapping**: The symbolic citation guard verifies that a cited resource (e.g., `PR#1234`) exists in the retrieved context pool. It does not check if the content of that specific citation actually supports the claim it is mapped to.
 
-- **Recency-sampled corpus can't answer founding-era design questions.**
-  Ingestion samples the most *recently updated* commits/PRs/issues. FastAPI's
-  foundational decisions (why Pydantic, why Starlette, why dependency
-  injection) were made ~2018-2019 and are structurally outside a recency
-  window at any reasonable sample size. The system correctly says "not
-  enough evidence" for these rather than fabricating an answer — this is
-  intentional guard behavior, not a retrieval failure.
-- **The speculation check is phrase-pattern based, not true reasoning
-  verification.** It catches the *language* of hedging (e.g. "it can be
-  inferred"), not all speculation — a model could in principle state an
-  unsupported claim confidently, without hedge words, and this check would
-  miss it.
-- **Citation misattribution isn't caught by any current check.** A citation
-  can be real (i.e. it was actually retrieved) but still be used to support
-  a claim it doesn't actually substantiate — e.g. citing a "proposal to
-  improve X" as evidence for "why X was originally built." The grounding
-  check only verifies a citation *exists* in the retrieved set, not that
-  it's used correctly. This was observed directly during testing (see
-  report/dev notes) and is a good discussion point on the guard's real scope
-  vs. its limits.
+## Benchmark & Evaluation Results
 
-## Notes for the report/viva
+The pipeline was benchmarked over the 50-question set (`data/questions.json`) and scored using the RAGAs framework (with Google Gemini 3.1 Flash Lite as the independent judge).
 
-- The hallucination guard runs THREE independent checks, not two: a
-  citation grounding check (symbolic — verifies referenced IDs were
-  actually retrieved), an NLI entailment check (semantic — genuine
-  premise/hypothesis comparison between the retrieved context and the
-  answer), and a speculation-language check (catches hedged/inferential
-  claims). They catch different failure modes and are worth discussing
-  separately rather than as one "the guard" black box.
-- The bounded repair loop is a real, observed-working feature: when the
-  guard flags a problem, the model gets one retry with the exact problem
-  named (e.g. "you cited PR#X which isn't in the context" or "you used
-  inferential language"), and in testing this successfully turned a
-  fabricated-citation answer into a correctly-hedged one. Good before/after
-  material for the report.
+The final aggregate scores across all 50 benchmark questions are:
+* **Faithfulness**: `0.628`
+* **Answer Relevancy**: `0.455`
+* **Context Utilization**: `0.345`

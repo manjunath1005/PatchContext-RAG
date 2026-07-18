@@ -5,7 +5,7 @@
 venv/
 env/
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 .Python
 *.egg-info/
