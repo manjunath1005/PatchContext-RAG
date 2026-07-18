@@ -1,19 +1,5 @@
 """
 PatchContext - NLI-based Hallucination Guard.
-
-Two independent checks run on every generated answer:
-
-1. Citation grounding check: every SHA / PR#/ Issue# the model cites in its
-   answer must actually appear in the metadata of the chunks that were
-   retrieved for that question. If the model invents a PR number that
-   wasn't retrieved, that's a hard fabrication and we flag it immediately.
-
-2. NLI entailment check: we treat the retrieved context as the premise and
-   the generated answer as the hypothesis, using a pretrained NLI model
-   (facebook/bart-large-mnli, free/local) called directly with that exact
-   (premise, hypothesis) pair. If the answer is classified as "contradiction"
-   with sufficient confidence, it's likely making claims not actually
-   supported by the retrieved discussions.
 """
 
 import re
@@ -50,11 +36,7 @@ SPECULATION_PATTERNS = [
 
 def speculation_check(answer_text):
     """
-    Flags hedging/inferential language (e.g. 'it can be inferred', 'suggests that').
-    This is a phrase-pattern check, not true reasoning verification — it catches the
-    LANGUAGE of speculation, not all speculation. A model could in principle speculate
-    confidently without hedge words and this would miss it. Treat as a useful signal,
-    not a complete guarantee.
+    Flags hedging or inferential language based on regex phrase patterns.
     """
     text_lower = answer_text.lower()
     matched = [p.pattern for p in SPECULATION_PATTERNS if p.search(text_lower)]
@@ -98,15 +80,7 @@ def citation_grounding_check(answer_text, retrieved_docs):
 
 def nli_entailment_check(answer_text, context_text, contradiction_threshold=0.5):
     """
-    True NLI: premise = retrieved context, hypothesis = generated answer.
-
-    Uses facebook/bart-large-mnli directly via its tokenizer/model, with the
-    context and answer passed as an explicit (premise, hypothesis) pair. (An
-    earlier version of this function used the 'zero-shot-classification'
-    pipeline, which does NOT accept a custom premise — the answer was being
-    compared against a fixed generic sentence instead of the actual retrieved
-    context, silently ignoring the context_text argument. This version fixes
-    that: the model genuinely sees the real context now.)
+    Entailment check: premise = retrieved context, hypothesis = generated answer.
     """
     tokenizer, model = _get_nli_model()
     inputs = tokenizer(context_text, answer_text, return_tensors="pt", truncation=True, max_length=1024)

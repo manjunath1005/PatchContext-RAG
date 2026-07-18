@@ -1,11 +1,5 @@
 """
 PatchContext - Stage 1: Data Ingestion
-Pulls commit history, pull requests, and issue threads from the FastAPI repo
-via the GitHub REST API and saves them as structured JSON.
-
-The FastAPI repo has 10k+ commits and 5k+ PRs/issues, so we sample the most
-recent N of each (configurable below) to keep embedding + indexing tractable
-for a course project. Increase the limits if you have time/rate-limit budget.
 """
 
 import os
@@ -28,19 +22,14 @@ if GITHUB_TOKEN:
 MAX_COMMITS = 300
 MAX_PRS = 200
 MAX_ISSUES = 200
-FETCH_COMMENTS_FOR_TOP_N = 200  # = MAX_PRS/MAX_ISSUES: fetch comments for all of them.
-                                  # Comments carry most of the "why" discussion, and the
-                                  # rate-limit cost of fetching all of them (vs. a subset)
-                                  # is trivial against GitHub's 5000/hr authenticated limit.
+FETCH_COMMENTS_FOR_TOP_N = 200  # Fetch comments for all items
 
 OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 
 def _get(url, params=None):
-    """GET with basic rate-limit handling and retries (also covers transient
-    network errors and non-rate-limit HTTP failures, e.g. GitHub 502/503 or
-    secondary abuse-detection 403s that don't literally say 'rate limit')."""
+    """GET with rate-limit handling and retries."""
     last_error = None
     for attempt in range(3):
         try:
@@ -120,12 +109,7 @@ def fetch_pull_requests():
 
 
 def fetch_issues():
-    """
-    Uses the Search API with type:issue so we don't waste budget on PRs.
-    The plain /issues endpoint mixes PRs and issues together, and on an
-    active repo like FastAPI, recently-updated PRs (including bot-driven
-    ones) crowd out real issues when sorted by 'updated'.
-    """
+    """Fetch issues using the Search API."""
     items = []
     page = 1
     with tqdm(total=MAX_ISSUES, desc="issues (search)") as pbar:

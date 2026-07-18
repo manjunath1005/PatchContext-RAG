@@ -1,10 +1,5 @@
 """
 PatchContext - Stage 2: Chunk, embed, and index.
-
-Turns commits.json / prs.json / issues.json into LangChain Documents with
-citation metadata (sha / pr number / issue number + url), embeds them with
-a free local sentence-transformers model (BAAI/bge-small-en-v1.5), and
-builds a FAISS index saved to disk.
 """
 
 import os
@@ -42,7 +37,13 @@ def commit_to_doc(c):
 
 
 def pr_to_doc(p):
-    comment_block = "\n\n".join(p.get("comments", [])[:10])  # cap to keep chunks reasonable
+    comment_bodies = []
+    for c in p.get("comments", []):
+        if isinstance(c, dict) and "body" in c:
+            comment_bodies.append(c["body"])
+        elif isinstance(c, str):
+            comment_bodies.append(c)
+    comment_block = "\n\n".join(comment_bodies[:10])  # cap to keep chunks reasonable
     text = (
         f"Pull Request #{p['number']}: {p['title']}\n\n"
         f"{p.get('body','')}\n\n"
@@ -59,7 +60,13 @@ def pr_to_doc(p):
 
 
 def issue_to_doc(i):
-    comment_block = "\n\n".join(i.get("comments", [])[:10])
+    comment_bodies = []
+    for c in i.get("comments", []):
+        if isinstance(c, dict) and "body" in c:
+            comment_bodies.append(c["body"])
+        elif isinstance(c, str):
+            comment_bodies.append(c)
+    comment_block = "\n\n".join(comment_bodies[:10])
     text = (
         f"Issue #{i['number']}: {i['title']}\n\n"
         f"{i.get('body','')}\n\n"
@@ -79,12 +86,56 @@ def build_documents():
     prs = load_json("prs.json")
     issues = load_json("issues.json")
 
+    # Deduplication sets
+    primary_commit_shas = {c["sha"] for c in commits if "sha" in c}
+    primary_pr_numbers = {p["number"] for p in prs if "number" in p}
+    primary_issue_numbers = {i["number"] for i in issues if "number" in i}
+
+    historical_commits_added = 0
+    historical_prs_added = 0
+    historical_issues_added = 0
+
+    historical_dir = os.path.join(DATA_DIR, "historical")
+    if os.path.exists(historical_dir):
+        for fname in sorted(os.listdir(historical_dir)):
+            if fname.endswith(".json"):
+                fpath = os.path.join(historical_dir, fname)
+                try:
+                    with open(fpath, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                    
+                    # Merge historical commits
+                    for c in data.get("commits", []):
+                        if c.get("sha") not in primary_commit_shas:
+                            commits.append(c)
+                            primary_commit_shas.add(c["sha"])
+                            historical_commits_added += 1
+                            
+                    # Merge historical PRs
+                    for p in data.get("prs", []):
+                        if p.get("number") not in primary_pr_numbers:
+                            prs.append(p)
+                            primary_pr_numbers.add(p["number"])
+                            historical_prs_added += 1
+                            
+                    # Merge historical issues
+                    for i in data.get("issues", []):
+                        if i.get("number") not in primary_issue_numbers:
+                            issues.append(i)
+                            primary_issue_numbers.add(i["number"])
+                            historical_issues_added += 1
+                except Exception as e:
+                    print(f"Error loading historical file {fname}: {e}")
+
     docs = []
     docs += [commit_to_doc(c) for c in commits]
     docs += [pr_to_doc(p) for p in prs]
     docs += [issue_to_doc(i) for i in issues]
     print(f"Built {len(docs)} raw documents "
           f"({len(commits)} commits, {len(prs)} PRs, {len(issues)} issues).")
+    print(f"Added {historical_commits_added} historical commits, "
+          f"{historical_prs_added} historical PRs, and "
+          f"{historical_issues_added} historical issues.")
     return docs
 
 
@@ -115,6 +166,15 @@ def main():
     os.makedirs(INDEX_DIR, exist_ok=True)
     vectorstore.save_local(INDEX_DIR)
     print(f"Index saved to {INDEX_DIR}")
+
+    # Calculate index size on disk
+    index_size = 0
+    if os.path.exists(INDEX_DIR):
+        for fname in os.listdir(INDEX_DIR):
+            fpath = os.path.join(INDEX_DIR, fname)
+            if os.path.isfile(fpath):
+                index_size += os.path.getsize(fpath)
+    print(f"Actual FAISS index size on disk: {index_size / (1024 * 1024):.2f} MB ({index_size} bytes)")
 
 
 if __name__ == "__main__":
